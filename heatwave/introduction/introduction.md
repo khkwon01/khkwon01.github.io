@@ -69,5 +69,4 @@ _Lab Setup_
 ## Acknowledgements
 
 - **Author** - Perside Foster, MySQL Principal Solution Engineering
-- **Contributors** - Mandy Pang, MySQL Principal Product Manager,  Nick Mader, MySQL Global Channel Enablement & Strategy Manager, Selena Sanchez, MySQL Solution Engineering
 - **Last Updated By/Date** - Kihyuk, MySQL Solution Engineering, July 2024
