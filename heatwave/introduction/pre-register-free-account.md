@@ -115,4 +115,4 @@ Estimated Time: 5 minutes 소요
 ## **Acknowledgements**
 
 - **Created By/Date** - Kay Malcolm, Database Product Management, Database Product Management, March 2020
-- **Last Updated By** - Kihyuk, March 2024
+- **Last Updated By** - Kihyuk, July 2024
