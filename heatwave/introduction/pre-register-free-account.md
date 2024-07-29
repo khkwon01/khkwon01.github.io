@@ -1,21 +1,21 @@
-# Get started - register Free Tier account
+# 시작 - Free Tier account 등록
 
-## Introduction
+## 소개
 
-Before you get started, you will need an Oracle Cloud account. This lab walks you through the steps of getting an Oracle Cloud Free Tier account and signing in.
+시작하기 전에 Oracle Cloud 계정이 필요합니다. 이 랩은 Oracle Cloud Free Tier 계정을 얻고 로그인하는 단계를 안내합니다.
 
-Estimated Time: 5 minutes
+Estimated Time: 5 minutes 소요
 
-### Existing Cloud Accounts
+### 기존 클라우드 계정
 
-If you already have access to an Oracle Cloud account, skip to **Task 2** to sign in to your cloud tenancy.
+이미 Oracle Cloud 계정에 대한 액세스 권한이 있는 경우 **작업 2**로 건너뛰어 클라우드 테넌시에 로그인하세요.
 
-### Objectives
+### 목표
 
-- Create an Oracle Cloud Free Tier account
-- Sign in to your account
+- Oracle Cloud Free Tier 계정 생성
+- 귀하의 계정에 로그인하세요
 
-### Prerequisites
+### Prerequisites (요구조건)
 
 * A valid email address
 * Ability to receive SMS text verification (only if your email isn't recognized)
