@@ -113,7 +113,7 @@ _Estimated Time:_ 20 minutes 소요
     ![home menu mysq](https://github.com/user-attachments/assets/545d13c3-8ba9-4be2-965f-b808ff8adf1d "home menu mysql")
 
 2. 'Create DB System' 클릭
-    ![mysql create button](https://github.com/user-attachments/assets/b51d2259-047a-4063-a6aa-6526d0d274a6" mysql create button")
+    ![mysql create button](https://github.com/user-attachments/assets/b51d2259-047a-4063-a6aa-6526d0d274a6 " mysql create button")
 
 3. 데이터베이스 구성을 위해 아래 필드 각각에 대해 값을 입력
 
