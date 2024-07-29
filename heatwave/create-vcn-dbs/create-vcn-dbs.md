@@ -18,7 +18,7 @@ _Estimated Time:_ 20 minutes 소요
 
 ### Prerequisites (요구조건)
 
-- Oracle 평가판 또는 유료 클라우드 계정
+- An Oracle Trial, Paid or LiveLabs Cloud Account
 - MySQL Shell에 사용경험
 
 ## 작업 1: Virtual Cloud Network 생성
