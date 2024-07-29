@@ -2,6 +2,9 @@
 
 ![image](https://github.com/user-attachments/assets/a7c6e7b7-086d-42d3-bba8-0f9e80ec5c8a)
 
+- Heatwave 전체 구성도 (application flow)
+![image](https://github.com/user-attachments/assets/2f055dda-9212-4d8d-bac7-c2d200939a2f)
+
 
 ## Workshop에 대해서
 
