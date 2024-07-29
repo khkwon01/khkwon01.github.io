@@ -19,16 +19,17 @@ _Estimated Lab Time:_ 4 hours 소요
 
 MySQL HeatWave는 Oracle MySQL Database Service를 위한 대량 병렬, 고성능, 메모리 내 쿼리 가속기로, 분석 및 혼합 워크로드에 대해 MySQL 성능을 엄청나게 가속화합니다. ETL 프로세스 없이 고객이 MySQL 데이터베이스에서 직접 OLTP 및 OLAP 워크로드를 실행할 수 있는 유일한 서비스입니다. MySQL Autopilot은 고급 머신 러닝 기술을 사용하여 프로비저닝, 데이터 로딩, 쿼리 처리 및 오류 처리를 포함한 데이터베이스 수명 주기 작업을 자동화합니다. 이를 통해 수동 관리 작업이 최소화되고 HeatWave의 유용성, 성능 및 확장성이 더욱 향상됩니다. MySQL HeatWave는 또한 Data Integration Service 및 Oracle Analytics Cloud와 같은 다른 Oracle Cloud 서비스와 통합되어 원활한 엔드투엔드 통합을 제공합니다.
 
-MySQL Database Service with HeatWave is a fully managed service, optimized for Oracle Cloud Infrastructure. It enables you to:
+HeatWave가 포함된 MySQL Database Service는 Oracle Cloud Infrastructure에 최적화된 완전 관리형 서비스입니다. 다음을 수행할 수 있습니다.
 
-- Instantly provision MySQL instances and connect to a production ready, pre-configured MySQL database.
-- Run OLTP and OLAP workload directly on a single MySQL platform without the need of ETL, and no change in your applications.
-- Efficiently run mixed and analytics workloads with best price performance. HeatWave is 6.5X faster than Amazon Redshift at half the cost, 7X faster than Snowflake at one-fifth the cost, and 1400X faster than Amazon Aurora at half the cost.
-- Make more informed business decision by getting real-time insights from your operational data.
-- Free up time of developers, DBAs, and DevOps to focus on value added tasks that are core to your business.
-- Access to dozens of additional Oracle Cloud Services enabling organizations to embrace the shift to the cloud.
+- MySQL 인스턴스를 즉시 프로비저닝하고 프로덕션에 바로 사용할 수 있는 사전 구성된 MySQL 데이터베이스에 연결합니다.
+- ETL이 필요 없고 애플리케이션을 변경하지 않고도 단일 MySQL 플랫폼에서 OLTP 및 OLAP 워크로드를 직접 실행하세요.
+- 최고의 가격 대비 성능으로 혼합 및 분석 워크로드를 효율적으로 실행합니다.
+  - HeatWave는 Amazon Redshift보다 6.5배 빠르지만 비용은 절반이고, Snowflake보다 7배 빠르지만 비용은 5분의 1이며, Amazon Aurora보다 1400배 빠르지만 비용은 절반입니다.
+- 운영 데이터에서 실시간 통찰력을 얻어 더욱 정보에 입각한 비즈니스 결정을 내리세요.
+- 개발자, DBA, DevOps의 시간을 절약하여 비즈니스의 핵심인 부가가치 작업에 집중할 수 있습니다.
+- 수십 개의 추가 Oracle Cloud Services에 액세스하여 조직이 클라우드로의 전환을 수용할 수 있습니다.
 
-_Lab Setup
+_Lab Setup_
 
 ![image](https://github.com/user-attachments/assets/3d3a2b35-f9ab-4f86-acbf-548b159c5a4a)
 
