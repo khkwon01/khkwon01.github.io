@@ -1,4 +1,4 @@
-# 도움이 필요할 경우
+![image](https://github.com/user-attachments/assets/7a6c0895-0bc8-4080-aeb1-94cd054b4f2c)# 도움이 필요할 경우
 
 ## 세션 소개
 이 페이지는 LiveLab에서 사용자가 직면하는 몇 가지 일반적인 문제를 해결하는 데 도움을 주기 위해 설계되었습니다.
@@ -41,37 +41,36 @@ no VNC 워크숍에 연결하는 동안 "Hmmm... 이 페이지에 접근할 수 
 
 1. VPN 연결을 끊은 후 다시 시도해 보세요.
 
-2. If you are connected to a corporate network, try switching to a public or a "clear" network if allowed.
+2. 회사 네트워크에 연결되어 있다면 허용된다면 공용 네트워크나 '일반' 네트워크로 전환해보세요.
 
-3. Check and disable the ad blocker if there is one setup for your browser.
+3. 브라우저에 광고 차단 기능이 설정되어 있다면 이를 확인하고 비활성화하세요.
 
-4. Try running the workshop in a different browser other than your current browser.
+4. 현재 사용 중인 브라우저가 아닌 다른 브라우저에서 워크숍을 실행해 보세요.
 
-5. For the noVNC workshop, check if you can open port 6080.
+5. noVNC 워크숍의 경우 6080 포트를 열 수 있는지 확인하세요.
 
-6. For other standard scenarios, check if you can open ports such as 80, 443, and 22 (for ssh).
+6. 다른 표준 시나리오의 경우 80, 443, 22(ssh용) 등의 포트를 열 수 있는지 확인하세요.
 
-7. Alternatively, contact your IT Administrator to see if adding exceptions to your network or firewall would be viable.
+7. 또는 IT 관리자에게 문의하여 네트워크나 방화벽에 예외를 추가하는 것이 가능한지 확인하세요.
 
 ## Cannot Create Passwords for Database Users?
 
-1. Make sure the password you enter satisfies the following [restrictions](https://docs.oracle.com/en/cloud/saas/marketing/responsys-user/Account_PasswordRestrictions.htm).
+1. 입력하는 비밀번호가 다음 조건을 만족하는지 확인하세요.[restrictions](https://docs.oracle.com/en/cloud/saas/marketing/responsys-user/Account_PasswordRestrictions.htm).
 
 ## Cannot find Groups under Identity and Security in my tenancy?
 
-1. From the navigation menu, click **Identity & Security** and select **Domains** under **Identity**.
+1. 탐색 메뉴에서, **Identity & Security** 클릭, **Domains** under **Identity** 아래 **Domains** 선택.
 
-  ![Select Domains](./images/select-domain.png " ")
+  ![Select Domains](https://github.com/user-attachments/assets/200af26f-f87a-42b5-9212-b2f6fc399acb " ")
 
-2. Make sure you are in the correct compartment and click **Default(Current domain)**
+2. 올바른 compartment에 있는지 확인하고 **기본값(Current domain)**을 클릭하세요.
 
-  ![Click Default](./images/domain-groups.png " ")
+  ![Click Default](https://github.com/user-attachments/assets/9f62c8de-858c-44c0-832f-99758375d3b9 " ")
 
-3. From the Identity domain section on the left, click **Groups** to access the groups.
+3. 왼쪽의 ID 도메인 섹션에서 **그룹**을 클릭하여 그룹에 액세스합니다.
 
-  ![Click Groups](./images/click-groups.png " ")
+  ![Click Groups](https://github.com/user-attachments/assets/2baaef4d-32ff-4180-b92c-db77b7989df8 " ")
 
 ## Acknowledgements
 * **Author** - LiveLabs Team
-* **Contributors** - LiveLabs Team, Arabella Yao
 * **Last Updated By/Date** - Kihyuk, July 2024
