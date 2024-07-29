@@ -53,67 +53,66 @@ Estimated Time: 5 minutes 소요
     - **계속**을 클릭하세요
     ![Account Info](https://github.com/user-attachments/assets/68533442-3ae5-42e6-b3cf-2bbfb4d71a08 " ")
 
-7.  Enter your address information. Choose your country and enter a phone number. Click **Continue**.
-          ![Free Tier Address](./images/free-tier-address.png " ")
+7. 주소 정보를 입력하세요. 국가를 선택하고 전화번호를 입력하세요. **계속**을 클릭하세요.
+          ![Free Tier Address](https://github.com/user-attachments/assets/2c3b6765-0e3d-4cbd-b45c-ed57e2842788 " ")
 
-8. Click the **Add payment verification method** button.
-          ![Payment Verification](./images/free-tier-payment-1.png " ")
+8. **결제 확인 방법 추가** 버튼을 클릭합니다.
+          ![Payment Verification](https://github.com/user-attachments/assets/9d755793-03d0-4af7-895f-1c2be1070adf " ")
 
-9. Choose the verification method. In this case, click the **Credit Card** button. Enter your information and payment details.
+9. 검증 방법을 선택하세요. 이 경우 **신용 카드** 버튼을 클릭하세요. 귀하의 정보와 결제 세부 정보를 입력하세요.
 
-    >**Note:** This is a free credit promotion account. You will not be charged unless you elect to upgrade the account.
+    >**참고:** 이것은 무료 신용 프로모션 계정입니다. 계정을 업그레이드하기로 선택하지 않는 한 요금이 청구되지 않습니다.
 
-    ![Credit Card](./images/free-tier-payment-2.png " ")
+    ![Credit Card](https://github.com/user-attachments/assets/1166113b-79b8-48c4-abb9-213bc61528d6 " ")
 
-10. Once your payment verification is complete, review and accept the agreement by clicking the check box.  Click the **Start my free trial** button.
+10. 결제 확인이 완료되면 확인란을 클릭하여 계약을 검토하고 수락합니다. **무료 체험 시작** 버튼을 클릭합니다.
 
-    ![Start Free Trial](./images/free-tier-agreement.png " ")
+    ![Start Free Trial](https://github.com/user-attachments/assets/00143bdd-ca24-4248-800f-f2105ef2f847 " ")
 
-11. Your account is provisioning and should be available soon! You might want to log out as you wait for your account to be provisioned. You'll receive an email from Oracle notifying you that provisioning is complete, with your cloud account and username.
+11. 귀하의 계정이 프로비저닝 중이며 곧 사용할 수 있을 것입니다! 계정이 프로비저닝될 때까지 로그아웃하는 것이 좋습니다. Oracle에서 프로비저닝이 완료되었다는 내용의 이메일을 받게 되며, 귀하의 클라우드 계정과 사용자 이름이 포함됩니다.
 
 ## 작업 2: OCI Account 로그인
 
-*Please note that while your tenancy is initially created, you will only see a direct login. Once your tenancy is fully provisioned, you will see the screens as described below.*
+*tenancy가 처음 생성될 때는 직접 로그인만 볼 수 있습니다. tenancy가 완전히 프로비저닝되면 아래에 설명된 대로 화면이 표시됩니다.*
 
-1. Go to [cloud.oracle.com](https://cloud.oracle.com). Enter your Cloud Account Name and click **Next**. This is the name you chose while creating your account in the previous section. It's NOT your email address. If you've forgotten the name, see the confirmation email.
+1. [cloud.oracle.com](https://cloud.oracle.com)으로 이동합니다. 클라우드 계정 이름을 입력하고 **다음**을 클릭합니다. 이는 이전 섹션에서 계정을 만들 때 선택한 이름입니다. 이메일 주소가 아닙니다. 이름을 잊은 경우 확인 이메일을 참조하세요.
 
-    ![Oracle Cloud](./images/cloud-oracle.png " ")
+    ![Oracle Cloud](https://github.com/user-attachments/assets/ec26be7d-5c9b-4e05-96cf-efae871b3adb " ")
 
-2. Click **Continue** to sign in using the *"oraclecloudidentityservice"*.
+2. **계속**을 클릭하여 *"oraclecloud identityservice"*를 사용하여 로그인하세요.
 
-   ![Sign In](./images/cloud-login-tenant-single-sigon.png " ")
+   ![Sign In](https://github.com/user-attachments/assets/c2a087d0-cebe-488a-a6ff-624f31b01489 " ")
 
-   When you sign up for an Oracle Cloud account, a user is created for you in Oracle Identity Cloud Service with the username and password you selected. You can use this single sign-on option to sign in to Oracle Cloud Infrastructure and then navigate to other Oracle Cloud services without re-authenticating. This user has administrator privileges for all the Oracle Cloud services included with your account.
+   Oracle Cloud 계정에 가입하면 선택한 사용자 이름과 비밀번호로 Oracle Identity Cloud Service에서 사용자가 생성됩니다. 이 단일 로그인 옵션을 사용하여 Oracle Cloud Infrastructure에 로그인한 다음 재인증 없이 다른 Oracle Cloud 서비스로 이동할 수 있습니다. 이 사용자는 계정에 포함된 모든 Oracle Cloud 서비스에 대한 관리자 권한을 가지고 있습니다.
 
-3. Enter your Cloud Account credentials and click **Sign In**. Your username is your email address. The password is what you chose when you signed up for an account.
+3. 클라우드 계정 자격 증명을 입력하고 **로그인**을 클릭합니다. 사용자 이름은 이메일 주소입니다. 비밀번호는 계정에 가입할 때 선택한 것입니다.
 
-     ![Username and Password](./images/oci-signin-single-signon.png " ")
+     ![Username and Password](https://github.com/user-attachments/assets/489448bc-6f93-47f7-9217-b22fc23b6eed " ")
 
-4. You will be prompted to enable secure verification. Click **Enable Secure Verification**. For more details, refer the [Managing Multifactor Authentication documentation](https://docs.oracle.com/en-us/iaas/Content/Identity/Tasks/usingmfa.htm)
+4. 보안 검증을 활성화하라는 메시지가 표시됩니다. **보안 검증 활성화**를 클릭합니다. 자세한 내용은, [다중 인증 관리 문서](https://docs.oracle.com/en-us/iaas/Content/Identity/Tasks/usingmfa.htm)를 참조 하세요.
 
-    ![Enable secure verification](./images/enable-secure-verification.png " ")
+    ![Enable secure verification](https://github.com/user-attachments/assets/38902c1a-a98a-42b1-88c7-5c31167b4933 " ")
 
-5. Select a method - **Mobile App** or **FIDO Authenticator** to enable secure verification.
+5. 안전한 확인을 위해 **Mobile App** 또는 **FIDO Authenticator** 중 하나를 선택하세요.
 
-    ![Choose method](./images/select-mfa-method.png " ")
+    ![Choose method](https://github.com/user-attachments/assets/75441764-a083-41ae-9b77-afb0a30cc861 " ")
 
-6. If you have chosen:
-    - **Mobile App** - Follow the steps as shown in the screenshot to setup authentication.
+6. 선택한 경우:
+    - **Mobile App** - 스크린샷에 표시된 단계에 따라 인증을 설정하세요.
 
-        ![Mobile App](./images/mobile-app-mfa.png " ")
+        ![Mobile App](https://github.com/user-attachments/assets/1c291688-9254-4990-830d-70f7c8cd0638 " ")
 
-    -  **FIDO Authenticator** - Click **Setup** and follow the steps to setup authentication.
+    -  **FIDO Authenticator** - **설정**을 클릭하고 단계에 따라 인증을 설정합니다.
 
-        ![FIDO Authenticator](./images/fido-mfa.png " ")
+        ![FIDO Authenticator](https://github.com/user-attachments/assets/3489c0a0-1c24-40ee-b2fa-ef587ec2e0d9 " ")
 
-7. Once you have verified authentication, you will now be signed in to Oracle Cloud!
+7. 인증을 확인하면 이제 Oracle Cloud에 로그인할 수 있습니다!
 
     ![OCI Console Home Page](https://oracle-livelabs.github.io/common/images/console/home-page.png " ")
 
-You may now **proceed to the next lab**.
+이제 **Next Lab로 진행**할 수 있습니다.
 
 ## **Acknowledgements**
 
 - **Created By/Date** - Kay Malcolm, Database Product Management, Database Product Management, March 2020
-- **Contributors** - John Peach, Kamryn Vinson, Rene Fontcha, Arabella Yao
-- **Last Updated By** - Ramona Magadan, March 2024
+- **Last Updated By** - Kihyuk, March 2024
