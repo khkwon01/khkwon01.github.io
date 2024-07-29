@@ -28,8 +28,8 @@ Estimated Time: 5 minutes 소요
 
 1. Oracle Cloud 계정 등록 양식에 액세스하려면 웹 브라우저를 엽니다 : [oracle.com/cloud/free](![image](https://github.com/user-attachments/assets/e37916d7-f1eb-41fa-ab60-75a9ee7eed70)).
 
-   You will be presented with a registration page.
-       ![Registration](./images/cloud-infrastructure.png " ")
+   등록 페이지가 나타납니다.
+       ![Registration](![image](https://github.com/user-attachments/assets/4273af51-dd3d-4b40-9cee-30cebfcb8d07) " ")
 2.  Enter the following information to create your Oracle Cloud Free Tier account.
     * Choose your **Country**
     * Enter your **Name** and **Email**
