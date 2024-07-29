@@ -1,6 +1,6 @@
 # Introduction
 
-![image](https://github.com/user-attachments/assets/73823634-c6c1-491f-88ce-86fa1ac13060)
+![image](https://github.com/user-attachments/assets/a7c6e7b7-086d-42d3-bba8-0f9e80ec5c8a)
 
 
 ## Workshop에 대해서
