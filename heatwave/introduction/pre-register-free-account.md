@@ -22,11 +22,11 @@ Estimated Time: 5 minutes 소요
 
 > **Note**: 다음 스크린샷에 나와 있는 인터페이스는 실제로 볼 수 있는 인터페이스와 다를 수 있습니다.
 
-## Task 1: Create Your Free Trial Account
+## 작업 1: Free Trial Account 생성
 
-If you already have a cloud account, skip to **Task 2**.
+이미 클라우드 계정이 있는 경우 **작업 2**로 넘어가세요.
 
-1. Open up a web browser to access the Oracle Cloud account registration form at [oracle.com/cloud/free](![image](https://github.com/user-attachments/assets/e37916d7-f1eb-41fa-ab60-75a9ee7eed70)).
+1. Oracle Cloud 계정 등록 양식에 액세스하려면 웹 브라우저를 엽니다 : [oracle.com/cloud/free](![image](https://github.com/user-attachments/assets/e37916d7-f1eb-41fa-ab60-75a9ee7eed70)).
 
    You will be presented with a registration page.
        ![Registration](./images/cloud-infrastructure.png " ")
@@ -73,7 +73,7 @@ If you already have a cloud account, skip to **Task 2**.
 
 11. Your account is provisioning and should be available soon! You might want to log out as you wait for your account to be provisioned. You'll receive an email from Oracle notifying you that provisioning is complete, with your cloud account and username.
 
-## Task 2: Sign in to Your Account
+## 작업 2: OCI Account 로그인
 
 *Please note that while your tenancy is initially created, you will only see a direct login. Once your tenancy is fully provisioned, you will see the screens as described below.*
 
