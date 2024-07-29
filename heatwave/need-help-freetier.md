@@ -11,7 +11,7 @@
 이메일을 사용하여 지원을 받는 방법에 대한 자세한 내용은, [here](#HowtoFormatYourSupportEmailRequest)를 클릭.
 
 ### 일반적인 문제 목차
-  - [Connectivity 이슈들?](#ConnectivityIssues?)
+  - [Connectivity Issues?](#ConnectivityIssues?)
   - [Cannot Create Passwords for Database Users?](#CannotCreatePasswordsforDatabaseUsers?)
   - [Cannot find Groups under Identity and Security in my tenancy?](#CannotfindGroupsunderIdentityandSecurityinmytenancy?)
 
