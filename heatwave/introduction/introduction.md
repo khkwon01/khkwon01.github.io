@@ -1,6 +1,7 @@
 # Introduction
 
-![mysql heatwave](./images/mysql-heatwave-logo.jpg "mysql heatwave")
+![image](https://github.com/user-attachments/assets/73823634-c6c1-491f-88ce-86fa1ac13060)
+
 
 ## About this Workshop
 
