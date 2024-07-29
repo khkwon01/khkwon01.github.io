@@ -15,7 +15,7 @@
   - [Cannot Create Passwords for Database Users?](#CannotCreatePasswordsforDatabaseUsers?)
   - [Cannot find Groups under Identity and Security in my tenancy?](#CannotfindGroupsunderIdentityandSecurityinmytenancy?)
 
-## Support 이메일 요청 서식 지정 방법
+## 이메일을 사용한 Workshop에 내용 Support 요청
 아래처럼 기본 메일 애플리케이션에서 LiveLabs 지원 받은 편지함에 자동으로 채워지는 이메일이 생성되고 제목 줄에 현재 워크숍도 포함됩니다. 아래 단계에 따라 문의하여 문제에 대한 빠른 해결책을 얻으세요.
 
 1. 제목란에 **Workshop 이름**을 입력해 주세요(예 참조).
@@ -31,15 +31,15 @@
 
 **VPN**, **Corporate Network**에 연결되어 있나요?, 아니면 엄격한 **방화벽** 뒤에 있나요?
 
-If any of these three conditions are true, some ports in your network may be closed to traffic.
+이 세 가지 조건 중 하나라도 해당되면 네트워크의 일부 포트가 트래픽에 대해 닫힐 수 있습니다.
 
-For uploading data through Database Actions in your web browser and applications like the Oracle Analytics Tool could be restricted and may appear to "Hang" or freeze.
+웹 브라우저와 Oracle Analytics Tool과 같은 애플리케이션에서 데이터베이스 작업을 통해 데이터를 업로드하는 경우 제한이 있을 수 있으며 "Hang"되거나 멈춘 것처럼 보일 수 있습니다.
 
-While connecting to a noVNC workshop, you might get "Hmmm... can't reach this page" error and could not access the workshop.
+no VNC 워크숍에 연결하는 동안 "Hmmm... 이 페이지에 접근할 수 없습니다" 오류가 발생하고 워크숍에 접속하지 못할 수 있습니다.
 
-Try these options to access the environment again:
+환경에 다시 액세스하려면 다음 옵션을 시도하세요.
 
-1. Please disconnect from your VPN and try again if applicable.
+1. VPN 연결을 끊은 후 다시 시도해 보세요.
 
 2. If you are connected to a corporate network, try switching to a public or a "clear" network if allowed.
 
