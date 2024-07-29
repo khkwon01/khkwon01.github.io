@@ -30,7 +30,8 @@ MySQL Database Service with HeatWave is a fully managed service, optimized for O
 
 _Lab Setup
 
-![heatwave architecture](![image](https://github.com/user-attachments/assets/463dc6f7-7b86-4d16-b404-0dbd7bb82246 "heatwave bastion -architecture compute ")
+![heatwave architecture](![image](https://github.com/user-attachments/assets/a3b41db2-34fa-47cf-9f44-a7daee85a75e)
+)
 
 [//]:    [](youtube:6nsgwclsnaM)
 
