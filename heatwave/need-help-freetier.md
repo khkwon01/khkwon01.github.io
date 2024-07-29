@@ -71,6 +71,14 @@ no VNC 워크숍에 연결하는 동안 "Hmmm... 이 페이지에 접근할 수 
 
   ![Click Groups](https://github.com/user-attachments/assets/2baaef4d-32ff-4180-b92c-db77b7989df8 " ")
 
+## Service request(SR) 하는 방법
+1. oracle support 사이트에 접속하여 가입을 합니다. [support site](https://support.oracle.com)
+2. oci 콘솔에서 아래 버튼을 클릭하여 SR 요청을 합니다. (처음일 경우 1번에 가입한 계정과 연결 하셔야 합니다.)
+   ![image](https://github.com/user-attachments/assets/5f34059b-dbe7-4f52-a6af-e52493f4b59a)
+3. 2번에 클릭후 나타나는 화면에서 아래 **Create support Request** 버튼을 클릭하여 service request 내용을 작성하고 생성하시면 됩니다.
+   ![image](https://github.com/user-attachments/assets/dc3ba392-c14f-4beb-9e9d-c9cfe36663a9)
+
+
 ## Acknowledgements
 * **Author** - LiveLabs Team
 * **Last Updated By/Date** - Kihyuk, July 2024
