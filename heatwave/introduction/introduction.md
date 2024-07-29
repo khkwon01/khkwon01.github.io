@@ -1,4 +1,4 @@
-# Introduction
+# Heatwave 소개
 
 ![image](https://github.com/user-attachments/assets/a7c6e7b7-086d-42d3-bba8-0f9e80ec5c8a)
 
