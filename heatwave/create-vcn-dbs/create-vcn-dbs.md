@@ -68,18 +68,18 @@ _Estimated Time:_ 20 minutes 소요
 9. 가상 클라우드 네트워크 생성이 완료되면 '가상 클라우드 네트워크 보기'를 클릭하여 생성된 VCN을 표시합니다.
     ![vcn creation completing](https://github.com/user-attachments/assets/3e933bf1-bce3-41b0-98b4-1d2c342240c0 "vcn creation completing")
 
-## 작업 2: MySQL 수신을 허용하도록 Security list을 구성합니다.
+## 작업 2: MySQL 수신을 허용하도록 Security list을 구성
 
 1. On HEATWAVE-VCN page under 'Subnets in (root) Compartment', '**Private Subnet-HEATWAVE-VCN**' 클릭
-     ![vcn subnet](./images/vcn-details-subnet.png "vcn details subnet")
+     ![vcn subnet](https://github.com/user-attachments/assets/0dc67da9-904b-456a-b389-db78d42a0a0c "vcn details subnet")
 
-2. On Private Subnet-HEATWAVE-VCN page under 'Security Lists',  click  '**Security List for Private Subnet-HEATWAVE-VCN**'
-    ![vcn private security list](./images/vcn-private-security-list.png "vcn private security list")
+2. On Private Subnet-HEATWAVE-VCN page under 'Security Lists', '**Security List for Private Subnet-HEATWAVE-VCN**' 클릭
+    ![vcn private security list](https://github.com/user-attachments/assets/d92bbfb1-1b27-4b05-8a43-06d9a6a08f42 "vcn private security list")
 
-3. On Security List for Private Subnet-HEATWAVE-VCN page under 'Ingress Rules', click '**Add Ingress Rules**'
-    ![vcn private subnet](./images/vcn-private-security-list-ingress.png "vcn private security list ingress")
+3. On Security List for Private Subnet-HEATWAVE-VCN page under 'Ingress Rules', '**Add Ingress Rules**' 클릭
+    ![vcn private subnet](https://github.com/user-attachments/assets/788253be-3378-4c8c-8d83-56db90d1ed22 "vcn private security list ingress")
 
-4. On Add Ingress Rules page under Ingress Rule 1
+4. Ingress Rule 1 아래 Ingress Rules page에서
 
     a. Add an Ingress Rule with Source CIDR
 
@@ -99,10 +99,10 @@ _Estimated Time:_ 20 minutes 소요
     <copy>MySQL Port Access</copy>
     ```
 
-    d. Click 'Add Ingress Rule'
-    ![add ingres rule](./images/vcn-private-security-list-ingress-rules-mysql.png "vcn private security list ingress rukes mysql")
+    d. 'Add Ingress Rule' 클릭
+    ![add ingres rule](https://github.com/user-attachments/assets/e84d8f43-61ba-440a-bc49-a79a3b699972 "vcn private security list ingress rukes mysql")
 
-5. On Security List for Private Subnet-HEATWAVE-VCN page, the new Ingress Rules will be shown under the Ingress Rules List
+5. On Security List for Private Subnet-HEATWAVE-VCN page, 새로운 Ingress 규칙은 Ingress 규칙 목록 아래에 표시됩니다.
     ![show ingres rule](./images/vcn-private-security-list-ingress-display.png "vcn private security list ingress display")
 
 ## 작업 3: Configure security list to allow HTTP incoming connections
