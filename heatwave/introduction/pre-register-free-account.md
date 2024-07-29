@@ -17,10 +17,10 @@ Estimated Time: 5 minutes 소요
 
 ### Prerequisites (요구조건)
 
-* A valid email address
-* Ability to receive SMS text verification (only if your email isn't recognized)
+* 유효한 email address
+* 이메일이 인식되지 않는 경우에만 SMS text verification 코드가 필요함
 
-> **Note**: Interfaces in the following screenshots may look different from the interfaces you will see.
+> **Note**: 다음 스크린샷에 나와 있는 인터페이스는 실제로 볼 수 있는 인터페이스와 다를 수 있습니다.
 
 ## Task 1: Create Your Free Trial Account
 
