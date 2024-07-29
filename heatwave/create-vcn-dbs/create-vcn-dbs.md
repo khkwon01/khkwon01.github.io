@@ -128,25 +128,25 @@ _Estimated Time:_ 20 minutes 소요
 
 4. DB System Option에서 **Development or Testing** 선택
 
-    ![heatwave db option](./images/mysql-create-option-develpment.png "heatwave db option")
+    ![heatwave db option](https://github.com/user-attachments/assets/557838a4-0f82-4474-befd-6af387cd6752 "heatwave db option")
 
-5. Provide basic information for the DB System:
+5. DB System 기본 정보 입력:
 
-    a. Select Compartment **(root)**
+    a. Compartment **(root)** 선택
 
-    b. Enter Name
+    b. Name 입력
 
     ```bash
     <copy>HEATWAVE-DB</copy>
     ```
 
-    c. Enter Description
+    c. Description 입력
 
     ```bash
     <copy>MySQL HeatWave Database Instance</copy>
     ```
 
-    d. Select **Standalone** and DISABLE **Configure MySQL HeatWave**
+    d. **Standalone** 선택 및 **Configure MySQL HeatWave** Disable
     ![heatwave db stand alone](./images/mysql-create-stand-alone.png "heatwave db stand alone ")
 
 6. Create Administrator Credentials - **IMPORTANT** username must be set to **admin**  in order to successfully complete this workshop
