@@ -1,6 +1,6 @@
 # 시작 - Free Tier account 등록
 
-## 소개
+## 세션 소개
 
 시작하기 전에 Oracle Cloud 계정이 필요합니다. 이 랩은 Oracle Cloud Free Tier 계정을 얻고 로그인하는 단계를 안내합니다.
 
@@ -20,7 +20,7 @@ Estimated Time: 5 minutes 소요
 * 유효한 email address
 * 이메일이 인식되지 않는 경우에만 SMS text verification 코드가 필요함
 
-> **Note**: 다음 스크린샷에 나와 있는 인터페이스는 실제로 볼 수 있는 인터페이스와 다를 수 있습니다.
+> **참고**: 다음 스크린샷에 나와 있는 인터페이스는 실제로 볼 수 있는 인터페이스와 다를 수 있습니다.
 
 ## 작업 1: Free Trial Account 생성
 
@@ -29,31 +29,29 @@ Estimated Time: 5 minutes 소요
 1. Oracle Cloud 계정 등록 양식에 액세스하려면 웹 브라우저를 엽니다 : [oracle.com/cloud/free](![image](https://github.com/user-attachments/assets/e37916d7-f1eb-41fa-ab60-75a9ee7eed70)).
 
    등록 페이지가 나타납니다.
-       ![Registration](![image](https://github.com/user-attachments/assets/4273af51-dd3d-4b40-9cee-30cebfcb8d07) " ")
-2.  Enter the following information to create your Oracle Cloud Free Tier account.
+       ![image](https://github.com/user-attachments/assets/4273af51-dd3d-4b40-9cee-30cebfcb8d07 " ")
+2.  Oracle Cloud Free Tier 계정을 만들려면 다음 정보를 입력하세요.
     * Choose your **Country**
     * Enter your **Name** and **Email**
-    * Use hCaptcha to verify your identity
+    * hCaptcha를 사용하여 신원을 확인하세요
 
 
-3. Once you have entered a valid email address, select the **Verify my email** button.
-    The screen will appear as follows after you select the button:
-       ![Verify Email](./images/verify-email.png " ")
+3. 유효한 이메일 주소를 입력한 후 Verify my email 버튼을 선택합니다. 버튼을 선택하면 다음과 같은 화면이 나타납니다.
+       ![Verify Email](https://github.com/user-attachments/assets/3b291f8b-54be-4e11-88cd-436dbae508b7 " ")
 
-4. Go to your email. You will see an account validation email from Oracle in your inbox. The email will be similar to the following:
-       ![Verification Mail](./images/verification-mail.png " ")
+4. 이메일로 이동하세요. 받은 편지함에 Oracle의 계정 검증 이메일이 표시됩니다. 이메일은 다음과 유사합니다.
+       ![Verification Mail](https://github.com/user-attachments/assets/ec4a8245-db40-4ebe-86e7-1de9686440bf " ")
 
-5. Click **Verify email**.
+5. **이메일 확인**을 클릭하세요.
 
-6. Enter the following information to create your Oracle Cloud Free Tier account.
+6. Oracle Cloud Free Tier 계정을 만들려면 다음 정보를 입력하세요.
     - Choose a **Password**
     - Enter your **Company Name**
-    - Your **Cloud Account Name** will generate automatically based on your inputs. You can change that name by entering a new value. Remember what you wrote. You'll need this name later to sign in.
-    - Choose a **Home Region**.  Your Home Region cannot be changed once you sign-up.
-    >**Note:** Based on the current design of the workshop and resource availability, it is recommended not to use the London region for this workshop at this time.
-
-    - Click **Continue**
-    ![Account Info](./images/account-info.png " ")
+    - **클라우드 계정 이름**은 입력 내용에 따라 자동으로 생성됩니다. 새 값을 입력하여 이름을 변경할 수 있습니다. 작성한 내용을 기억하세요. 나중에 로그인할 때 이 이름이 필요합니다.
+    - **Home Region**을 선택하세요. 가입 후에는 홈 지역을 변경할 수 없습니다.
+    >**참고:** 현재 워크숍 설계와 리소스 가용성을 토대로 볼 때, 현재로서는 이 워크숍에 런던 지역을 사용하지 않는 것이 좋습니다.
+    - **계속**을 클릭하세요
+    ![Account Info](https://github.com/user-attachments/assets/68533442-3ae5-42e6-b3cf-2bbfb4d71a08 " ")
 
 7.  Enter your address information. Choose your country and enter a phone number. Click **Continue**.
           ![Free Tier Address](./images/free-tier-address.png " ")
