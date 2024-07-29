@@ -108,8 +108,6 @@ _Estimated Time:_ 20 minutes 소요
 ## 작업 3: MySQL Database for HeatWave (DB System) instance 생성
 
 1. Navigation Menu > Databases > MySQL 클릭
-         Databases
-         MySQL
     ![home menu mysq](https://github.com/user-attachments/assets/545d13c3-8ba9-4be2-965f-b808ff8adf1d "home menu mysql")
 
 2. 'Create DB System' 클릭
@@ -147,7 +145,7 @@ _Estimated Time:_ 20 minutes 소요
     ```
 
     d. **Standalone** 선택 및 **Configure MySQL HeatWave** Disable
-    ![heatwave db stand alone](./images/mysql-create-stand-alone.png "heatwave db stand alone ")
+    ![heatwave db stand alone](https://github.com/user-attachments/assets/ad2584eb-38c6-43f1-8590-15e24d896d46 "heatwave db stand alone ")
 
 6. Create Administrator Credentials - **IMPORTANT** username must be set to **admin**  in order to successfully complete this workshop
 
