@@ -4,39 +4,39 @@
 
 ## 세션 소개
 
-이 랩에서는 MySQL DB 시스템을 만들고 구성합니다. 자세한 내용은 OCI 문서를 참조하세요.
+이 Lab에서는 MySQL DB 시스템을 만들고 구성합니다. 자세한 내용은 OCI 문서를 참조하세요.
 [Creating a DB System Using the Console](https://docs.oracle.com/en-us/iaas/mysql-database/doc/creating-db-system1.html#GUID-AE89C67D-E1B1-4F11-B934-8B0564B4FC69).
 
 _Estimated Time:_ 20 minutes 소요
 
-### Objectives
+### 목표
 
-In this lab, you will be guided through the following tasks:
+이 Lab에서는 다음 작업을 안내해 드립니다.
 
-- Create Virtual Cloud Network
-- Create MySQL HeatWave (DB System) Instance
+- Virtual Cloud Network (VCN) 생성
+- MySQL HeatWave (DB System) Instance 생성
 
-### Prerequisites
+### Prerequisites (요구조건)
 
-- An Oracle Trial or Paid Cloud Account
-- Some Experience with MySQL Shell
+- Oracle 평가판 또는 유료 클라우드 계정
+- MySQL Shell에 사용경험
 
-## Task 1: Create Virtual Cloud Network
+## 작업 1: Virtual Cloud Network 생성
 
-1. You should be signed in to Oracle Cloud!
+1. Oracle Cloud에 로그인해야 합니다!
 
-    Click **Navigation Menu**,
+    **탐색 메뉴**를 클릭하세요.
 
-    ![OCI Console Home Page](./images/homepage.png " home page")
+    ![OCI Console Home Page](https://github.com/user-attachments/assets/51609651-9416-47c4-9315-deeaa76e0ddd " home page")
 
-2. Click  **Networking**, then **Virtual Cloud Networks**  
-    ![menu vcn](./images/home-menu-networking-vcn.png "home menu networking vcn ")
+2. **Networking** 클릭, 다음 **Virtual Cloud Networks** 클릭
+    ![menu vcn](https://github.com/user-attachments/assets/deffa714-6cd6-4245-8283-95ecb5dde36b "home menu networking vcn ")
 
-    Select the root compartment
-    ![vcn wizard Select Root compartment](./images/vcn-menu-compartmen-root.png "vcn menu compartmen root ")
+    root compartment 선택
+    ![vcn wizard Select Root compartment](https://github.com/user-attachments/assets/f46635d5-8288-4922-8b8f-46697ab168ac "vcn menu compartmen root ")
 
-3. Select the Click **Start VCN Wizard**
-    ![vcn start wizard](./images/vcn-wizard-menu.png "vcn wizard menu")
+3. **Start VCN Wizard** 선택 및 클릭
+    ![vcn start wizard](https://github.com/user-attachments/assets/216f4865-7252-4941-ad9a-784fa6a94357 "vcn wizard menu")
 
 4. Select 'Create VCN with Internet Connectivity'
 
@@ -68,7 +68,7 @@ In this lab, you will be guided through the following tasks:
 8. When the Virtual Cloud Network creation completes, click 'View Virtual Cloud Network' to display the created VCN
     ![vcn creation completing](./images/vcn-wizard-view.png "vcn creation completing")
 
-## Task 2: Configure security list to allow MySQL incoming connections
+## 작업 2: Configure security list to allow MySQL incoming connections
 
 1. On HEATWAVE-VCN page under 'Subnets in (root) Compartment', click  '**Private Subnet-HEATWAVE-VCN**'
      ![vcn subnet](./images/vcn-details-subnet.png "vcn details subnet")
@@ -105,7 +105,7 @@ In this lab, you will be guided through the following tasks:
 5. On Security List for Private Subnet-HEATWAVE-VCN page, the new Ingress Rules will be shown under the Ingress Rules List
     ![show ingres rule](./images/vcn-private-security-list-ingress-display.png "vcn private security list ingress display")
 
-## Task 3: Configure security list to allow HTTP incoming connections
+## 작업 3: Configure security list to allow HTTP incoming connections
 
 1. Navigation Menu > Networking > Virtual Cloud Networks
 
@@ -143,7 +143,7 @@ In this lab, you will be guided through the following tasks:
 
     ![View VCN Completed HTTP Ingress rules](./images/vcn-ttp-ingress-completed.png "View VCN Completed HTTP Ingress rules")
 
-## Task 4: Create MySQL Database for HeatWave (DB System) instance
+## 작업 4: Create MySQL Database for HeatWave (DB System) instance
 
 1. Click on Navigation Menu > Databases > MySQL
          Databases
