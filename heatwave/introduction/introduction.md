@@ -59,15 +59,15 @@ _Lab Setup_
 - Stop OCI Services
 
 
-## Prerequisites
+## Prerequisites (요구사항)
 
 - An Oracle Trial, Paid or LiveLabs Cloud Account
-- Some Experience with MySQL Shell - [MySQL Site](https://dev.MySQL.com/doc/MySQL-shell/8.0/en/).
+- MySQL Shell에 대한 경험 - [MySQL Site](https://dev.MySQL.com/doc/MySQL-shell/8.0/en/).
 
-You may now **proceed to the next lab**
+이제 **다음 Lab으로 진행**할 수 있습니다.
 
 ## Acknowledgements
 
 - **Author** - Perside Foster, MySQL Principal Solution Engineering
 - **Contributors** - Mandy Pang, MySQL Principal Product Manager,  Nick Mader, MySQL Global Channel Enablement & Strategy Manager, Selena Sanchez, MySQL Solution Engineering
-- **Last Updated By/Date** - Perside Foster, MySQL Solution Engineering, March 2024
+- **Last Updated By/Date** - Kihyuk, MySQL Solution Engineering, July 2024
