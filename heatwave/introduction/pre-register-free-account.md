@@ -26,7 +26,7 @@ Estimated Time: 5 minutes 소요
 
 If you already have a cloud account, skip to **Task 2**.
 
-1. Open up a web browser to access the Oracle Cloud account registration form at [oracle.com/cloud/free](https://signup.cloud.oracle.com).
+1. Open up a web browser to access the Oracle Cloud account registration form at [oracle.com/cloud/free](![image](https://github.com/user-attachments/assets/e37916d7-f1eb-41fa-ab60-75a9ee7eed70)).
 
    You will be presented with a registration page.
        ![Registration](./images/cloud-infrastructure.png " ")
