@@ -17,7 +17,7 @@
    
         {
             "title": "Lab 1: MySQL HeatWave Instance 생성",
-            "filename": "../../create-vcn-dbs/create-vcn-dbs.md"
+            "filename": "../create-vcn-dbs/create-vcn-dbs.md"
         },
 
         {
