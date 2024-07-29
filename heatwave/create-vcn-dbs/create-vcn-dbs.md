@@ -103,57 +103,19 @@ _Estimated Time:_ 20 minutes 소요
     ![add ingres rule](https://github.com/user-attachments/assets/e84d8f43-61ba-440a-bc49-a79a3b699972 "vcn private security list ingress rukes mysql")
 
 5. On Security List for Private Subnet-HEATWAVE-VCN page, 새로운 Ingress 규칙은 Ingress 규칙 목록 아래에 표시됩니다.
-    ![show ingres rule](./images/vcn-private-security-list-ingress-display.png "vcn private security list ingress display")
+    ![show ingres rule](https://github.com/user-attachments/assets/222d6dbc-2711-4f87-863f-faa3b71915ad "vcn private security list ingress display")
 
-## 작업 3: Configure security list to allow HTTP incoming connections
+## 작업 3: MySQL Database for HeatWave (DB System) instance 생성
 
-1. Navigation Menu > Networking > Virtual Cloud Networks
-
-2. Open HEATWAVE-VCN
-
-3. Click  public subnet-HEATWAVE-VCN
-
-4. Click Default Security List for HEATWAVE-VCN
-
-5. Click Add Ingress Rules page under Ingress Rule
-
-    Add an Ingress Rule with Source CIDR
-
-    ```bash
-    <copy>0.0.0.0/0</copy>
-    ```
-
-    Destination Port Range
-
-    ```bash
-    <copy>80,443</copy>
-    ```
-
-    Description
-
-    ```bash
-    <copy>Allow HTTP connections</copy>
-    ```
-
-6. Click 'Add Ingress Rule'
-
-    ![Add HTTP Ingress Rule](./images/vcn-ttp-add-ingress.png "Add HTTP Ingress Rule")
-
-7. On Security List for Default Security List for HEATWAVE-VCN page, the new Ingress Rules will be shown under the Ingress Rules List
-
-    ![View VCN Completed HTTP Ingress rules](./images/vcn-ttp-ingress-completed.png "View VCN Completed HTTP Ingress rules")
-
-## 작업 4: Create MySQL Database for HeatWave (DB System) instance
-
-1. Click on Navigation Menu > Databases > MySQL
+1. Navigation Menu > Databases > MySQL 클릭
          Databases
          MySQL
-    ![home menu mysq](./images/home-menu-database-mysql.png "home menu mysql")
+    ![home menu mysq](https://github.com/user-attachments/assets/545d13c3-8ba9-4be2-965f-b808ff8adf1d "home menu mysql")
 
-2. Click 'Create DB System'
-    ![mysql create button](./images/mysql-menu.png " mysql create button")
+2. 'Create DB System' 클릭
+    ![mysql create button](https://github.com/user-attachments/assets/b51d2259-047a-4063-a6aa-6526d0d274a6" mysql create button")
 
-3. Create MySQL DB System dialog by completing the fields in each section
+3. 데이터베이스 구성을 위해 아래 필드 각각에 대해 값을 입력
 
     - Provide DB System information
     - Setup the DB system
@@ -164,7 +126,7 @@ _Estimated Time:_ 20 minutes 소요
     - Exclude Backups
     - Set up Advanced Options
 
-4. For DB System Option Select **Development or Testing**
+4. DB System Option에서 **Development or Testing** 선택
 
     ![heatwave db option](./images/mysql-create-option-develpment.png "heatwave db option")
 
