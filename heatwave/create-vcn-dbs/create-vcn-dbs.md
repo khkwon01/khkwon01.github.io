@@ -105,7 +105,7 @@ _Estimated Time:_ 20 minutes 소요
 5. On Security List for Private Subnet-HEATWAVE-VCN page, 새로운 Ingress 규칙은 Ingress 규칙 목록 아래에 표시됩니다.
     ![show ingres rule](https://github.com/user-attachments/assets/222d6dbc-2711-4f87-863f-faa3b71915ad "vcn private security list ingress display")
 
-## 작업 3: MySQL Database for HeatWave (DB System) instance 생성
+## 작업 3: MySQL HeatWave (DB System) instance 생성
 
 1. Navigation Menu > Databases > MySQL 클릭
     ![home menu mysq](https://github.com/user-attachments/assets/545d13c3-8ba9-4be2-965f-b808ff8adf1d "home menu mysql")
