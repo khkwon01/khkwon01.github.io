@@ -16,17 +16,17 @@
         },
    
         {
-            "title": "Lab 1: Create MySQL HeatWave Instance",
+            "title": "Lab 1: MySQL HeatWave Instance 생성",
             "filename": "../../create-vcn-dbs/create-vcn-dbs.md"
         },
 
         {
-          "title": "Lab 2: Create Compute Instance",
+          "title": "Lab 2: Compute Instance 생성",
           "filename": "../../create-compute/create-compute.md"
         },  
 
         {
-          "title": "Lab 3: Connect to HeatWave with MySQL Shell and Workbench",
+          "title": "Lab 3: MySQL Shell and Workbench로 HeatWave 접속",
           "filename": "../../connect-compute/connect-compute.md"
         },  
       
