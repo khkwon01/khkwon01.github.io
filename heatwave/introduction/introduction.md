@@ -59,7 +59,7 @@ _Lab Setup_
 - Stop OCI Services
 
 
-## Prerequisites (요구사항)
+## Prerequisites (요구조건)
 
 - An Oracle Trial, Paid or LiveLabs Cloud Account
 - MySQL Shell에 대한 경험 - [MySQL Site](https://dev.MySQL.com/doc/MySQL-shell/8.0/en/).
