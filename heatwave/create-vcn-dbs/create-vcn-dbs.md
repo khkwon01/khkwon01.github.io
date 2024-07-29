@@ -38,14 +38,14 @@ _Estimated Time:_ 20 minutes 소요
 3. **Start VCN Wizard** 선택 및 클릭
     ![vcn start wizard](https://github.com/user-attachments/assets/216f4865-7252-4941-ad9a-784fa6a94357 "vcn wizard menu")
 
-4. Select 'Create VCN with Internet Connectivity'
+4. 'Create VCN with Internet Connectivity' 생성
 
-    Click 'Start VCN Wizard'
-    ![vcn wizard start create](./images/vcn-wizard-start.png "start vcn wizard start")
+    'Start VCN Wizard' 클릭
+    ![vcn wizard start create](https://github.com/user-attachments/assets/e5c425d1-b78f-41f9-8c80-8bc8deca0afc "start vcn wizard start")
 
-5. Create a VCN with Internet Connectivity
+5. VCN with Internet Connectivity 생성
 
-    On Basic Information, complete the following fields:
+    기본 정보에서 다음 필드를 작성하세요.
 
     VCN Name:
 
@@ -53,24 +53,24 @@ _Estimated Time:_ 20 minutes 소요
     <copy>HEATWAVE-VCN</copy>
     ```
 
-    Compartment: Select  **(root)**
+    Compartment: **(root)** 선택
+   
+    화면은 다음과 유사해야 합니다.
+    ![select compartment](https://github.com/user-attachments/assets/f4d21356-9dc1-4b3e-964a-7cdf9cb5e277 "select compartment")
 
-    Your screen should look similar to the following
-    ![select compartment](./images/vcn-wizard-compartment.png "select compartment")
+7. 화면 하단의 '다음'을 클릭하세요
 
-6. Click 'Next' at the bottom of the screen
+8. Oracle Virtual Cloud Network(VCN), 서브넷 및 게이트웨이 검토
 
-7. Review Oracle Virtual Cloud Network (VCN), Subnets, and Gateways
+    '생성'을 클릭하여 VCN을 생성합니다.
+    ![create vcn](https://github.com/user-attachments/assets/615f4e26-581d-420e-9aa7-2f13710e5aed "create vcn")
 
-    Click 'Create' to create the VCN
-    ![create vcn](./images/vcn-wizard-create.png "create vcn")
+9. 가상 클라우드 네트워크 생성이 완료되면 '가상 클라우드 네트워크 보기'를 클릭하여 생성된 VCN을 표시합니다.
+    ![vcn creation completing](https://github.com/user-attachments/assets/3e933bf1-bce3-41b0-98b4-1d2c342240c0 "vcn creation completing")
 
-8. When the Virtual Cloud Network creation completes, click 'View Virtual Cloud Network' to display the created VCN
-    ![vcn creation completing](./images/vcn-wizard-view.png "vcn creation completing")
+## 작업 2: MySQL 수신을 허용하도록 Security list을 구성합니다.
 
-## 작업 2: Configure security list to allow MySQL incoming connections
-
-1. On HEATWAVE-VCN page under 'Subnets in (root) Compartment', click  '**Private Subnet-HEATWAVE-VCN**'
+1. On HEATWAVE-VCN page under 'Subnets in (root) Compartment', '**Private Subnet-HEATWAVE-VCN**' 클릭
      ![vcn subnet](./images/vcn-details-subnet.png "vcn details subnet")
 
 2. On Private Subnet-HEATWAVE-VCN page under 'Security Lists',  click  '**Security List for Private Subnet-HEATWAVE-VCN**'
