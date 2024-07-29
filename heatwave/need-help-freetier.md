@@ -8,10 +8,10 @@
 ![Help button](https://github.com/user-attachments/assets/2d46fe0d-355b-477b-96f3-089f9a43eeae)
 
 
-For more about getting support using our email, click [here](#HowtoFormatYourSupportEmailRequest).
+이메일을 사용하여 지원을 받는 방법에 대한 자세한 내용은, [here](#HowtoFormatYourSupportEmailRequest)를 클릭.
 
-### Common Issues Table of Contents
-  - [Connectivity Issues?](#ConnectivityIssues?)
+### 일반적인 문제 목차
+  - [Connectivity 이슈들?](#Connectivity이슈들?)
   - [Cannot Create Passwords for Database Users?](#CannotCreatePasswordsforDatabaseUsers?)
   - [Cannot find Groups under Identity and Security in my tenancy?](#CannotfindGroupsunderIdentityandSecurityinmytenancy?)
 
@@ -27,7 +27,7 @@ This will construct an email in your default mail application that is auto-popul
 
 4. Attach a **Screenshot** and **Any Troubleshooting Steps** you've tried, so that we can recreate the issue and provide a timely and accurate solution.
 
-## Connectivity Issues?
+## Connectivity 이슈들?
 
 Are you connected to a **VPN**, **Corporate Network**, or behind a strict **Firewall**?
 
