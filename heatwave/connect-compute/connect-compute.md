@@ -1,8 +1,8 @@
-# Connect to HeatWave with MySQL Shell and Workbench
+# MySQL Shell and Workbench로 Heatwave 접속
 
 ![mysql heatwave](./images/mysql-heatwave-logo.jpg "mysql heatwave")
 
-## Introduction
+## 세션 소개
 
 You cannot connect directly from a remote IP to the endpoint of a DB system. Use SSH or RDP to connect to a compute instance, and from the compute instance use MySQL Shell, MySQL Client or MySQL Workbench to connect to the DB system.For more details see OCI Document:
 
