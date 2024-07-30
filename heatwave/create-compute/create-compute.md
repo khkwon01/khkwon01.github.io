@@ -28,9 +28,9 @@ _Estimated Lab Time:_ 10 minutes 소요
 
 ## 작업 1: OCI Cloud Shell에서 SSH Key 생성
 
-The Cloud Shell machine is a small virtual machine running a Bash shell which you access through the Oracle Cloud Console (Homepage). You will start the Cloud Shell and generate a SSH Key to use  for the Bastion  session.
+Cloud Shell 머신은 Oracle Cloud Console(홈페이지)을 통해 액세스하는 Bash 셸을 실행하는 작은 가상 머신입니다. Cloud Shell을 시작하고 Bastion 세션에 사용할 SSH 키를 생성합니다.
 
-1. To start the Oracle Cloud shell, go to your Cloud console and click the cloud shell icon at the top right of the page. This will open the Cloud Shell in the browser, the first time it takes some time to generate it.
+1. Oracle Cloud Shell을 시작하려면 Cloud 콘솔로 이동하여 페이지 오른쪽 상단에 있는 Cloud Shell 아이콘을 클릭합니다. 그러면 브라우저에서 Cloud Shell이 ​​열리고 처음에는 생성하는 데 시간이 걸립니다.
 
     ![cloud shell main](./images/cloud-shell.png  "cloud shell main " )
 
@@ -38,23 +38,23 @@ The Cloud Shell machine is a small virtual machine running a Bash shell which yo
 
     ![open cloud shell](./images/cloud-shell-open.png "open cloud shell" )
 
-    _Note: You can use the icons in the upper right corner of the Cloud Shell window to minimize, maximize, restart, and close your Cloud Shell session._
+    _참고: Cloud Shell 창의 오른쪽 상단에 있는 아이콘을 사용하여 Cloud Shell 세션을 최소화, 최대화, 다시 시작, 닫을 수 있습니다._
 
-2. Once the cloud shell has started, create the SSH Key using the following command:
+2. 클라우드 셸이 시작되면 다음 명령을 사용하여 SSH 키를 만듭니다.
 
     ```bash
     <copy>ssh-keygen -t rsa</copy>
     ```
 
-    Press enter for each question.
+    각 질문에 대해 Enter 키를 누르세요.
 
-    Here is what it should look like.  
+    그러면 다음과 같은 모습이 됩니다.
 
     ![ssh key](./images/ssh-key-show.png "ssh key show")
 
-3. The public  and  private SSH keys  are stored in ~/.ssh/id_rsa.pub.
+3. 공개 및 개인 SSH 키는 ~/.ssh/id_rsa.pub에 저장됩니다.
 
-4. Examine the two files that you just created.
+4. 방금 만든 두 파일을 살펴보세요.
 
     ```bash
     <copy>cd .ssh</copy>
@@ -66,7 +66,7 @@ The Cloud Shell machine is a small virtual machine running a Bash shell which yo
 
     ![ssh key list ](./images/shh-key-list.png "shh key list")
 
-    Note in the output there are two files, a *private key:* `id_rsa` and a *public key:* `id_rsa.pub`. Keep the private key safe and don't share its content with anyone. The public key will be needed for various activities and can be uploaded to certain systems as well as copied and pasted to facilitate secure communications in the cloud.
+    출력에는 두 개의 파일이 있습니다. *private key:* `id_rsa`와 *public key:* `id_rsa.pub`. 개인 키는 안전하게 보관하고 그 내용을 누구와도 공유하지 마세요. 공개 키는 다양한 활동에 필요하며 특정 시스템에 업로드할 수 있고 클라우드에서 안전한 통신을 용이하게 하기 위해 복사하여 붙여넣을 수도 있습니다.
 
 ## 작업 2: Compute instance 생성
 
@@ -198,5 +198,4 @@ You may now **proceed to the next lab**
 ## Acknowledgements
 
 - **Author** - Perside Foster, MySQL Principal Solution Engineering
-- **Contributors** - Mandy Pang, MySQL Principal Product Manager,  Nick Mader, MySQL Global Channel Enablement & Strategy Manager, Selena Sanchez, MySQL Solution Engineering
-- **Last Updated By/Date** - Perside Foster, MySQL Solution Engineering, March 2024
+- **Last Updated By/Date** - kihyuk, MySQL Solution Engineering, July 2024
