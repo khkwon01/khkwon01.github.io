@@ -1,8 +1,8 @@
-# Run Queries in HeatWave and MySQL 
+# HeatWave과 MySQL에서 쿼리 수행 
 
 ![mysql heatwave](./images/mysql-heatwave-logo.jpg "mysql heatwave")
 
-## Introduction
+## 세션 소개
 
 In this lab, you will run queries in HeatWave and in MySQL. You will see the query performance improvements on HeatWave compare to MySQL.
 
@@ -10,20 +10,20 @@ _Estimated Time:_ 10 minutes
 
 [//]:   [](youtube:fOcDBTf-KqE)
 
-### Objectives
+### 목표
 
-In this lab, you will be guided through the following tasks:
+이 Lab에서는 다음 작업을 안내해 드립니다.
 
-- Run Queries with MySQL Shell
+- MySQL Shell를 사용하여 쿼리 수행
 
-### Prerequisites
+### Prerequisites (필요사항)
 
 - An Oracle Trial or Paid Cloud Account
-- Some Experience with MySQL Shell
+- MySQL Shell에 사용경험
 
-## Task 1: Run Queries in HeatWave
+## Task 1: HeatWave에서 쿼리 수행
 
-1. Go to Cloud shell to SSH into the Compute Instance
+1. Cloud Shell로 이동하여 Compute Instance에 SSH를 실행합니다.
 
     (Example: **ssh -i ~/.ssh/id_rsa opc@132.145.170...**) 
 
@@ -31,13 +31,13 @@ In this lab, you will be guided through the following tasks:
     <copy>ssh -i ~/.ssh/id_rsa opc@<your_compute_instance_ip></copy>
     ```
 
-2. Connect to the HeatWave Database using MySQL Shell with the following command:
+2. 다음 명령을 사용하여 MySQL Shell을 사용하여 HeatWave 데이터베이스에 연결합니다.
 
     ```bash
     <copy>mysqlsh -uadmin -p -h 10.0.1... --sql </copy>
     ```
 
-3. Change to the airport database
+3. airport database로 이동
 
     Enter the following command at the prompt
 
@@ -45,9 +45,9 @@ In this lab, you will be guided through the following tasks:
     <copy>USE airportdb;</copy>
     ```
 
-4. **Query 1** - Find per-company average age of passengers from Switzerland, Italy and France
+4. **Query 1** - 스위스, 이탈리아, 프랑스의 승객들의 회사별 평균 연령을 찾아보세요.
 
-5. Before running a query, use EXPLAIN to verify that the query can be offloaded to the HeatWave cluster. You should see "Use secondary engine RAPID" in the explain plan. For example:
+5. 쿼리를 실행하기 전에 EXPLAIN을 사용하여 쿼리를 HeatWave 클러스터로 오프로드할 수 있는지 확인합니다. 설명 계획에 "Use secondary engine RAPID"이 표시되어야 합니다. 예를 들어:
 
     ```bash
     <copy>EXPLAIN SELECT
@@ -70,7 +70,7 @@ In this lab, you will be guided through the following tasks:
 
     ![heatwave qeury average age explain](./images/heatwave-qeury-explain.png "heatwave qeury average age explain")
 
-6. After verifying that the query can be offloaded, run the query and note the execution time. Enter the following command at the prompt:
+6. 쿼리가 오프로드될 수 있는지 확인한 후 쿼리를 실행하고 실행 시간을 기록합니다. 프롬프트에 다음 명령을 입력합니다.
 
      ```bash
     <copy>SELECT
@@ -92,15 +92,15 @@ In this lab, you will be guided through the following tasks:
     </copy>
     ```
 
-7. To compare the HeatWave execution time with MySQL DB System execution time, disable the `use_secondary_engine` variable to see how long it takes to run the same query on the MySQL DB System. For example:
+7. HeatWave 실행 시간을 MySQL DB 시스템 실행 시간과 비교하려면 `use_secondary_engine` 변수를 비활성화하여 MySQL DB 시스템에서 동일한 쿼리를 실행하는 데 걸리는 시간을 확인합니다. 예를 들어:
 
-    Enter the following command at the prompt:
+    프롬프트에 다음 명령을 입력하세요:
 
     ```bash
     <copy>SET SESSION use_secondary_engine=OFF;</copy>
     ```
 
-8. Enter the following command at the prompt:
+8. 프롬프트에 다음 명령을 입력하세요:
 
     ```bash
     <copy>SELECT
@@ -123,27 +123,27 @@ In this lab, you will be guided through the following tasks:
 
     ![query compare](./images/heatwave-qeury-avg.png " query compare")
 
-9. To see if `use_secondary_engine` is enabled (=ON)
+9. `use_secondary_engine`이 활성화되어 있는지 확인하려면(=ON)
 
-    Enter the following command at the prompt:
+    프롬프트에 다음 명령을 입력하세요:
 
     ```bash
     <copy>SHOW VARIABLES LIKE 'use_secondary_engine%';</copy>
     ```
 
-10. Run additional queries. Remember to turn on and off the `use_secondary_engine`  to compare the execution time.
+10. 추가 쿼리를 실행합니다. 실행 시간을 비교하려면 `use_secondary_engine`을 켜고 끄는 것을 잊지 마세요.
 
     (Example  **SET SESSION `use_secondary_engine`=On;**)
 
     (Example  **SET SESSION `use_secondary_engine`=Off;**)      
 
-11. Enter the following command at the prompt
+11. 프롬프트에 다음 명령을 입력하세요.
 
     ```bash
     <copy>SET SESSION use_secondary_engine=ON;</copy>
     ```
 
-12. **Query 2** -  Find top 10 companies selling the biggest amount of tickets for planes taking off from US airports. Run Pricing Summary Report Query:
+12. **Query 2** -  미국 공항에서 이륙하는 비행기 티켓을 가장 많이 판매하는 상위 10개 회사를 찾아보세요. 가격 요약 보고서 쿼리 실행:
 
     ```bash
     <copy> SELECT
@@ -165,13 +165,13 @@ In this lab, you will be guided through the following tasks:
         </copy>
     ```
 
-13. Enter the following command at the prompt:
+13. 프롬프트에 다음 명령을 입력하세요:
 
     ```bash
     <copy>SET SESSION use_secondary_engine=OFF;</copy>
     ```
 
-    Run Query again:
+    쿼리를 다시 실행하세요:
 
     ```bash
     <copy> SELECT
@@ -193,7 +193,7 @@ In this lab, you will be guided through the following tasks:
     </copy>
     ```
 
-14. **Query 3** - Give me the number of bookings that Neil Armstrong and Buzz Aldrin made for a price of > $400.00
+14. **Query 3** - Neil Armstrong과 Buzz Aldrin가 $400.00 이상 예약한 횟수를 알려주세요.
 
     ```bash
     <copy>SET SESSION use_secondary_engine=ON;</copy>
@@ -237,16 +237,15 @@ In this lab, you will be guided through the following tasks:
     GROUP BY firstname , lastname;</copy>
     ```
 
-15. Keep HeatWave processing enabled
+15. HeatWave 처리를 활성화 상태로 유지하세요
 
     ```bash
     <copy>SET SESSION use_secondary_engine=ON;</copy>
     ```
 
-You may now **proceed to the next lab**
+이제 **next lab으로 진행**할 수 있습니다.
 
 ## Acknowledgements
 
 - **Author** - Perside Foster, MySQL Principal Solution Engineering
-- **Contributors** - Mandy Pang, MySQL Principal Product Manager,  Nick Mader, MySQL Global Channel Enablement & Strategy Manager, Selena Sanchez, MySQL Solution Engineering
-- **Last Updated By/Date** - Perside Foster, MySQL Solution Engineering, March 2024
+- **Last Updated By/Date** - kihyuk, MySQL Solution Engineering, July 2024
