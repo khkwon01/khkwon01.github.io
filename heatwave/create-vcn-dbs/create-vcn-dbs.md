@@ -147,17 +147,17 @@ _Estimated Time:_ 20 minutes 소요
     d. **Standalone** 선택 및 **Configure MySQL HeatWave** Disable
     ![heatwave db stand alone](https://github.com/user-attachments/assets/ad2584eb-38c6-43f1-8590-15e24d896d46 "heatwave db stand alone ")
 
-6. Create Administrator Credentials - **IMPORTANT** username must be set to **admin**  in order to successfully complete this workshop
+6. DB admin(Administrator Credentials) 생성 - **중요** 이 워크숍을 성공적으로 완료하려면 사용자 이름을 **admin**으로 설정해야 합니다.
 
     Username : **admin**
 
-    Password*  (write password to notepad for later use)
+    Password*  (나중에 사용하기 위해 메모장에 비밀번호를 쓰세요)
 
-    **Confirm Password** (value should match password for later use)
+    **Confirm Password** (위에 패스워드와 동일해야 합니다)
 
-    ![heatwave db admin](./images/mysql-create-admin.png "heatwave db admin ")
+    ![heatwave db admin](https://github.com/user-attachments/assets/dfb4272a-079f-496a-8230-dc76a75b0a52 "heatwave db admin ")
 
-7. On Configure networking, keep the default values
+7. networking 설정에서, 기본값을 유지 하시면 됩니다.
 
     a. Virtual Cloud Network: **HEATWAVE-VCN**
 
@@ -165,9 +165,9 @@ _Estimated Time:_ 20 minutes 소요
 
     c. On Configure placement under 'Availability Domain'
 
-    Select AD-1  ...  Do not check 'Choose a Fault Domain' for this DB System.
+    AD-1 선택 ...  DB System에서 'Choose a Fault Domain'를 선택하지 마십시요.
 
-    ![heatwave db network ad](./images/mysql-create-network-ad.png "heatwave db network ad ")
+    ![heatwave db network ad](https://github.com/user-attachments/assets/5a9e307d-8c2b-4e0a-a991-4c79fb3ee83d "heatwave db network ad ")
 
 8. On Configure Backups, disable 'Enable Automatic Backup'
 
