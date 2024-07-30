@@ -96,76 +96,73 @@ Cloud Shell 머신은 Oracle Cloud Console(홈페이지)을 통해 액세스하�
 
     ![minimize cloud shell](./images/ssh-key-display-minimize.png "minimize cloud shell")  
 
-5. Linux Compute 인스턴스를 시작하려면 다음으로 이동하세요.
-    Navigation Menu
-    Compute
-    Instances
+5. Linux Compute 인스턴스를 시작하려면 다음으로 이동하세요. ( Navigation Menu > Compute > Instances )
     ![navigation compute](./images/navigation-compute.png "navigation compute")
 
-6. On Instances in **(root)** Compartment, click  **Create Instance**
+6. **(root)** Compartment에서, **Create Instance** 클릭
     ![compute menu create instance](./images/compute-menu-create-instance.png "ccompute menu create instance ")
 
-7. On Create Compute Instance 
+7. Compute Instance 생성 화면에서 
 
-    Enter Name
+    Name 넣고
 
     ```bash
     <copy>HEATWAVE-Client</copy>
     ```
 
-8. Make sure **(root)** compartment is selected 
+8. **(root)** compartment가 선택되었는지 확인하세요
 
-9. On Placement, keep the selected Availability Domain
+9. On Placement, 선택된 Availability Domain를 유지
 
-10. On Security, keep the default
+10. On Security, default로 유지
 
     - Shielded instance: Disabled
     - Confidential computing:Disabled
 
       ![compute create security](./images/compute-create-security.png "compute create security ") 
 
-11. On Image  keep the selected Image, Oracle Linux 8 and click Edit
+11. On Image에서 선택된 Image 유지, Oracle Linux 8 및 Edit 클릭
 
       ![compute create image](./images/compute-create-image.png "compute create image ")  
 
-12. Click Change Shape
+12. Change Shape 클릭
 
       ![compute create change shape](./images/compute-create-change-shape.png "compute create change shape")  
 
-13. Select Instance Shape: VM.Standard.E2.2
+13. Instance Shape 선택: VM.Standard.E2.2
 
       ![compute create select shape](./images/compute-create-select-shape.png "compute create select shape")  
 
-14. On Networking, click Edit
+14. On Networking, Edit 클릭
 
       ![compute create networking](./images/compute-create-networking.png "compute create networking ")  
 
-15. Make sure **HEATWAVE-VCN**  and  and  **public subnet-HEATWAVE-VCN** are selected. Keep Public IPV4 address **Assign..** default
+15. **HEATWAVE-VCN** 와  **public subnet-HEATWAVE-VCN** 가 선택되었는지 확인. Public IPV4 address는 **Assign..** 유지 (default)
 
       ![compute create networking](./images/compute-create-networking-select.png "compute create networking ")
 
-16. On Add SSH keys, paste the public key from the notepad.
+16. SSH keys 추가에서, 메모장에서 공개키를 붙여넣으세요.
   
     ![compute create add ssh key](./images/compute-create-add-ssh-key.png "compute create add ssh key ")
 
-17. On Boot Volume select the **Use in-transit encryption** box and click the **Create** button to finish creating your Compute Instance.
+17. Boot Volume에서 **Use in-transit encryption** box 유지 및 Compute Instance 생성을 위해 **Create** 버튼 클릭 
 
     ![compute Use in-transit encryption](./images/compute-create-boot-volume.png "compute Use in-transit encryption")
 
-18. The New Virtual Machine will be ready to use after a few minutes. The state will be shown as 'Provisioning' during the creation
+18. 새 가상 머신은 몇 분 후에 사용할 준비가 됩니다. 생성 중에 상태가 '프로비저닝'으로 표시됩니다.
     ![compute provisioning](./images/compute-provisioning.png "compute provisioning ")
 
-19. The state 'Running' indicates that the Virtual Machine is ready to use.
+19. 'Running' 상태는 가상 머신을 사용할 준비가 되었음을 나타냅니다.
 
     ![compute active](./images/compute-active.png "compute active")
 
 ## 작업 3: Compute System 생성
 
-1. Go to Cloud shell to SSH into the new Compute Instance
+1. Cloud Shell로 이동하여 새 Compute Instance에 SSH를 실행합니다.
 
-2. Enter the username **opc** and the Public **IP Address**.
+2. **opc** 이름과 Public **IP Address**를 입력.
 
-    Note: The **HEATWAVE-Client**  shows the  Public IP Address on the Compute Detail page
+   참고: **HEATWAVE-Client**는 Compute Detail 페이지에 공용 IP 주소를 표시합니다.
 
     (Example: **ssh -i ~/.ssh/id_rsa opc@132.145.170...**) 
 
@@ -173,16 +170,16 @@ Cloud Shell 머신은 Oracle Cloud Console(홈페이지)을 통해 액세스하�
     <copy>ssh -i ~/.ssh/id_rsa opc@<your_compute_instance_ip></copy>
     ```
 
-3. For the **Are you sure you want to continue connecting (yes/no)?**
-    - answer **yes**
+3. **Are you sure you want to continue connecting (yes/no)?** 에 대해서
+    - **yes** 로 입력
 
     ![connect signin](./images/connect-first-signin.png "connect signin ")
 
 ## 작업 4: Compute Instance에 MySQL Shell 설치
 
-1. You will need a MySQL client tool to connect to your new MySQL DB System from your client machine.
+1. 클라이언트 머신에서 새로운 MySQL DB 시스템에 연결하려면 MySQL 클라이언트 도구가 필요합니다.
 
-2. Install MySQL Shell with the following command (enter y for each question)
+2. 다음 명령으로 MySQL Shell을 설치하세요(질문마다 y를 입력하세요)
 
     **[opc@…]$**
 
@@ -193,7 +190,7 @@ Cloud Shell 머신은 Oracle Cloud Console(홈페이지)을 통해 액세스하�
     ![mysql shell install](./images/mysql-install-shell.png "mysql shell install ")
 
 
-You may now **proceed to the next lab**
+이제 **next lab으로 진행**할 수 있습니다.
 
 ## Acknowledgements
 
