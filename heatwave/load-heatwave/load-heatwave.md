@@ -1,14 +1,14 @@
-# Load Airportdb Data into HeatWave
+# Heatwave에 Airportdb Data Load
 
 ![mysql heatwave](./images/mysql-heatwave-logo.jpg "mysql heatwave")
 
-## Introduction
+## 세션 소개
 
-A HeatWave cluster comprise of a MySQL DB System node and one or more HeatWave nodes. The MySQL DB System node includes a plugin that is responsible for cluster management, loading data into the HeatWave cluster, query scheduling, and returning query result.
+HeatWave 클러스터는 MySQL DB 시스템 노드와 하나 이상의 HeatWave 노드로 구성됩니다. MySQL DB 시스템 노드에는 클러스터 관리, HeatWave 클러스터로의 데이터 로드, 쿼리 스케줄링 및 쿼리 결과 반환을 담당하는 플러그인이 포함됩니다.
 
 ![heatwave architect](./images/mysql-heatwave-architecture.png "heatwave architect ")
 
-_Estimated Time:_ 10 minutes
+_Estimated Time:_ 10 minutes 소요
 
 [//]:    [](youtube:OzqCt3XATto)
 
