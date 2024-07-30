@@ -70,16 +70,16 @@ Cloud Shell 머신은 Oracle Cloud Console(홈페이지)을 통해 액세스하�
 
 ## 작업 2: Compute instance 생성
 
-You will need a compute Instance to connect to your brand new MySQL database.
+새로운 MySQL 데이터베이스에 연결하려면 컴퓨팅 인스턴스가 필요합니다.
 
-1. Before creating the Compute instance open a notepad 
+1. Compute 인스턴스를 생성하기 전에 메모장을 엽니다.
 
-2. Do the followings steps to copy the public SSH key to the  notepad
+2. 공개 SSH 키를 메모장에 복사하려면 다음 단계를 수행하세요.
 
-    Open the Cloud shell
+    Cloud shell 오픈
     ![open cloud shell large](./images/cloud-shell-open-large.png "open cloud shell large ")
 
-    Enter the following command  
+    다음 명령을 입력하세요
 
     ```bash
     <copy>cat ~/.ssh/id_rsa.pub</copy>
@@ -87,16 +87,16 @@ You will need a compute Instance to connect to your brand new MySQL database.
 
     ![ssh key display](./images/ssh-key-display.png "ssh key display ") 
 
-3. Copy the id_rsa.pub content the notepad
+3. id_rsa.pub 내용을 메모장에 복사하세요
 
-    Your notepad should look like this
+    귀하의 메모장은 다음과 같아야 합니다.
     ![show ssh key](./images/notepad-rsa-key.png "show ssh key")  
 
-4. Minimize cloud shell
+4. cloud shell 최소화
 
     ![minimize cloud shell](./images/ssh-key-display-minimize.png "minimize cloud shell")  
 
-5. To launch a Linux Compute instance, go to 
+5. Linux Compute 인스턴스를 시작하려면 다음으로 이동하세요.
     Navigation Menu
     Compute
     Instances
