@@ -22,10 +22,10 @@ _Estimated Lab Time:_ 10 minutes 소요
 - airport-db database 데이터를 로드하기 위해 MySQL Shell 사용하기
 - MySQL Workbench를 사용하여 Heatwave 접속
 
-### Prerequisites (요구조건)
+### Prerequisites (필요사항)
 
 - An Oracle Trial or Paid Cloud Account
-- Some Experience with MySQL Shell
+- MySQL Shell에 사용경험
 
 
 ## Task 1: Connect to the Compute System
