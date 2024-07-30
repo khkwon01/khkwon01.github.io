@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/7a6c0895-0bc8-4080-aeb1-94cd054b4f2c)# 도움이 필요할 경우
+# 도움이 필요할 경우
 
 ## 세션 소개
 이 페이지는 LiveLab에서 사용자가 직면하는 몇 가지 일반적인 문제를 해결하는 데 도움을 주기 위해 설계되었습니다.
