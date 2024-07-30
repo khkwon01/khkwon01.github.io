@@ -24,9 +24,9 @@ _Estimated Lab Time:_ 10 minutes 소요
 ### Prerequisites
 
 - An Oracle Trial or Paid Cloud Account
-- Some Experience with MySQL Shell
+- MySQL Shell에 사용경험
 
-## Task 1: Create SSH Key on OCI Cloud Shell
+## 작업 1: OCI Cloud Shell에서 SSH Key 생성
 
 The Cloud Shell machine is a small virtual machine running a Bash shell which you access through the Oracle Cloud Console (Homepage). You will start the Cloud Shell and generate a SSH Key to use  for the Bastion  session.
 
@@ -68,7 +68,7 @@ The Cloud Shell machine is a small virtual machine running a Bash shell which yo
 
     Note in the output there are two files, a *private key:* `id_rsa` and a *public key:* `id_rsa.pub`. Keep the private key safe and don't share its content with anyone. The public key will be needed for various activities and can be uploaded to certain systems as well as copied and pasted to facilitate secure communications in the cloud.
 
-## Task 2: Create Compute instance
+## 작업 2: Compute instance 생성
 
 You will need a compute Instance to connect to your brand new MySQL database.
 
@@ -159,7 +159,7 @@ You will need a compute Instance to connect to your brand new MySQL database.
 
     ![compute active](./images/compute-active.png "compute active")
 
-## Task 3: Connect to Compute System
+## 작업 3: Compute System 생성
 
 1. Go to Cloud shell to SSH into the new Compute Instance
 
@@ -178,7 +178,7 @@ You will need a compute Instance to connect to your brand new MySQL database.
 
     ![connect signin](./images/connect-first-signin.png "connect signin ")
 
-## Task 4: Install MySQL Shell on the Compute Instance
+## 작업 4: Compute Instance에 MySQL Shell 설치
 
 1. You will need a MySQL client tool to connect to your new MySQL DB System from your client machine.
 
