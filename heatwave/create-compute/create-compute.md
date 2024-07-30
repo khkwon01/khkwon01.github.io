@@ -1,25 +1,24 @@
-# Create Compute Instance
+# Compute Instance 생성 (DB 작업 또는 Application 테스트)
 
 ![mysql heatwave](./images/mysql-heatwave-logo.jpg "mysql heatwave")
 
-## Introduction
+## 세션 소개
 
-You cannot connect directly from a remote IP to the endpoint of a DB system. Use SSH or RDP to connect to a compute instance, and from the compute instance use MySQL Shell, MySQL Client or MySQL Workbench to connect to the DB system.For more details see OCI Document:
+원격 IP에서 DB 시스템의 엔드포인트(endpoint)로 직접 연결할 수 없습니다. SSH 또는 RDP를 사용하여 컴퓨트 인스턴스에 연결하고, 컴퓨트 인스턴스에서 MySQL Shell, MySQL Client 또는 MySQL Workbench를 사용하여 DB 시스템에 연결합니다. 자세한 내용은 OCI 문서를 참조하세요.
 
 [Creating a Compute Intane Using the Console](
 https://docs.oracle.com/en-us/iaas/Content/Compute/Tasks/launchinginstance.htm).
 
 
-_Estimated Lab Time:_ 10 minutes
+_Estimated Lab Time:_ 10 minutes 소요
 
-### Objectives
+### 목표
 
-In this lab, you will be guided through the following tasks:
-
-- Create SSH Key on OCI Cloud
-- Create Compute Instance
-- Install MySQL Shell on the Compute Instance
-- Test connection to MySQL HeatWave System
+이 Lab에서는 다음과 같은 작업들을 진행합니다.
+- OCI에서 사용할 SSH Key 생성
+- Compute Instance 생성
+- Compute Instance에 MySQL Shell 설치
+- MySQL HeatWave System 접속 테스트
 
 
 ### Prerequisites
