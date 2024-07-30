@@ -6,11 +6,11 @@
 클라우드에서 작업할 때 서버와 서비스가 퍼블릭 인터넷에 노출되지 않는 경우가 종종 있습니다. Oracle Cloud Infrastructure(OCI) MySQL 클라우드 서비스는 프라이빗 네트워크를 통해서만 액세스할 수 있는 서비스의 예입니다. 이 서비스는 완벽하게 관리되므로 잠재적인 공격과 취약성으로부터 데이터를 보호하기 위해 인터넷에서 분리하여 보관합니다. 리소스 노출을 최대한 제한하는 것이 좋지만 언젠가는 해당 리소스에 연결하고 싶을 것입니다. 바로 여기서 배스천 호스트가 등장합니다. 배스천 호스트는 프라이빗 리소스와 프라이빗 네트워크에 액세스해야 하는 엔드포인트 사이에 있는 리소스로, SSH 또는 RDP와 같은 프로토콜을 통해 프라이빗 리소스에 로그인할 수 있도록 하는 "jump box" 역할을 할 수 있습니다. 배스천 호스트에는 MySQL DB 시스템에 연결하기 위한 가상 클라우드 네트워크가 필요합니다.
 
 
-Oracle added a Bastion Service to OCI. And you may also have noticed that the OCI Dashboard offers you the possibility to use a browser based terminal: Cloud Shell.
+Oracle은 OCI에 Bastion Service를 추가했습니다. 그리고 OCI 대시보드에서 브라우저 기반 터미널인 Cloud Shell을 사용할 수 있는 환경도 제공하고 있습니다.
 
 Today, you will use these two components to connect from the browser to a MDS DB System
 
-Estimated Lab Time 15 minutes
+_Estimated Lab Time:_ 15 minutes 소요
 
 ### Objectives
 
