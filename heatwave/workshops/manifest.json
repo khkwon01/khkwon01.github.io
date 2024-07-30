@@ -41,69 +41,47 @@
         },
 
         {
-          "title": "Lab 6: HeatWave Lakehouse 생성 및 테스트",
-          "filename": "../do-lakehouse/do-lakehouse.md"  
-        },
-
-        {
-          "title": "Lab 7: (부가내용) Heatwave를 이용하여 Oracle Analytics Cloud Dashboard 구성",
-          "filename": "../do-oac-advanced/do-oac-advanced.md"
-        }, 
-
-        {
-          "title": "Lab 8: HeatWave Machine Learning 생성 및 테스트",
-          "filename": "../do-heatwave-ml/do-heatwave-ml.md"
-        }, 
-
-        {
-          "title": "Lab 9: OCI Bastion를 사용하여 HeatWave 접속",
+          "title": "Lab 6: OCI Bastion를 사용하여 HeatWave 접속",
           "filename": "../connect-dbs-bastion/connect-dbs-bastion.md"
         },
 
         {
-          "title": "Lab 10: OCI SQL Worksheet를 사용하여 HeatWave 접속",
-          "filename": "../connect-dbs-worksheet/connect-dbs-worksheet.md"
-        },
-
-        {
-          "title": "Lab 11: MySQL HeatWave DB System 관리",
+          "title": "Lab 7: MySQL HeatWave DB System 관리",
           "filename": "../manage-heatwave/manage-heatwave.md"
         },
 
         {
-          "title": "Lab 12: MySQL HeatWave DB System 백업",
+          "title": "Lab 8: MySQL HeatWave DB System 백업",
           "filename": "../backup-dbs/backup-dbs.md"
         },
 
         {
-          "title": "Lab 13: MySQL HeatWave DB System 설정",
+          "title": "Lab 9: MySQL HeatWave DB System 설정",
           "filename": "../config-dbs/config-dbs.md"
         },
- 
-        
+         
         {
-          "title": "Lab 14: MySQL HeatWave Read Replicas 구성",
+          "title": "Lab 10: MySQL HeatWave Read Replicas 구성",
           "filename": "../setup-replicas/setup-replicas.md"
         },
 
         {
-          "title": "Lab 15: MySQL HeatWave Inbound Replication 구성",
+          "title": "Lab 11: MySQL HeatWave Inbound Replication 구성",
           "filename": "../setup-inbound-replication/setup-inbound-replication.md"
         },
-
                 
         {
-          "title": "Lab 16: MySQL HeatWave로 데이터 마이그레이션",
+          "title": "Lab 12: MySQL HeatWave로 데이터 마이그레이션",
           "filename": "../migrate-data/migrate-data.md"
         },
               
         {
-          "title": "Lab 17: MySQL HeatWave High Availability 구성",
+          "title": "Lab 13: MySQL HeatWave High Availability 구성",
           "filename": "../setup-ha/setup-ha.md"
         },
 
         {
-          "title": "Lab 18: OCI Services 중단",
+          "title": "Lab 14: OCI Services 중단",
           "filename": "../stop-services/stop-services.md"
         },
 
