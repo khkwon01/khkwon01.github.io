@@ -21,7 +21,7 @@ _Estimated Lab Time:_ 10 minutes 소요
 - MySQL HeatWave System 접속 테스트
 
 
-### Prerequisites
+### Prerequisites (필요사항)
 
 - An Oracle Trial or Paid Cloud Account
 - MySQL Shell에 사용경험
