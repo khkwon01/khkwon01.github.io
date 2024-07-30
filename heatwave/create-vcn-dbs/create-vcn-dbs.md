@@ -16,7 +16,7 @@ _Estimated Time:_ 20 minutes 소요
 - Virtual Cloud Network (VCN) 생성
 - MySQL HeatWave (DB System) Instance 생성
 
-### Prerequisites (요구조건)
+### Prerequisites (필요사항)
 
 - An Oracle Trial, Paid or LiveLabs Cloud Account
 - MySQL Shell에 사용경험
