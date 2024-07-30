@@ -18,11 +18,11 @@ _Estimated Lab Time:_ 10 minutes 소요
 
 - Compute System 접속
 - MySQL HeatWave Database Endpoint 가져오기
-- Install MySQL Shell on the Compute Instance
-- Use MySQL Shell to load the airport-db database
-- Connect to Databsae with MySQL Workbench
+- Compute Instance에 MySQL Shell 설치
+- airport-db database 데이터를 로드하기 위해 MySQL Shell 사용하기
+- MySQL Workbench를 사용하여 Heatwave 접속
 
-### Prerequisites
+### Prerequisites (요구조건)
 
 - An Oracle Trial or Paid Cloud Account
 - Some Experience with MySQL Shell
