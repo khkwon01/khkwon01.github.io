@@ -4,7 +4,7 @@
 
 ## 세션 소개
 
-In this lab, you will run queries in HeatWave and in MySQL. You will see the query performance improvements on HeatWave compare to MySQL.
+이 Lab에서는 HeatWave와 MySQL에서 쿼리를 실행합니다. MySQL과 비교했을 때 HeatWave에서 쿼리 성능이 향상되는 것을 볼 수 있습니다.
 
 _Estimated Time:_ 10 minutes
 
