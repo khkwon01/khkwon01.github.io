@@ -64,7 +64,8 @@ DB 시스템 이름을 클릭하면 DB 시스템 세부 정보 페이지가 열�
 
 DB 시스템의 상태가 업데이트 중으로 변경되고, 선택한 instance가 primary instance가 됩니다.
 
-이제 next lab으로 진행할 수 있습니다.
+
+이제 **다음 Lab으로 진행**할 수 있습니다.
 
 ## Acknowledgements
 
