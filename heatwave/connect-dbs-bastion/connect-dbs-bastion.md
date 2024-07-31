@@ -8,36 +8,36 @@
 
 Oracle은 OCI에 Bastion Service를 추가했습니다. 그리고 OCI 대시보드에서 브라우저 기반 터미널인 Cloud Shell을 사용할 수 있는 환경도 제공하고 있습니다.
 
-Today, you will use these two components to connect from the browser to a MDS DB System
+오늘은 이 두 가지 구성 요소를 사용하여 브라우저에서 MDS DB 시스템에 연결합니다.
 
 _Estimated Lab Time:_ 15 minutes 소요
 
-### Objectives
+### 목표
 
-In this lab, you will be guided through the following tasks:
+이 Lab에서는 다음 작업을 안내해 드립니다.
 
-- Setup Bastion Service
-- Create Bastion session
-- Connect to MySQL DB System
+- Bastion Service 구성
+- Bastion session 생성
+- MySQL Heatwave 접속
 
-### Prerequisites
+### Prerequisites (필요사항)
 
 - An Oracle Trial or Paid Cloud Account
-- Some Experience with MySQL Shell
+- MySQL Shell에 사용경험
 
-## Task 1: Create Bastion Service
+## 작업 1: Bastion Service 구성
 
-The new Bastion Service will allow you to create a SSH Tunnel to your MySQL DB System.
+새로운 Bastion 서비스를 사용하면 MySQL DB 시스템에 대한 SSH 터널을 생성할 수 있습니다.
 
-1. Go to Navigation Menu > Identity Security > Bastion
+1. Navigation Menu > Identity Security > Bastion 로 이동
 
     ![bastion menu](./images/bastion-menu.png " bastion menu")
 
-2. Click Create Bastion
+2. Create Bastion 클릭
 
     ![bastion menu create](./images/bastion-menu-create.png "bastion menu create ")
 
-3. On Create bastion, complete the following fields:
+3. Create bastion 화면에서, 다음 필드를 완성하세요:
 
     Bastion Name
 
@@ -47,11 +47,11 @@ The new Bastion Service will allow you to create a SSH Tunnel to your MySQL DB S
 
     Target virtual Cloud network in .. (root)
 
-    Select  `HEATWAVE-VCN`
+    `HEATWAVE-VCN` 선택
 
     Target subnet in .. (root)
 
-    Select  `Private Subnet-HEATWAVE-VCN`
+    `Private Subnet-HEATWAVE-VCN` 선택
 
     CIDR block allowlist (As you don’t know the IP of the Cloud Shell, use 0.0.0.0/0)
 
@@ -59,35 +59,35 @@ The new Bastion Service will allow you to create a SSH Tunnel to your MySQL DB S
      <copy>0.0.0.0/0</copy>
      ```
 
-    Click `0.0.0.0/0(New)`
+    `0.0.0.0/0(New)` 클릭
 
      ![bastion create page](./images/bastion-create.png "bastion create page ")
 
-4. Click `Create Bastion` button
+4. `Create Bastion` 버튼 클릭
 
-    When completed your screen should look like this:
+    완료되면 화면이 다음과 같아야 합니다:
 
     ![bastion list](./images/bastion-menu-list.png "bastion list ")
 
-## Task 2: Create Bastion Session
+## 작업 2: Bastion session 생성
 
-1. Before creating the Bastion Session open a notepad. Do the following steps to record the MySQL Database System private IP address:
+1. Bastion 세션을 만들기 전에 메모장을 엽니다. 다음 단계를 수행하여 MySQL 데이터베이스 시스템 private IP 주소를 기록합니다.:
 
-    - Go to Navigation Menu > Databases > MySQL
+    - Navigation Menu > Databases > MySQL 로 이동
      ![db list](./images/db-list.png "db list")
 
-    - Click on the `HEATWAVE-DB` Database System link. 
+    -  `HEATWAVE-DB` Database System link 클릭
 
      ![active ](./images/db-active.png "active ")
 
-    - Go to the **Connections** tab and copy the **Private IP address** to the notepad
+    - **Connections** tab 으로 이동 및 **Private IP address** 를 메모장에 복사
 
-2. Do the followings steps to copy  the public SSH key to the  notepad
+2. public SSH 키를 메모장에 복사하려면 다음 단계를 수행하세요.
 
-    - Open the Cloud shell
+    - Cloud shell 오픈
      ![cloud shell open](./images/cloudshell-open.png "cloud shell open")
 
-    - Enter the following command
+    - 다음 명령을 입력하세요
 
     ```bash
      <copy>cat .ssh/id_rsa.pub</copy>
@@ -95,7 +95,7 @@ The new Bastion Service will allow you to create a SSH Tunnel to your MySQL DB S
 
     ![new cloud shell get ssh](./images/cloudshell-get-ssh.png "new cloud shell det ssh")
 
-3. Copy the id\_rsa.pub content from the notepad.
+3. 메모장에 id\_rsa.pub 내용을 복사합니다.
         Your notepad should look like this
     ![notepad](./images/notepad-display.png "notepad ")  
 
@@ -132,7 +132,7 @@ The new Bastion Service will allow you to create a SSH Tunnel to your MySQL DB S
 
     **Note: The Session will expire in 180 minutes**
 
-## Task 3: Connect to MySQL HeatWave with Bastion Session
+## 작업 3: MySQL Heatwave 접속
 
 1. Click on the 3 vertical dots on the Bastion Session
 
@@ -179,5 +179,4 @@ You may now **proceed to the next lab**
 ## Acknowledgements
 
 - **Author** - Perside Foster, MySQL Principal Solution Engineering
-- **Contributors** - Mandy Pang, MySQL Principal Product Manager,  Nick Mader, MySQL Global Channel Enablement & Strategy Manager, Selena Sanchez, MySQL Solution Engineering
-- **Last Updated By/Date** - Perside Foster, MySQL Solution Engineering, April 2024
+- **Last Updated By/Date** - kihyuk, MySQL Solution Engineering, July 2024
