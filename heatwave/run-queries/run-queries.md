@@ -243,7 +243,7 @@ _Estimated Time:_ 10 minutes
     <copy>SET SESSION use_secondary_engine=ON;</copy>
     ```
 
-이제 **next lab으로 진행**할 수 있습니다.
+이제 **다음 Lab으로 진행**할 수 있습니다.
 
 ## Acknowledgements
 
