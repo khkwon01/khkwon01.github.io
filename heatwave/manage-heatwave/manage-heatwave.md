@@ -6,6 +6,13 @@
 
 _Estimated Time:_ 10 minutes 소요
 
+### 목표
+이 Lab에서는 다음 작업을 안내해 드립니다.
+
+- MySQL HeatWave Metrics 살펴보기
+- MySQL HeatWave System 시작, 중단, 재시작
+- MySQL HeatWave DatabaseSystem 삭제
+
 ### Prerequisites
 
 - An Oracle Free Tier, Always Free, Paid or LiveLabs Cloud Account
