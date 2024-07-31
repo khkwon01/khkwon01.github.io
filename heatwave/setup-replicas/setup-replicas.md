@@ -132,7 +132,7 @@ DB 시스템에 연결하는 것과 비슷한 방식, 즉 컴퓨팅 인스턴스
 자세한 내용은 OCI 문서를 참조하세요:
 [Overview of Read Replica](https://docs.oracle.com/en-us/iaas/mysql-database/doc/overview-read-replica.html#:~:text=You%20can%20connect%20to%20a,the%20read%20replica%20lag%20metric).
 
-이제 **next lab으로 진행**할 수 있습니다.
+이제 **다음 Lab으로 진행**할 수 있습니다.
 
 ## Acknowledgements
 
