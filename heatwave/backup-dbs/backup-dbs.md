@@ -24,11 +24,11 @@ _Estimated Time:_ 15 minutes 소요
 
 ## 작업 1: Manual Backup 생성
 
-1. **Navigation Menu** 클릭
+1. **Navigation Menu** 클릭합니다.
 
     ![OCI Console Home Page](./images/homepage.png "home page")
 
-2. **Databases** 클릭, **DB Systems** 클릭  
+2. **Databases** 클릭, **DB Systems** 클릭합니다.  
     ![menu databases](./images/menu-dbsystems.png "menu databases dbsystems")
 
     root compartment를 선택했는지 확인
@@ -60,154 +60,154 @@ _Estimated Time:_ 15 minutes 소요
 
 ## 작업 2: DB System 백업 Plan 수정
 
-1. Click **Navigation Menu** 
+1. **Navigation Menu** 클릭합니다.
 
     ![OCI Console Home Page](./images/homepage.png "home page")
 
-2. Click  **Databases**, then **DB Systems**  
+2. **Databases** 클릭, **DB Systems** 클릭합니다. 
     ![menu databases](./images/menu-dbsystems.png "menu databases dbsystems")
 
-     Make sure you are using the root compartment
+    root compartment를 선택했는지 확인
     ![use root compartment](./images/select-compartment.png "use root comparment")
 
-3. Click on **HEATWAVE-DB** to view the deatils.  
+3. deatils한 정보를 보기 위해 **HEATWAVE-DB** 클릭합니다.
     ![databases list](./images/list-dbsystem.png "list of dbsystem")
 
-4. From the **More Actions** menu, select **Edit Backup Plan** 
+4. **More Actions** menu에서, **Edit Backup Plan** 선택합니다.
     ![databases click backup](./images/click-edit-backup.png "select edit backup")
 
-5. Enable **Automatic Backups** and fill the requested information
+5. **Automatic Backups**를 enable하고 요청된 정보를 입력하세요
     * Backup Retention Period: 1
     * Window Start Time: 07:00 UTC
     * Enable Point in Time Recovery
 
     ![databases edit backup](./images/edit-backup-plan.png "edit backup plan") 
 
-6. Click **Show backup windows per region**. A list of all backup windows per region will appear. If you don't define a backup window, Oracle will select one for you based on your region
+6. **Show backup windows per region** 클릭합니다. 지역별 모든 백업 윈도우 목록이 나타납니다. 백업 윈도우를 정의하지 않으면 Oracle이 지역을 기준으로 하나를 선택합니다.
     ![databases edit backup window](./images/edit-backup-plan-window.png "edit backup pla window")
 
-7. Click **Save Changes** 
+7. **Save Changes** 클릭합니다.
 
 
 ## 작업 3: Manual Backup를 사용하여 new DB System으로 데이터 복구
 
-1. From the **More Actions** menu on your **HEATWAVE-DB** database, select **Restore to a new DB System** 
+1. **HEATWAVE-DB** 데이터베이스의 **More Actions** 메뉴에서 **Restore to a new DB System**을 선택하세요.
     ![databases click restore](./images/click-restore-backup.png "select restore backup")
 
-2. Select **Restore from a backup**, then click the **Select backup** button to open the **Browse all backup** page 
+2. **Restore from a backup**을 선택한 다음 **Select backup** 버튼을 클릭하여 **Browse all backup** 페이지를 엽니다.
 
     ![databases restore](./images/restore-from-backup.png "restore from backup")
 
-3. Click the **Manual** button and select the check box next to the **Manual Backup** you created before. Then Click **Select Backup** 
+3. **Manual** 버튼을 클릭하고 이전에 만든 **Manual Backup** 옆의 확인란을 선택합니다. 그런 다음 **Select Backup**을 클릭합니다.
     ![databases restore](./images/restore-backup-config.png "restore from manual backup config")
 
-4. Ensure the root compartment is selected and enter the name of the new DB System, and Select **Standalone** option
+4. root compartment이 선택되었는지 확인하고 새 DB 시스템의 이름을 입력하고 **Standalone** 옵션을 선택합니다.
     ```bash
     <copy>NEWDB</copy>
     ```
     ![databases restore](./images/restore-from-manual-backup.png "restore from manual backup")
 
-5. Under Configure Networking section, ensure the HEATWAVE-VCN and its private subnet are selected 
+5. 네트워크 구성 섹션에서 HEATWAVE-VCN 및 해당 private subnet이 선택되었는지 확인하십시오.
     ![databases restore](./images/restore-backup-create-db.png "restore backup create-db")
 
-6. Ensure that the **MySQL.HeatWave.VM.Standard** shape is selected. 
+6. **MySQL.HeatWave.VM.Standard** 모양이 선택되었는지 확인하세요.
 
     ![databases restore](./images/restore-backup-create-db-shape.png "restore backup create db shape")
 
-    If not, click on **Change Shape** and look for and select the **MySQL.HeatWave.VM.Standard** shape.
+    그렇지 않은 경우 **Change Shape**을 클릭하고 **MySQL.HeatWave.VM.Standard** 모양을 찾아 선택합니다.
 
-7. Leave **Data Storage Size** as it is.
+7. **데이터 저장 크기(Data Storage Size)**는 그대로 둡니다.
 
-8. On Configure Backups, disable 'Enable Automatic Backup'
+8. 백업 구성에서 'Enable Automatic Backup'을 disable 합니다.
 
     ![databases restore](./images/restore-edit-backup-plan.png "restore edit backup plan") 
 
-9. Click on **Show Advanced Options** and go to the **Connections** tab, assign **NEWDB** as the new hostname. 
+9. **Show Advanced Options**를 클릭하고 **Connections** 탭으로 가서 **NEWDB**를 새 호스트 이름으로 지정합니다.
 
-    Then click **Restore**
+    그리고나서, **Restore** 클릭합니다.
 
     ![databases restore](./images/restore-backup-create.png "restore from backup create")
 
-    **Note**: It may take a few minures for the DB system to be created. When the DB System satate changes to Active, the DB System is ready to use.
+    **참고**: DB 시스템이 생성되는 데 몇 분이 걸릴 수 있습니다. DB 시스템 상태가 활성으로 변경되면 DB 시스템을 사용할 준비가 됩니다.
 
 
 ## 작업 4: Point-in-Time를 사용하여 new DB System으로 데이터 복구
 
-1. 1. Click **Navigation Menu**
+1. **Navigation Menu** 클릭합니다.
 
     ![OCI Console Home Page](./images/homepage.png "home page")
 
-2. Click  **Databases**, then **DB Systems**  
+2. **Databases** 클릭, 그리고 **DB Systems** 클릭합니다. 
     ![menu databases](./images/menu-dbsystems.png "menu databases dbsystems")
 
-    Make sure you are using the root compartment
+    root compartment를 선택했는지 확인
     ![use root compartment](./images/select-compartment.png "use root comparment")
 
-3. Click on **HEATWAVE-DB** to view the deatils.  
+3. deatils한 정보를 보기 위해 **HEATWAVE-DB** 클릭합니다. 
     ![databases list](./images/list-dbsystem.png "list of dbsystem")
 
-4. From the **More Actions** menu on your **HEATWAVE-DB** database, select **Restore to a new DB System** 
+4. **HEATWAVE-DB** 데이터베이스의 **More Actions** 메뉴에서 **Restore to a new DB System**을 선택하세요.
     ![databases click restore](./images/click-restore-backup.png "select restore backup")
 
-5. Next, select **Restore from DB System at a point in time** option, and click on the **latest available point-in-time**
+5. 다음으로 **latest available point-in-time** 옵션을 선택하고 **Restore from DB System at a point in time**을 클릭합니다.
 
     ![databases restore](./images/restore-backup-pitr-config.png "restore from pitr backup config")
 
 
-6. Ensure the root compartment is selected and enter the name of the new DB System, and Select **Standalone** option
+6. root compartment이 선택되었는지 확인하고 새 DB 시스템의 이름을 입력하고 **Standalone** 옵션을 선택합니다.
     ```bash
     <copy>NEWDB2</copy>
     ```
     ![databases restore](./images/restore-from-pitr-backup.png "restore from pitr backup")
 
-7. Under Configure Networking section, ensure the HEATWAVE-VCN and its private subnet are selected 
+7. 네트워크 구성 섹션에서 HEATWAVE-VCN 및 해당 private subnet이 선택되었는지 확인하십시오.
     ![databases restore](./images/restore-backup-create-db.png "restore backup create-db")
 
-8. Ensure that the **MySQL.HeatWave.VM.Standard** shape is selected. 
+8. **MySQL.HeatWave.VM.Standard** 모양이 선택되었는지 확인하세요.
 
     ![databases restore](./images/restore-backup-create-db-shape.png "restore backup create db shape")
 
-    If not, click on **Change Shape** and look for and select the **MySQL.HeatWave.VM.Standard** shape.
+    그렇지 않은 경우 **Change Shape**을 클릭하고 **MySQL.HeatWave.VM.Standard** 모양을 찾아 선택합니다.
 
-9. Leave **Data Storage Size** as it is.
+9. **데이터 저장 크기(Data Storage Size)**는 그대로 둡니다.
 
-10. On Configure Backups, disable **'Enable Automatic Backup'**
+10. 백업 구성에서 **'자동 백업 사용'**을 disable 합니다.
 
     ![databases restore](./images/restore-edit-backup-plan.png "restore edit backup plan") 
 
-11. Click on **Show Advanced Options** and go to the **Connections tab**, assign **NEWDB** as the new hostname. 
+11. **Show Advanced Options**를 클릭하고 **Connections tab**으로 가서 **NEWDB**를 새 호스트 이름으로 지정합니다.
 
-    Then click **Restore**
+    그리고나서, **Restore** 클릭합니다.
     ![databases restore](./images/restore-backup-create.png "restore from backup create")
 
-    **Note**: It may take a few minures for the DB system to be created. When the DB System satate changes to Active, the DB System is ready to use.
-
+    **참고**: DB 시스템이 생성되는 데 몇 분이 걸릴 수 있습니다. DB 시스템 상태가 활성으로 변경되면 DB 시스템을 사용할 준비가 됩니다.
+    
 ## 작업 5: 사용하지 않는 MySQL Backups 삭제
 
-1. **Navigation Menu** 클릭
+1. **Navigation Menu** 클릭합니다.
 
     ![OCI Console Home Page](./images/homepage.png "home page")
 
-2. Click  **Databases**, then **Backups**  
+2. **Databases** 클릭, 그리고 **Backups** 클릭합니다.
     ![menu databases](./images/menu-databases-backups.png "menu dbsystems backups")
 
-    Make sure you are using the root compartment
+    root compartment를 선택했는지 확인
     ![use root compartment](./images/select-compartment.png "use root comparment")
 
-3. Click the **Actions** button next to the Manual Backup you created previously, and select **Delete** from the drop-down menu
+3. 이전에 생성한 수동 백업 옆에 있는 **Actions** 버튼을 클릭하고 드롭다운 메뉴에서 **Delete**를 선택합니다.
     ![delete backup](./images/delete-backup.png "click delete backup")
 
-4. A pop-up window will appear asking you to confirm that you want to delete the backup, click **Delete Backup**
+4. 백업을 삭제할 것인지 확인하는 팝업 창이 나타나면 **Delete Backup**를 클릭하세요.
     ![delete backup](./images/confirm-delete-backup.png "confirm delete backup")
 
-5. When the backup is deleted, its state will change to **Deleted** and it cannot be restored. 
+5. 백업이 삭제되면 상태가 **Deleted**으로 변경되며 복원할 수 없습니다. 
     ![delete backup](./images/delete-backup-completed.png "delete backup completed")
 
-    > **Note**: 
-    - It may take a few minutes for the backup to be deleted.
-    - Disable PITR (as it’s not compatible with Lakehouse) or disable backups completely to avoid issues later.
+    > **참고**: 
+    - 백업이 삭제되는 데 몇 분이 걸릴 수 있습니다.
+    - 나중에 문제가 발생하지 않도록 PITR을 비활성화하거나 백업을 완전히 비활성화하세요.
  
-You may now **proceed to the next lab**
+이제 **next lab으로 진행**할 수 있습니다.
 
 ## Acknowledgements
 
