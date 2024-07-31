@@ -36,7 +36,7 @@ _Estimated Time:_ 5 minutes 소요
 4. Displayed **Stop DB system** dialog box에서, **Stop** 버튼을 클릭합니다.
     ![mysql system stop](./images/mysql-system-stop.png " mysql system stop")
 
-## 작업 3: HEATWAVE-Client Compute Instance 중단
+## 작업 2: HEATWAVE-Client Compute Instance 중단
 
 1. Navigation menu 선택하고 아래처럼 이동합니다. 
     - Compute
