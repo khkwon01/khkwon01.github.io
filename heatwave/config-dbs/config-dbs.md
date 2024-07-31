@@ -1,39 +1,39 @@
-# Configure MySQL HeatWave DB System
+# MySQL HeatWave DB System 설정
 
 
-## Introduction
+## 세션 소개
 
-In this lab, you will learn to manage configurations in a MySQL DB System.
+이 Lab에서는 MySQL Heatwave DB 시스템의 구성을 관리하는 방법을 학습합니다.
 
-_Estimated Time:_ 15 minutes
+_Estimated Time:_ 15 minutes 소요
 
 
-### Objectives
+### 목표
 
-In this lab, you will be guided through the following tasks:
+이 Lab에서는 다음 작업을 안내해 드립니다.
 
-- Create a MySQL Configuration 
-- Copy a MySQL Configuration, change variables and compare them
-- Update the MySQL Configuration of a DB system
-- Delete unused MySQL Confiigurations
+- MySQL Configuration 생성
+- MySQL Configuration 복사, variables 변경 및 기존 설정과 비교
+- MySQL Configuration 변경
+- 사용하지 않는 MySQL Confiigurations 삭제
 
-### Prerequisites
+### Prerequisites (필수사항)
 
 - An Oracle Trial or Paid Cloud Account
 
-## Task 1: Create a MySQL Configuration
+## 작업 1: MySQL Configuration 생성
 
-1. Click **Navigation Menu**
+1. **Navigation Menu** 클릭합니다.
 
     ![OCI Console Home Page](./images/homepage.png "home page")
 
-2. Click  **Databases**, then **Configurations**  
+2. **Databases** 클릭, 그리고 **Configurations** 클릭합니다.
     ![menu databases](./images/menu-databases-configurations.png "menu databases configurations")
 
-    Make sure you are using the root compartment
+    root compartment을 사용하고 있는지 확인하세요
     ![use root compartment](./images/select-compartment.png "use root comparment")
 
-3. Select the Click **Create Configuration**
+3. **Create Configuration** 클릭합니다.
     ![create configuration](./images/create-configuration-list.png " click create configuration")
 
     Enter a name for your configuration: 
@@ -45,7 +45,7 @@ In this lab, you will be guided through the following tasks:
     ![create configuration](./images/create-configuration-name.png "configuration compartment")
 
     
-4. Click the **Change Shape** button 
+4. **Change Shape** 버튼을 클릭합니다. 
     ![create configuration](./images/create-configuration-shape-change.png "change configuration shape")
     
 5. Select the **OCPU** tab and look for and select the **MySQL.HeatWave.VM.Standard** shape. Then click **Select Shape**
@@ -69,7 +69,7 @@ In this lab, you will be guided through the following tasks:
 
 
 
-## Task 2: Copy a MySQL Configuration
+## 작업 2: MySQL Configuration 복사
 
 1. On the MyConfig Details page, click **Copy Configuration** to make copy of the MyConfig configuration. 
     ![configuration details](./images/configuration-copy.png "click copy configuration")
@@ -115,8 +115,7 @@ In this lab, you will be guided through the following tasks:
 9. Click **Create** to create MyConfig3 
 
 
-
-## Task 3: Comparing two MySQL Configuration
+## 작업 3: 2개의 MySQL Configuration 비교
 
 1. Go back to the configurations list page 
     ![configuration list](./images/list-configuration3.png "list of confiigurations")
@@ -136,7 +135,7 @@ In this lab, you will be guided through the following tasks:
 
 4. Click **Close**. 
 
-## Task 4: Update the Configuration of a DB System
+## Task 4: MySQL Configuration 변경
 
 1. Click **Navigation Menu**, click  **Databases**, then **DB Systems**  
     ![menu databases](./images/menu-dbsystems.png "menu databases dbsystem")
@@ -171,7 +170,7 @@ In this lab, you will be guided through the following tasks:
     ![database details](./images/dbsystem-active.png "active database")
 
 
-## Task 5: Delete MySQL Configuration
+## 작업 5: 사용하지 않는 MySQL Confiigurations 삭제
 
 1. Click **Navigation Menu**, then **Configurations**  
     ![configuration list](./images/menu-databases-configurations.png "list of confiigurations")
@@ -201,5 +200,4 @@ You may now **proceed to the next lab**
 ## Acknowledgements
 
 - **Author** - Selena Sanchez, MySQL Solution Engineering 
-- **Contributors** - Mandy Pang, MySQL Principal Product Manager,  Nick Mader, MySQL Global Channel Enablement & Strategy Manager, Perside Foster, MySQL Principal Solution Engineering
-- **Last Updated By/Date** - Selena Sanchez, MySQL Solution Engineering, March 2024
+- **Last Updated By/Date** - kihyuk, MySQL Solution Engineering, July 2024
