@@ -161,7 +161,8 @@ local(PC) 머신에서 MySQL Workbench를 사용하면 컴퓨팅 인스턴스를
 
      ![MySQL Workbench launched for MySQL HeatWave](./images/workbench-launch.png "MySQL Workbench launched for MySQL HeatWave")
 
-이제 **next lab으로 진행**할 수 있습니다.
+
+이제 **다음 Lab으로 진행**할 수 있습니다.
 
 ## Acknowledgements
 
