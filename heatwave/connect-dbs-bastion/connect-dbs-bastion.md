@@ -174,7 +174,7 @@ _Estimated Lab Time:_ 15 minutes 소요
 
 **참고** 또한 bastion 서비스를 사용하여 로컬 컴퓨터에 연결하고 Workbench 또는 Visual Studio Code를 사용하여 MySQL에 액세스할 수 있습니다.
 
-이제 **next lab으로 진행**할 수 있습니다.
+이제 **다음 Lab으로 진행**할 수 있습니다.
 
 ## Acknowledgements
 
