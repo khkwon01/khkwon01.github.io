@@ -190,7 +190,7 @@ Cloud Shell 머신은 Oracle Cloud Console(홈페이지)을 통해 액세스하�
     ![mysql shell install](./images/mysql-install-shell.png "mysql shell install ")
 
 
-이제 **next lab으로 진행**할 수 있습니다.
+이제 **다음 Lab으로 진행**할 수 있습니다.
 
 ## Acknowledgements
 
