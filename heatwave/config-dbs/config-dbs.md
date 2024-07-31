@@ -48,10 +48,10 @@ _Estimated Time:_ 15 minutes 소요
 4. **Change Shape** 버튼을 클릭합니다. 
     ![create configuration](./images/create-configuration-shape-change.png "change configuration shape")
     
-5. Select the **OCPU** tab and look for and select the **MySQL.HeatWave.VM.Standard** shape. Then click **Select Shape**
+5. **OCPU** 탭을 선택하고 **MySQL.HeatWave.VM.Standard** 모양을 찾아 선택합니다. 그런 다음 **Select Shape**을 클릭합니다.
     ![create configuration](./images/create-configuration-shape-select.png "select configuration shape")
 
-6. Scroll down, the Variables Information page is displayed. In the **User Variables (Read/Write)** sectiion add the following variables and values:
+6. 아래로 스크롤하면 변수 정보 페이지가 표시됩니다. **User Variables (Read/Write)** 섹션에서 다음 변수와 값을 추가합니다.
 
     * Set **max_connections** to 200
     * Set **sort\_buffer\_size** to 500000
@@ -59,22 +59,22 @@ _Estimated Time:_ 15 minutes 소요
 
     ![create configuration](./images/create-configuration-add-variables.png "configuration add variables")
 
-    **Note:** You can click the **+Another Variable** to add more rows for configuring more variables
+    **참고:** 더 많은 변수를 구성하기 위해 더 많은 행을 추가하려면 **+다른 변수**를 클릭할 수 있습니다.
 
-7. Click **Create** to create the configuration. The configuration Details page is displayed. 
+7. **Create**를 클릭하여 구성을 만듭니다. 구성 세부 정보 페이지가 표시됩니다.
     ![configuration details](./images/configuration-details.png "new configuration details")
 
-8. Scroll down to see the variables that you have configured
+8. 아래로 스크롤하여 구성한 변수를 확인하세요.
     ![configuration variable details](./images/configuration-variables.png "new configuration variables details")
 
 
 
 ## 작업 2: MySQL Configuration 복사
 
-1. On the MyConfig Details page, click **Copy Configuration** to make copy of the MyConfig configuration. 
+1. MyConfig 세부 정보 페이지에서 **Copy Configuration**를 클릭하여 MyConfig 구성을 복사합니다.
     ![configuration details](./images/configuration-copy.png "click copy configuration")
 
-2. The configuration copy page is displayed, enter a name for the configuration:
+2. 구성 복사 페이지가 표시됩니다. 구성의 이름을 입력합니다.
 
     ```bash
     <copy>MyConfig2</copy>
@@ -82,120 +82,119 @@ _Estimated Time:_ 15 minutes 소요
 
     ![copy configuration](./images/copy-configuration-name.png " copy configuration name")
 
-3. Scroll Down and click the **Initialization Variiables** tab, and enable the **Ignore case in table and schema names** option
+3. 아래로 스크롤하여 **Initialization Variiables** 탭을 클릭하고 **Ignore case in table and schema names** 옵션을 활성화합니다.
 
     ![copy configuration](./images/copy-configuration-change-initialization.png "copy configuration add initiialization variable")
 
-4. Click **Create** to create the MyConfig2 configuration
+4. **Create**를 클릭하여 MyConfig2 구성을 만듭니다.
 
-5. Go back to the configurations list page
+5. 구성 목록 페이지로 돌아가기
     ![configuration list](./images/list-configuration.png "list of configurations")
 
-6. Click the context menu of MyConfig and click **Copy Configuration**
+6. MyConfig의 상황에 맞는 메뉴를 클릭하고 **Copy Configuration**를 클릭합니다.
     ![copy configuration](./images/copy-configuration-from-dropdown.png "copy configuration dropdown menu")
 
-7. The configuration copy page is displayed, enter a name for the configuration:
+7. 구성 복사 페이지가 표시됩니다. 구성의 이름을 입력합니다.
 
     ```bash
     <copy>MyConfig3</copy>
     ```
     ![copy configuration](./images/copy3-configuration-name.png "copy configuration name")
 
-8. Scroll down to the **User variables (read/write)** tab and perform the following changes:
+8. **User variables (read/write)** 탭으로 스크롤하여 다음 변경을 수행합니다.
     * Change the value of **max_connections** to 300
     * Change the value **time_zone** to +02:00. 
     * Click **+Another Variable** to add another row.
 
     ![copy configuration](./images/copy-configuration-change-variables.png "copy configuration change variables")
 
-    *  Add the **autocomit** variable and set its value to **OFF** 
+    *  **autocomit** 변수를 추가하고 해당 값을 **OFF**로 설정합니다.
 
     ![copy configuration](./images/copy-configuration-add-variable.png "copy configuration add variable")
 
-9. Click **Create** to create MyConfig3 
+9. **Create**를 클릭하여 MyConfig3를 만듭니다.
 
 
 ## 작업 3: 2개의 MySQL Configuration 비교
 
-1. Go back to the configurations list page 
+1. 구성 목록 페이지로 돌아가기
     ![configuration list](./images/list-configuration3.png "list of confiigurations")
     
-2. Select the **MyConfig2** and **MyConfig 3** confiigurations from the configurations list by selecting the check boxes. 
-    Then click the **Actions** button and select **Compare** from the drop-down menu
+2. 구성 목록에서 확인란을 선택하여 **MyConfig2** 및 **MyConfig 3** 구성을 선택합니다. 
+    그런 다음 **Actions** 버튼을 클릭하고 드롭다운 메뉴에서 **Compare**를 선택합니다.
 
     ![compare confgurations](./images/compare-configurations.png "click compare configurations")
 
-3. The Compare configurations dialog box is shown. It shows the differences by **default**. 
+3. 구성 비교 대화 상자가 표시됩니다. **default** 차이점을 보여줍니다. 
 
     ![compare confgurations](./images/compare-configurations-default.png "compare confgurations default")
 
-    * If you want to view all information of both configurations, click the **Show all** configuration Information button. 
+    * 두 구성에 대한 모든 정보를 보려면 **Show all** 버튼을 클릭하세요.
     
     ![compare confgurations](./images/compare-configurations-show-all.png "compare confgurations all")
 
-4. Click **Close**. 
+4. **Close** 클릭합니다. 
 
 ## Task 4: MySQL Configuration 변경
 
-1. Click **Navigation Menu**, click  **Databases**, then **DB Systems**  
+1. **Navigation Menu** 클릭, **Databases** 클릭, 그리고 **DB Systems** 클릭합니다. 
     ![menu databases](./images/menu-dbsystems.png "menu databases dbsystem")
 
-2. Click on **EATWAVE-DB** to view the deatils.  
+2. **HEATWAVE-DB**를 클릭해서 자세한 내용을 보세요.
     ![databases list](./images/list-dbsystem.png "list of dbsystem")
 
-3. Click the **Edit** button to edit the DB System
+3. **Edit** 버튼을 클릭하여 DB 시스템을 편집하세요.
     ![edit database](./images/edit-dbsystem.png "click edit database")
 
-4. The edit DB system page is shown. Scroll down to the Configuration section, click the **Change Configuration** button to choose a different configuration.
+4. DB 시스템 편집 페이지가 표시됩니다. 구성 섹션으로 스크롤하여 **Change Configuration** 버튼을 클릭하여 다른 구성을 선택합니다.
     ![edit database](./images/dbsystem-change-configuration.png "change database configuration")
 
-5. The browse configuration dialog is displayed. Note that it only lists all configurations **that match the shape of the DB System**
+5. 찾아보기 구성 대화 상자가 표시됩니다. **that match the shape of the DB System** 모든 구성만 나열합니다.
     
-    Click the Custom button to hide the default configurations 
+    기본 구성(default configurations)을 숨기려면 사용자 정의 버튼을 클릭하세요.
 
     ![edit database](./images/dbsystem-change-configuration-custom.png "edit database cnfiguration custom tab")
 
-6. Select **MyConfig2** configuration. 
-    * An error message is displayed, this is because the initilization variable cannot be changed once the DB System has been deployed. 
-
+6. **MyConfig2** 구성을 선택합니다. 
+    * 오류 메시지가 표시되는 이유는 DB 시스템이 배포된 후에는 초기화 변수를 변경할 수 없기 때문입니다.
     ![edit database](./images/dbsystem-change-configuration-error.png "edit database error")
     
-7. Select the **MyConfig3** configuration and click **Select a Configuration**. 
+7. **MyConfig3** 구성을 선택하고 **Select a Configuration**을 클릭합니다.
     ![edit database](./images/dbsystem-change-configuration-final.png "change database configuration")
 
-8. Click **Save Changes** in the Edit DB System page. HEATWAVE-DB changes to an updating state, after changing the configuration, the database needs to be restarted for the changes to take effect. 
+8. DB 시스템 편집 페이지에서 **Save Changes**을 클릭합니다. HEATWAVE-DB가 업데이트 상태로 변경되고, 구성을 변경한 후 데이터베이스를 다시 시작해야 변경 사항이 적용됩니다.
     ![edit database](./images/dbsystem-change-configuration-save-changes.png "edit database save changes")
 
-9. After it has restared, the database will change to **ACTIVE** state and the configuration shows MyConfig3. 
+9. 다시 시작하면 데이터베이스가 **ACTIVE** 상태로 변경되고 구성에 MyConfig3이 표시됩니다.
     ![database details](./images/dbsystem-active.png "active database")
 
 
 ## 작업 5: 사용하지 않는 MySQL Confiigurations 삭제
 
-1. Click **Navigation Menu**, then **Configurations**  
+1. **Navigation Menu** 클릭, 그리고 **Configurations** 클릭합니다.
     ![configuration list](./images/menu-databases-configurations.png "list of confiigurations")
 
-    Make sure you are in the root compartment
+    root compartment에 있는지 확인하세요
     ![Select Root compartment](./images/select-compartment.png "use root comparment")
 
-3. Select the **MyConfig3, MyConfig2 and MyConfig** configurations by selecting the respective check boxes, click the actions button and select the **Delete** from the drop down menu
+3. 각각의 확인란을 선택하여 **MyConfig3, MyConfig2 및 MyConfig** 구성을 선택하고 작업 버튼을 클릭한 후 드롭다운 메뉴에서 **Delete**를 선택합니다.
     ![delete configuration](./images/delete-configurations.png "click delete configuration")
 
-4. Click **Delete configurations** too confirm
+4. **Delete configurations**를 클릭하여 확인하세요.
     ![delete configuration](./images/delete-configurations-confirm.png "delete configuration")
 
-5. An error occurs and the deletion of the MyConfig3 configuration fails. Click **Show Details** to view the reason. 
+5. 오류가 발생하여 MyConfig3 구성 삭제가 실패합니다. 이유를 보려면 **Show Details**를 클릭하세요.
 
     ![delete configuration](./images/delete-configurations-error.png "delete configuration error")
     
-    As shown on the details, the MyConfig3 configuration cannot be deleted because it is currently being used by a DB system.
-    Click close on the details page. 
+    세부 정보에 표시된 대로, MyConfig3 구성은 현재 DB 시스템에서 사용 중이므로 삭제할 수 없습니다.
+    세부 정보 페이지에서 닫기를 클릭합니다. 
 
-6. On the configuration list page, you will notice that MyConfig2 and MyConfig configurations have been deleted.
+6. 구성 목록 페이지에서 MyConfig2 및 MyConfig 구성이 삭제된 것을 확인할 수 있습니다.
     ![configuration list](./images/list-configurations.png "list of configurations")
 
 
-You may now **proceed to the next lab**
+이제 **next lab으로 진행**할 수 있습니다.
 
 ## Acknowledgements
 
