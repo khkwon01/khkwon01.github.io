@@ -5,60 +5,60 @@
 
 이 Lab에서는 MySQL Heatwave DB 시스템에서 백업을 관리하는 방법을 학습합니다.
 
-_Estimated Time:_ 15 minutes
+_Estimated Time:_ 15 minutes 소요
 
 
 ### 목표
 
-In this lab, you will be guided through the following tasks:
+이 Lab에서는 다음 작업을 안내해 드립니다.
 
-- Create a Manual Backup 
-- Edit the Backup Plan of a DB System
-- Restore to a new DB System from a Manual Backup
-- Restore to a new DB System from a Point-in-Time
-- Delete unused MySQL Backups
+- Manual Backup 생성
+- DB System 백업 Plan 수정
+- Manual Backup를 사용하여 new DB System으로 데이터 복구
+- Point-in-Time를 사용하여 new DB System으로 데이터 복구
+- 사용하지 않는 MySQL Backups 삭제
 
-### Prerequisites
+### Prerequisites (필요사항)
 
 - An Oracle Trial or Paid Cloud Account
 
-## Task 1: Create a Manual Backup
+## 작업 1: Manual Backup 생성
 
-1. Click **Navigation Menu**
+1. **Navigation Menu** 클릭
 
     ![OCI Console Home Page](./images/homepage.png "home page")
 
-2. Click  **Databases**, then **DB Systems**  
+2. **Databases** 클릭, **DB Systems** 클릭  
     ![menu databases](./images/menu-dbsystems.png "menu databases dbsystems")
 
-    Make sure you are using the root compartment
+    root compartment를 선택했는지 확인
     ![use root compartment](./images/select-compartment.png "use root comparment")
 
-3. Click on **HEATWAVE-DB** to view the deatils.  
+3. deatils한 정보를 보기 위해 **HEATWAVE-DB** 클릭합니다.  
     ![databases list](./images/list-dbsystem.png "list of dbsystem")
 
-4. From the **More Actions** menu, select **Create Manual Backup** 
+4. **More Actions** menu 에서, **Create Manual Backup** 선택합니다.
     ![databases click backup](./images/click-manual-backup.png "select create manual databases")
 
-5. Fill in the information requested and then click on **Create Manual Backup**
+5. 요청된 정보를 입력한 후 **Create Manual Backup**를 클릭하세요.
     * Display Name: Manual Backup
-    * Leave the description as is
+    * description를 그대로 두세요
     * Backup Type: Full Backup
-    * Leave the Retention Period as is
+    * 보존기간(Retention Period)을 그대로 두세요
 
     ![databases backup create](./images/create-manual-backup.png "create manual backup")
 
-    **Note**: It may take a few minutes for the backup to complete
+    **참고**: 백업이 완료되는 데 몇 분이 걸릴 수 있습니다.
 
-6. Click **Navigation Menu**, click  **Databases**, then **Backups**  
+6. **Navigation Menu** 클릭, **Databases** 클릭, **Backups** 클릭  
     ![menu databases](./images/menu-databases-backups.png "menu dbsystems backups")
 
-    Confirm that Manual backup has been created successfully
+    수동 백업이 성공적으로 생성되었는지 확인하세요
     ![databases backup create](./images/create-manual-backup-complete.png "create manual backup complete")
 
 
 
-## Task 2: Edit a Backup Plan
+## 작업 2: DB System 백업 Plan 수정
 
 1. Click **Navigation Menu** 
 
@@ -89,7 +89,7 @@ In this lab, you will be guided through the following tasks:
 7. Click **Save Changes** 
 
 
-## Task 3: Restore a Backup to a New DB System
+## 작업 3: Manual Backup를 사용하여 new DB System으로 데이터 복구
 
 1. From the **More Actions** menu on your **HEATWAVE-DB** database, select **Restore to a new DB System** 
     ![databases click restore](./images/click-restore-backup.png "select restore backup")
@@ -131,9 +131,7 @@ In this lab, you will be guided through the following tasks:
     **Note**: It may take a few minures for the DB system to be created. When the DB System satate changes to Active, the DB System is ready to use.
 
 
-
-
-## Task 4: Restore a Backup to a New DB System at a Point in Time
+## 작업 4: Point-in-Time를 사용하여 new DB System으로 데이터 복구
 
 1. 1. Click **Navigation Menu**
 
@@ -184,9 +182,9 @@ In this lab, you will be guided through the following tasks:
 
     **Note**: It may take a few minures for the DB system to be created. When the DB System satate changes to Active, the DB System is ready to use.
 
-## Task 5: Delete a Backup
+## 작업 5: 사용하지 않는 MySQL Backups 삭제
 
-1. Click **Navigation Menu**
+1. **Navigation Menu** 클릭
 
     ![OCI Console Home Page](./images/homepage.png "home page")
 
@@ -214,5 +212,4 @@ You may now **proceed to the next lab**
 ## Acknowledgements
 
 - **Author** - Selena Sanchez, MySQL Solution Engineering 
-- **Contributors** - Mandy Pang, MySQL Principal Product Manager,  Nick Mader, MySQL Global Channel Enablement & Strategy Manager, Perside Foster, MySQL Principal Solution Engineering
-- **Last Updated By/Date** - Selena Sanchez, MySQL Solution Engineering, March 2024
+- **Last Updated By/Date** - kihyuk, MySQL Solution Engineering, July 2024
