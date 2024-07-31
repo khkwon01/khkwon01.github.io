@@ -220,7 +220,7 @@ _Estimated Time:_ 20 minutes 소요
 
     ![heatwave endpoint](https://github.com/user-attachments/assets/f167c081-b1f0-45bc-a0bf-da94fd3bb122 "heatwave endpoint")
 
-이제 **next lab으로 진행**할 수 있습니다.
+이제 **다음 Lab으로 진행**할 수 있습니다.
 
 ## Acknowledgements
 
