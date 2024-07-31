@@ -111,7 +111,7 @@ _Estimated Time:_ 10 minutes 소요
 - [Oracle Cloud Infrastructure MySQL Database Service Documentation](https://docs.cloud.oracle.com/en-us/iaas/MySQL-database)
 - [MySQL Database Documentation](https://www.MySQL.com)
 
-이제 **next lab으로 진행**할 수 있습니다.
+이제 **다음 Lab으로 진행**할 수 있습니다.
 
 ## Acknowledgements
 
