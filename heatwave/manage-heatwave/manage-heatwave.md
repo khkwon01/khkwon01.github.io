@@ -105,6 +105,9 @@ DB 시스템의 Metrics을 보려면 다음을 수행하세요.:
 
 - [MySQL HeatWave Database Documentation](https://www.mysql.com)
 
+이제 **다음 Lab으로 진행**할 수 있습니다.
+
+
 ## Acknowledgements
 
 - **Author** - Perside Foster, MySQL Principal Solution Engineering
