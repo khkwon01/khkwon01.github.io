@@ -66,7 +66,7 @@ Console과 MySQL Shell을 사용하여 MySQL 인스턴스를 MySQL HeatWave Serv
 [Migrating a MySQL Instance to MySQL HeatWave Service](https://docs.public.oneportal.content.oci.oraclecloud.com/en-us/iaas/mysql-database/doc/migrating-mysql-instance-mysql-heatwave-service.html)
 
 
-이제 next lab으로 진행할 수 있습니다.
+이제 **다음 Lab으로 진행**할 수 있습니다.
 
 ## Acknowledgements
 
