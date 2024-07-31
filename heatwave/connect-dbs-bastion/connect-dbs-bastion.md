@@ -96,45 +96,45 @@ _Estimated Lab Time:_ 15 minutes 소요
     ![new cloud shell get ssh](./images/cloudshell-get-ssh.png "new cloud shell det ssh")
 
 3. 메모장에 id\_rsa.pub 내용을 복사합니다.
-        Your notepad should look like this
+        메모장에 내용은 다음과 같아야 합니다.
     ![notepad](./images/notepad-display.png "notepad ")  
 
-    >**Note** Make sure you have a copy of your id\_rsa and Id\_rsa.pub files in your local ~/.ssh folder. If not download it from the cloud shell where you originally created it. 
+    >**참고** 로컬 ~/.ssh 폴더에 id\_rsa 및 Id\_rsa.pub 파일의 사본이 있는지 확인하세요. 그렇지 않은 경우 원래 생성한 클라우드 셸에서 다운로드하세요.
 
-4. Go to Navigation Menu > Identity Security > Bastion
+4. Navigation Menu > Identity Security > Bastion 로 이동
 
-5. Click the `MDSBastion` link
+5. `MDSBastion` link 를 클릭
 
      ![bastion display](./images/bastion-display.png "bastion display ")
 
-6. Click `Create Session`
+6. `Create Session` 클릭
 
-7. Set up the following information
+7. 다음 정보를 설정하세요
     - Session type
-      Select `SSH port forwarding session`
+      `SSH port forwarding session` 선택
     - Session Name
         *Keep Default*
     - IP address
-        *Enter HeatWave DB IP address ( from notepad)*
+        * HeatWave DB IP address 입력 ( 메모장 복사에서 )*
 
-8. Enter the Port
+8. Port 입력
 
     ```bash
         <copy>3306</copy>
     ```
 
-9. Add SSH Key -  Copy SSH Key from notepad
+9. SSH Key 추가 -  메모장으로부터 SSH Key 복사
     - The screen should look like this
     ![ssh key](./images/bastion-ssh-key.png "ssh key ")
-    - Click the `Create Session` button
-10. The completed Bastion Session should look like this
+    - `Create Session` 버튼 클릭
+10. 완성된 Bastion Session은 다음과 같아야 합니다.
     ![bastion session display](./images/bastion-session-display.png "bastion session display")
 
-    **Note: The Session will expire in 180 minutes**
+    **참고: 세션은 180분 후에 만료됩니다.**
 
 ## 작업 3: MySQL Heatwave 접속
 
-1. Click on the 3 vertical dots on the Bastion Session
+1. Bastion Session에서 3개의 세로 점을 클릭하세요.
 
     ![connect with bastion](./images/bastion-connect.png "connect with bastion ")
 
