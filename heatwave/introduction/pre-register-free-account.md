@@ -110,7 +110,8 @@ Estimated Time: 5 minutes 소요
 
     ![OCI Console Home Page](https://oracle-livelabs.github.io/common/images/console/home-page.png " ")
 
-이제 **Next Lab로 진행**할 수 있습니다.
+
+이제 **다음 Lab으로 진행**할 수 있습니다.
 
 ## **Acknowledgements**
 
