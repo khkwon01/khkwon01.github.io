@@ -1,76 +1,74 @@
-# Migrate Data Into MySQL HeatWave
+# MySQL HeatWave 데이터 마이그레이션
 
 ![mysql heatwave](./images/mysql-heatwave-logo.jpg "mysql heatwave")
 
-## Introduction
+## 세션 소개
 
-Use the export and import methods to transfer data from a MySQL instance to MySQL HeatWave Service.
+export 및 import 방법을 사용하여 MySQL 인스턴스에서 MySQL HeatWave 서비스로 데이터를 전송합니다..
 
-For more details see OCI Document:
+자세한 내용은 OCI 문서를 참조하세요:
 - [MySQL HeatWave Exporting and Importing](https://docs.public.oneportal.content.oci.oraclecloud.com/en-us/iaas/mysql-database/doc/exporting-and-importing.html).
 
 - https://plforacle.github.io/mysql-mgrate-apex/workshops/freetier/index.html
 
 
-_Estimated Time:_ 20 minutes
+_Estimated Time:_ 20 minutes 소요
 
-### Objectives
+### 목표
 
-In this lab, you will be guided through the following task:
+이 Lab에서는 다음 작업을 안내해 드립니다.:
 
-- Create a DB system with data import
-- Import data into a DB system
-- Export data from MySQL servers and DB systems
-- Migrate data with replication
+- Data import 사용하여 DB system 생성
+- DB system에 data를 import
+- MySQL servers and DB systems에서 data export
+- Replication를 사용하여 data migrate
 
-### Prerequisites
+### Prerequisites (필수사항)
 
 - An Oracle Trial or Paid Cloud Account
-- Some Experience with MySQL Shell
+- MySQL Shell에 사용경험
 
 
-## Task 1: Create a DB system with data import
+## 작업 1: Data import 사용하여 DB system 생성
 
-Use the data import feature to import data from an Object Storage bucket to a standalone DB system.
+데이터 import 기능을 사용하면 Object Storage bucket에서 standalone DB 시스템으로 데이터를 가져올 수 있습니다.
 
-You can import to a standalone DB system in the same region as the Object Storage bucket only. Also, you can import a dump while it is still being exported to an Object Storage bucket.
+Object Storage bucket에서과 동일한 지역의 standalone DB 시스템으로만 가져올 수 있습니다. 또한, Object Storage bucket으로 데이터를 내보내는 동안 dump를 가져올 수 있습니다.
 
-To import data to a high availability DB system, first import data to a standalone DB system and then enable high availability.
+고가용성 DB 시스템(high availability DB system)으로 데이터를 가져오려면 먼저 standalone DB 시스템으로 데이터를 가져온 다음 고가용성(high availability) 기능을 활성화합니다.
 
-Go to the link below and follow the **Importing Using the Data Import Feature** Instructions:
+아래 링크로 이동하여 **Importing Using the Data Import Feature** 지침을 따르세요.
 
 [Importing Using the Data Import Feature](https://docs.public.oneportal.content.oci.oraclecloud.com/en-us/iaas/mysql-database/doc/importing-using-data-import-feature.html)
 
-## Task 2: Import data into a DB system
+## 작업 2: DB system에 data를 import
 
-Use MySQL Shell in the Oracle Cloud Infrastructure compute instance to import data to a MySQL HeatWave Service DB system.
+Oracle Cloud Infrastructure 컴퓨팅 인스턴스에서 MySQL Shell을 사용하여 MySQL HeatWave Service DB 시스템으로 데이터를 가져옵니다.
 
-Go to the link below and follow the **Importing Using MySQL Shell** Instructions:
+아래 링크로 이동하여 **Importing Using MySQL Shell** 지침을 따르세요:
 
 [Importing Using MySQL Shell](https://docs.public.oneportal.content.oci.oraclecloud.com/en-us/iaas/mysql-database/doc/importing-using-mysql-shell.html)
 
-## Task 3: Export data from MySQL servers and DB systems
+## 작업 3: MySQL servers and DB systems에서 data export
 
-Export a MySQL instance to an Object Storage bucket using dump utilities of MySQL Shell. You can then use the data import feature to import data from the Object Storage bucket to a DB system present in the same region.
+MySQL Shell의 dump 유틸리티를 사용하여 MySQL 인스턴스 데이터를 Object Storage bucket으로 내보냅니다. 그런 다음 데이터 import 기능을 사용하여 Object Storage bucket에서 동일한 지역에 있는 DB 시스템으로 데이터를 가져올 수 있습니다.
 
-Go to the link below and follow the **Importing Using the Data Import Feature** Instructions:
+아래 링크로 이동하여 **Importing Using the Data Import Feature** 지침을 따르세요.:
 
 [Exporting a MySQL Instance](https://docs.public.oneportal.content.oci.oraclecloud.com/en-us/iaas/mysql-database/doc/exporting-mysql-instance.html)
 
-## Task 4: Migrate data with replication
+## 작업 4: Replication를 사용하여 data migrate
 
-Use the Console and MySQL Shell to migrate a MySQL instance to MySQL HeatWave Service. The MySQL instance can be running on-premises, in other cloud vendors as managed or unmanaged services, or a MySQL HeatWave Service instance.
+Console과 MySQL Shell을 사용하여 MySQL 인스턴스를 MySQL HeatWave Service로 마이그레이션합니다. MySQL 인스턴스는 온프레미스, 다른 클라우드 공급업체에서 관리형 또는 비관리형 서비스로 실행되거나 MySQL HeatWave Service 인스턴스로 실행될 수 있습니다.
 
-Go to the link below and follow the **Migrating a MySQL Instance to MySQL HeatWave Service** Instructions:
+아래 링크로 이동하여 **Migrating a MySQL Instance to MySQL HeatWave Service** 지침을 따르세요:
 
 [Migrating a MySQL Instance to MySQL HeatWave Service](https://docs.public.oneportal.content.oci.oraclecloud.com/en-us/iaas/mysql-database/doc/migrating-mysql-instance-mysql-heatwave-service.html)
 
 
-
-You may now **proceed to the next lab**
+이제 next lab으로 진행할 수 있습니다.
 
 ## Acknowledgements
 
 - **Author** - Perside Foster, MySQL Principal Solution Engineering
-- **Contributors** - Mandy Pang, MySQL Principal Product Manager,  Nick Mader, MySQL Global Channel Enablement & Strategy Manager, Selena Sanchez, MySQL Solution Engineering
-- **Last Updated By/Date** - Perside Foster, MySQL Solution Engineering, March 2024
+- **Last Updated By/Date** - kihyuk, MySQL Solution Engineering, July 2024
