@@ -1,72 +1,59 @@
-# Stop OCI Services
+# OCI Services 중단
 
 ![mysql heatwave](./images/mysql-heatwave-logo.jpg "mysql heatwave")
 
-## Introduction
+## 세션 소개
 
-In this lab you will use the Console to Stop all of the Services you created in this Workshop.
+이 Lab에서는 콘솔을 사용하여 이 워크숍에서 만든 모든 서비스를 중지합니다.
 
-_Estimated Time:_ 5 minutes
+_Estimated Time:_ 5 minutes 소요
 
 
-### Objectives
+### 목표
 
-In this lab, you will be guided through the following task:
+이 Lab에서는 다음 작업을 안내해 드립니다.:
 
-- Stop HeatWave Database Instance
-- Stop OAC Instance
-- Stop Compute Instance
+- HeatWave Database Instance 중단
+- Compute Instance 중단
 
-### Prerequisites
+### Prerequisites (필수사항)
 
 - An Oracle Trial or Paid Cloud Account
-- Some Experience with MySQL Shell
+- MySQL Shell에 사용경험
 
-## Task 1: Stop HEATWAVE-DB Database Instance
+## 작업 1: HEATWAVE-DB Database Instance 중단
 
-1. Open the navigation menu  
+1. Navigation menu 선택하고 아래처럼 이동합니다.
     - Databases
     - MySQL
     - DB Systems
-2. Choose the **turbo** Compartment. A list of DB Systems is displayed.
+2. **root** Compartment 선택하면 DB Systems 리스트가 표시됩니다.
     ![navigation mysql with instance](./images/navigation-mysql-with-instance.png "navigation mysql with instance")
 
-3. In the displayed Instance Click **Stop**.
+3. Displayed Instance에서 **Stop** 클릭합니다.
     ![mysql select stop](./images/mysql-instance-active.png " mysql select stop")
 
-4. In the displayed **Stop DB system** dialog box, click the  **Stop** button.
+4. Displayed **Stop DB system** dialog box에서, **Stop** 버튼을 클릭합니다.
     ![mysql system stop](./images/mysql-system-stop.png " mysql system stop")
 
-## Task 2: Stop hwoac Oracle Anlytics Cloud Instance
+## 작업 3: HEATWAVE-Client Compute Instance 중단
 
-1. Open the navigation menu  
-    - Analytics & AI
-    - Analytics Clouds
-
-2. Choose the **turbo** Compartment. A list of OAC instances is displayed.
-    ![navigation OAC instance](./images/navigation-oac.png "navigation OAC instance")
-
-3. In the list of OAC Instances, click the **hwoac** instance. click **Pause**.
-    ![OAC stop](./images/oac-instance-pause.png "OAC stop")
-
-## Task 3: Stop HEATWAVE-Client Compute Instance
-
-1. Open the navigation menu  
+1. Navigation menu 선택하고 아래처럼 이동합니다. 
     - Compute
     - Instances
 
-2. Choose the **turbo** Compartment. A list of Compute intances is displayed. In the list of Compute Instances, click the **HEATWAVE-Client** instance.
+2. **root** Compartment 선택하면 Compute intances 리스트가 표시됩니다. Compute Instances 리스트에서, **HEATWAVE-Client** 인스턴스를 클릭하세요.
     ![navigation compute instance](./images/navigation-compute-instance.png "navigation compute instance")
 
-3. In the displayed Instance Click **Stop**.
+3. Displayed Instance에서 **Stop** 클릭합니다.
     ![mysql select stop](./images/compute-instance-stop.png " mysql select stop")
 
-4. In the displayed **Stop Instance** dialog box, click the  **Stop instance** button.
+4. Displayed **Stop Instance** dialog box에서, **Stop instance** 버튼을 클릭합니다.
     ![mysql select stop](./images/compute-instance-stop-dialog.png " mysql select stop")
 
-**Congratulations!  You have successfully finished the Workshop.**
+**축하합니다! Workshop을 성공적으로 마쳤습니다.**
 
-## Learn More
+## 더 알아보기
 
 - [Oracle Cloud Infrastructure MySQL Database Service Documentation](https://docs.cloud.oracle.com/en-us/iaas/MySQL-database)
 - [MySQL Database Documentation](https://www.MySQL.com)
@@ -75,4 +62,4 @@ In this lab, you will be guided through the following task:
 
 - **Author** - Perside Foster, MySQL Principal Solution Engineering
 - **Contributors** - Mandy Pang, MySQL Principal Product Manager,  Nick Mader, MySQL Global Channel Enablement & Strategy Manager, Selena Sanchez, MySQL Solution Engineering
-- **Last Updated By/Date** - Perside Foster, MySQL Solution Engineering, March 2024
+- **Last Updated By/Date** - kihyuk, MySQL Solution Engineering, July 2024
