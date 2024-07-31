@@ -138,33 +138,33 @@ _Estimated Lab Time:_ 15 minutes 소요
 
     ![connect with bastion](./images/bastion-connect.png "connect with bastion ")
 
-2. Click `View SSH Command`  
+2. `View SSH Command` 클릭
 
     ![bastion view ssh](./images/bastion-view.png "bastion view ssh ")
 
-3. Click copy and paste the information to your notepad and hit Close
+3. 복사를 클릭하고 정보를 메모장에 붙여넣은 후 닫기를 클릭합니다.
 
-4. update the session command on notepad
-    - Set the beginning of the command `ssh -i <privateKey> -N -L 3306`
-    - Add the verbose (-v) option to the SSH command for detailed information about the connection.
+4. 메모장에서 세션 명령 업데이트
+    - 명령의 시작을 설정 : `ssh -i <privateKey> -N -L 3306`
+    - 연결에 대한 자세한 정보를 얻으려면 SSH 명령에 자세한 정보(-v) 옵션을 추가하세요.
 
-    The command from your notepad should look like this
+    메모장의 명령은 다음과 같아야 합니다.
 
     ![notepad display](./images/notepad-connect-command.png "notepad display")
 
-5. Open a Windows PowerShell or Mac Terminal and enter the command from the notepad. Add  the ssh file name  and the Database Port  value (3306) It should like this..
+5. Windows PowerShell 또는 Mac 터미널을 열고 메모장에서 명령을 입력합니다. ssh 파일 이름과 데이터베이스 포트 값(3306)을 추가합니다. 다음과 같아야 합니다...
 
-    *Don't forget the -v  character*
+    *-v 문자를 잊지 마세요*
 
     `ssh -i ~/.ssh/id_rsa -N -L 3306:10.0.1.17:3306 -p 22 ocid1.bastionsession.oc1.iad.amaaaaaa47ys2xaabm3koownovovwekvkitudcvdjk6dc5qtl6c6mtwxdkuq@host.bastion.us-ashburn-1.oci.oraclecloud.com -v`
 
-6. Use MySQL Shell to connect to the MySQL Database Service. Enter:
+6. MySQL Shell을 사용하여 MySQL 데이터베이스 서비스에 연결합니다. 다음을 입력합니다:
 
      ```bash
      <copy>mysqlsh admin@127.0.0.1 --sql</copy>
      ```
 
-7. View  the airportdb total records per table in
+7. 테이블당 airportdb 총 records 확인하세요.
 
     ```bash
     <copy>SELECT table_name, table_rows FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'airportdb';</copy>
@@ -172,9 +172,9 @@ _Estimated Lab Time:_ 15 minutes 소요
 
     ![view arportdb](./images/airport-db-view.png "view arportdb ")
 
-**Note** You can also use  the bastion service to connect to your local computer and access  MySQL  with Workbench or Visual Studio Code
+**참고** 또한 bastion 서비스를 사용하여 로컬 컴퓨터에 연결하고 Workbench 또는 Visual Studio Code를 사용하여 MySQL에 액세스할 수 있습니다.
 
-You may now **proceed to the next lab**
+이제 **next lab으로 진행**할 수 있습니다.
 
 ## Acknowledgements
 
