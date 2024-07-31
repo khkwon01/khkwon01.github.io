@@ -7,7 +7,9 @@
 Inbound replication는 MySQL HeatWave Service에서 구성된 복제 채널을 사용하여 다른 위치에서 DB 시스템으로 트랜잭션을 복사합니다. 채널은 source(MySQL 인스턴스 또는 다른 DB 시스템)를 replica(Heatwave DB 시스템)에 연결하고 source에서 replica으로 데이터를 복사합니다.
 
 자세한 내용은 OCI 문서를 참조하세요:
-[MySQL HeatWave Inbound Replication](https://docs.oracle.com/en-us/iaas/mysql-database/doc/inbound-replication.html).
+
+- [MySQL HeatWave Inbound Replication](https://docs.oracle.com/en-us/iaas/mysql-database/doc/inbound-replication.html)
+- https://github.com/khkwon01/mig_db/blob/main/handon/mds_replication_handon.md
 
 _Estimated Time:_ 20 minutes 소요
 
