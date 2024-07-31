@@ -10,6 +10,8 @@ export 및 import 방법을 사용하여 MySQL 인스턴스에서 MySQL HeatWave
 - [MySQL HeatWave Exporting and Importing](https://docs.public.oneportal.content.oci.oraclecloud.com/en-us/iaas/mysql-database/doc/exporting-and-importing.html).
 
 - https://plforacle.github.io/mysql-mgrate-apex/workshops/freetier/index.html
+  
+- https://github.com/khkwon01/mig_db/blob/main/handon/mds_dump_load_handon.md
 
 
 _Estimated Time:_ 20 minutes 소요
