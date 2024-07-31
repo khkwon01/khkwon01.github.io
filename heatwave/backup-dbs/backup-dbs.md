@@ -1,14 +1,14 @@
-# Backup MySQL DB System
+# MySQL Heatwave 백업
 
 
-## Introduction
+## 세션 소개
 
-In this lab, you will learn to manage backups in a MySQL DB System.
+이 Lab에서는 MySQL Heatwave DB 시스템에서 백업을 관리하는 방법을 학습합니다.
 
 _Estimated Time:_ 15 minutes
 
 
-### Objectives
+### 목표
 
 In this lab, you will be guided through the following tasks:
 
