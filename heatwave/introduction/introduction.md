@@ -40,24 +40,20 @@ _Lab Setup_
 
 이 워크숍에서는 OLTP/OLAP/AutoML/Lakehouse를 위한 MySQL HeatWave의 프로비저닝, 구성 및 관리에 필요한 지식을 제공합니다. 다음 단계에 따라 안내해 드립니다.
 
-- Create MySQL HeatWave Instance
-- Create Compute Instance
-- Connect to HeatWave with MySQL Shell and Workbench
-- Connect to HeatWave with OCI Bastion
-- Connect to HeatWave with OCI SQL Worksheet
-- Manage MySQL HeatWave DB System
-- Backup MySQL HeatWave DB System
-- Configure MySQL HeatWave DB System
-- Setup MySQL HeatWave Read Replicas
-- Setup MySQL HeatWave Inbound Replication
-- Migrate Data Into MySQL HeatWave
-- Setup MySQL HeatWave High Availability
-- Load Airportdb Data into HeatWave
-- Run Queries in HeatWave and MySQL
-- Create and Test HeatWave Lakehouse
-- (부가내용) Build Oracle Analytics Cloud Dashboard with HeatWave
-- Create and Test HeatWave Machine Learning
-- Stop OCI Services
+- MySQL HeatWave Instance 생성
+- Compute Instance 생성
+- MySQL Shell and Workbench로 Heatwave 접속
+- Heatwave에 Airportdb Data Load
+- HeatWave과 MySQL에서 쿼리 수행
+- OCI Bastion를 사용하여 Heatwave 접속
+- MySQL HeatWave Service 관리
+- MySQL Heatwave 백업
+- MySQL HeatWave DB System 설정
+- MySQL HeatWave Read Replicas 설정
+- MySQL HeatWave Inbound Replication 설정
+- MySQL HeatWave 데이터 마이그레이션
+- MySQL HeatWave High Availability 구성
+- OCI Services 중단
 
 
 ## Prerequisites (필요사항)
