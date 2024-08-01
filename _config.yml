@@ -33,8 +33,8 @@ theme_config:
   # options for "home" page
   home:
     title_data: 데이터 및 데이터베이스 정보들
+    title_blog: 기술 Blog
     title_misc_list: Details
-    title_blog: Blog
 
 highlighter: rouge
 
