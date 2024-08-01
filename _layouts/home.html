@@ -31,6 +31,10 @@ layout: default
   {% include post_list.html %}
 {% endif %}
 
+{% if site.theme_config.show_demo == true %}
+  <h2>{{ site.theme_config.home.title_demo }}</h2>
+  {% include horizontal_list.html collection=site.data.home.demo_entries %}
+{% endif %}
 
 {% if site.theme_config.show_footer == true %}
   <footer>
