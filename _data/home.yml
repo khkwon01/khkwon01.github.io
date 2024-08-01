@@ -13,10 +13,6 @@ project_entries:
     url: heatwave/workshops/
     desc: 이 온라인 문서는 Heatwave 사용에 대해 Gudie를 제공합니다.
     highlight: NEW
-    
-  - title: Project 2
-    url: overview-post
-    desc: Projects are shown in card layout
 
 
 old_project_entries:
