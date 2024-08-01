@@ -9,9 +9,9 @@ navbar_entries:
     url: https://www.abhinav.co
 
 project_entries:
-  - title: Heatwave Handon Guide
+  - title: Heatwave Handon
     url: heatwave/workshops/
-    desc: This is an example project, configured in _data/home.yml
+    desc: 이 온라인 문서는 Heatwave 사용에 대해 Gudie를 제공합니다.
     highlight: NEW
     
   - title: Project 2
