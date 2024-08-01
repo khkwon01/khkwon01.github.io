@@ -22,6 +22,8 @@ data_entries:
 demo_entries:
   - title: Heatwave MySQL Demo
     url: https://158.180.80.105:8000/
+  - title: MySQL vistual explain 
+    url: https://mysqlexplain.com/
 
 footer_entries:
   - title: Tistory
