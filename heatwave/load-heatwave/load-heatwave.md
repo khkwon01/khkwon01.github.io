@@ -1,4 +1,4 @@
-# Heatwave에 Airportdb Data Load
+# Heatwave Cluster에 Airportdb Data Load
 
 ![mysql heatwave](./images/mysql-heatwave-logo.jpg "mysql heatwave")
 
@@ -17,7 +17,7 @@ _Estimated Time:_ 10 minutes 소요
 이 Lab에서는 다음 작업을 안내해 드립니다.
 
 - MySQL Database System에 HeatWave Cluster 추가 하기
-- HeatWave에 Airportdb Data 로드하기
+- HeatWave Cluster에 Airportdb Data 로드하기
 
 ### Prerequisites
 
@@ -53,7 +53,7 @@ _Estimated Time:_ 10 minutes 소요
 4. HeatWave 클러스터 생성에는 약 10분이 걸립니다. DB 표시 페이지에서 리소스 섹션으로 스크롤합니다. **HeatWave** 링크를 클릭합니다. 완성된 HeatWave 클러스터 정보 섹션은 다음과 같습니다.
     ![mysql cluster compltete](./images/mysql-cluster-complete.png "mysql cluster compltete")
 
-## 작업 2: HeatWave에 Airportdb Data 로드하기
+## 작업 2: HeatWave Cluster에 Airportdb Data 로드하기
 
 1. Cloud Shell로 이동하여 Compute Instance에 SSH를 실행합니다.
 
