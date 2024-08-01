@@ -15,7 +15,7 @@ data_entries:
     desc: 해당 Git site는 MySQL 튜닝에 대한 가이드 제공합니다.
     highlight: NEW   
   - title: Gen-AI 기본 설명
-    url: https://github.com/khkwon01/AI-LLM/blob/main/gpt.md
+    url: https://github.com/khkwon01/AI-LLM
     desc: 해당 Git site는 Gen-AI에 기본적인 개념을 설명합니다.
     highlight: NEW   
 
