@@ -19,6 +19,10 @@ data_entries:
     desc: 해당 Git site는 Gen-AI에 기본적인 개념을 설명합니다.
     highlight: NEW   
 
+demo_entries:
+  - title: Heatwave MySQL Demo
+    url: https://158.180.80.105:8000/
+
 footer_entries:
   - title: Tistory
     url: https://semode.tistory.com/
