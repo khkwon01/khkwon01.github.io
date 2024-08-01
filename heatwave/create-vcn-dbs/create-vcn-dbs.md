@@ -5,6 +5,7 @@
 ## 세션 소개
 
 이 Lab에서는 MySQL DB 시스템을 만들고 구성합니다. 자세한 내용은 OCI 문서를 참조하세요.
+
 [Creating a DB System Using the Console](https://docs.oracle.com/en-us/iaas/mysql-database/doc/creating-db-system1.html#GUID-AE89C67D-E1B1-4F11-B934-8B0564B4FC69).
 
 _Estimated Time:_ 20 minutes 소요
