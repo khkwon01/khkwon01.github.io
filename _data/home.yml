@@ -8,7 +8,7 @@ navbar_entries:
   - title: website
     url: https://www.abhinav.co
 
-project_entries:
+data_entries:
   - title: Heatwave Handon
     url: heatwave/workshops/
     desc: 이 온라인 문서는 Heatwave 사용에 대해 Gudie를 제공합니다.
