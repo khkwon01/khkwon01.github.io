@@ -12,7 +12,8 @@ project_entries:
   - title: Heatwave Handon Guide
     url: heatwave/workshops/
     desc: This is an example project, configured in _data/home.yml
-
+    highlight: NEW
+    
   - title: Project 2
     url: overview-post
     desc: Projects are shown in card layout
