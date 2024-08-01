@@ -11,12 +11,11 @@ data_entries:
     desc: 이 온라인 문서는 Heatwave 사용에 대해 Gudie를 제공합니다.
     highlight: NEW
 
-
 footer_entries:
-  - title: tistory
+  - title: Tistory
     url: https://semode.tistory.com/
 
-  - title: github
+  - title: Github
     url: https://github.com/khkwon01
 
 misc_entries:
