@@ -27,6 +27,7 @@ theme_config:
   # following keys are using to create home layout
   show_data: true # show projects as cards, add in _data/home.yml
   show_blog: true # show blog posts added in _posts
+  show_demo: true #
   show_misc_list: false # show generic vertical list for misc details, add _data/home.yml
   show_reading_time: true # show number of words and reading time in the blog posts
   show_tags: true # show tags in a blog posts
@@ -34,6 +35,7 @@ theme_config:
   home:
     title_data: 데이터 및 데이터베이스 정보들
     title_blog: 기술 블로그
+    title_demo: 기술 데모 사이트
     title_misc_list: Details
 
 highlighter: rouge
