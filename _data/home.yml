@@ -5,8 +5,10 @@ navbar_entries:
   - title: blog
     url: blog
 
+"""
   - title: website
     url: https://www.abhinav.co
+"""
 
 data_entries:
   - title: Heatwave Handon
