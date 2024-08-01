@@ -43,7 +43,7 @@ _Lab Setup_
 - MySQL HeatWave Instance 생성
 - Compute Instance 생성
 - MySQL Shell and Workbench로 Heatwave 접속
-- Heatwave에 Airportdb Data Load
+- Heatwave Cluster에 Airportdb Data Load
 - HeatWave과 MySQL에서 쿼리 수행
 - OCI Bastion를 사용하여 Heatwave 접속
 - MySQL HeatWave Service 관리
