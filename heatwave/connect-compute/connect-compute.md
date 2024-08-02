@@ -57,7 +57,7 @@ _Estimated Lab Time:_ 10 minutes 소요
         - **Public IP** 복사
     ![navigation compute with instance](./images/navigation-compute-with-instance.png "navigation compute with instance ")
 
-2. 실행중인 MySQL 데이터베이스 서비스 인스턴스의 개인 IP 주소를 메모장에 복사합니다.
+2. 실행중인 MySQL 데이터베이스 서비스 인스턴스의 private IP 주소를 메모장에 복사합니다.
 
     - Navigation Menu에서 아래와 같이 이동
         - Databases 
@@ -111,7 +111,10 @@ _Estimated Lab Time:_ 10 minutes 소요
 
 ## 작업 4: Airport-db database 데이터를 로드하기 위해 MySQL Shell 사용하기
 
-설치 절차에는 airportdb 데이터베이스를 클라우드 셸에 다운로드하고 MySQL 셸 덤프 로딩 유틸리티를 사용하여 클라우드 셸에서 MySQL DB 시스템으로 데이터를 가져오는 작업이 포함됩니다. 이 유틸리티에 대한 정보는 Dump Loading Utility를 참조하세요: [https://dev.mysql.com/doc/mysql-shell/8.0/en/mysql-shell-utilities-load-dump.htmly](https://dev.mysql.com/doc/mysql-shell/8.0/en/mysql-shell-utilities-load-dump.html)
+설치 절차에는 airportdb 데이터베이스를 클라우드 셸에 다운로드하고 MySQL 셸 덤프 로딩 유틸리티를 사용하여 클라우드 셸에서 MySQL DB 시스템으로 데이터를 가져오는 작업이 포함됩니다. 이 유틸리티에 대한 정보는 Dump Loading Utility를 참조하세요: 
+
+[https://dev.mysql.com/doc/mysql-shell/8.0/en/mysql-shell-utilities-load-dump.htmly](https://dev.mysql.com/doc/mysql-shell/8.0/en/mysql-shell-utilities-load-dump.html)
+
 
 1. JavaScript mode로 변경
 
