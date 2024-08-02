@@ -3,4 +3,6 @@ layout: post
 tags: [mysql, oltp, olap, lakehouse, automl, gen-ai]
 ---
 
-`Heatwave 테스트 페이지`
+
+### 1. Heatwave 서비스 구성도
+![image](https://github.com/user-attachments/assets/d203b777-8397-41bc-81f6-e923e9771aed)
