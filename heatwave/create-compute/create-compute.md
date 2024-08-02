@@ -63,8 +63,6 @@ Cloud Shell 머신은 Oracle Cloud Console(홈페이지)을 통해 액세스하�
     <copy>ls</copy>
     ```
 
-    ![ssh key list ](./images/shh-key-list.png "shh key list")
-
     출력에는 두 개의 파일이 있습니다. *private key:* `id_rsa`와 *public key:* `id_rsa.pub`. 개인 키는 안전하게 보관하고 그 내용을 누구와도 공유하지 마세요. 공개 키는 다양한 활동에 필요하며 특정 시스템에 업로드할 수 있고 클라우드에서 안전한 통신을 용이하게 하기 위해 복사하여 붙여넣을 수도 있습니다.
 
 ## 작업 2: Compute instance 생성
