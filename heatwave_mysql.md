@@ -1,5 +1,6 @@
 ---
 layout: post
+title: Heatwave 서비스
 tags: [mysql, oltp, olap, lakehouse, automl, gen-ai]
 ---
 
