@@ -5,6 +5,9 @@ navbar_entries:
   - title: blog
     url: blog
 
+  - title: Heatwave
+    url: heatwave
+
 data_entries:
   - title: Heatwave Handon
     url: heatwave/workshops/
