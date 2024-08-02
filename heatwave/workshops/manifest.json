@@ -31,7 +31,7 @@
         },  
       
         {
-          "title": "Lab 4: Heatwave에 Airportdb Data Load",
+          "title": "Lab 4: Heatwave cluster에 Airportdb Data Load",
           "filename": "../load-heatwave/load-heatwave.md"
         },
       
