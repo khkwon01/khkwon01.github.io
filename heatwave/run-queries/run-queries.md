@@ -47,7 +47,7 @@ _Estimated Time:_ 10 minutes
 
 4. **Query 1** - 스위스, 이탈리아, 프랑스의 승객들의 회사별 평균 연령을 찾아보세요.
 
-5. 쿼리를 실행하기 전에 EXPLAIN을 사용하여 쿼리를 HeatWave 클러스터로 오프로드할 수 있는지 확인합니다. 설명 계획에 "Use secondary engine RAPID"이 표시되어야 합니다. 예를 들어:
+5. 쿼리를 실행하기 전에 EXPLAIN을 사용하여 쿼리를 HeatWave 클러스터로 오프로드할 수 있는지 확인합니다. 실행 계획에 "Use secondary engine RAPID"이 표시되어야 합니다. 예를 들어:
 
     ```bash
     <copy>EXPLAIN SELECT
