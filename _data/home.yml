@@ -2,11 +2,11 @@ navbar_entries:
   - title: About
     url: about
 
-  - title: blog
+  - title: Blog
     url: blog
 
   - title: Heatwave
-    url: heatwave
+    url: heatwave_mysql
 
 data_entries:
   - title: Heatwave Handon
