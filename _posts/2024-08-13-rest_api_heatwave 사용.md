@@ -3,8 +3,9 @@ layout: post
 ---
 
 # Heatwave Rest API 사용
-- 전체 구성 flow    
+- 전체 구성 flow  
 ![image](https://github.com/user-attachments/assets/78acbd39-5e80-49bb-ba84-cc69254ab1a7)
+
 
 ## Connection 설정 (Menu > Developer Services > Database Tools > Connection)
 ![image](https://github.com/user-attachments/assets/9688fb93-c638-4f7e-b297-369496d09139)
