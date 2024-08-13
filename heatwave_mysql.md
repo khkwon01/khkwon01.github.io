@@ -6,7 +6,7 @@ tags: [mysql, oltp, olap, lakehouse, automl, gen-ai]
 
 Oracle Heatwave 서비스에 대해 설명 하고자 합니다.
 
-### 1. Heatwave 서비스 구성도
+## 1. Heatwave 서비스 구성도
 
 ![image](https://github.com/user-attachments/assets/d203b777-8397-41bc-81f6-e923e9771aed)
 
