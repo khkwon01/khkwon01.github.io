@@ -34,3 +34,6 @@ on: [workflow-dispatch, repository-dispatch]
 6) Common Activity
 on: issue_comment
 ```
+
+## 3. Github Action Component
+- steps
