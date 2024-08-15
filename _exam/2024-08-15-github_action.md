@@ -19,5 +19,16 @@ on:
       - v1.*
       - beta  
     paths:
-      - '**.ts'  
+      - '**.ts'
+
+4) Schedule Event
+on:
+  scheduled:
+    - cron: '30 5,15 * * *'
+
+5) Specific Manual Event
+on: [workflow-dispatch, repository-dispatch]
+
+6) Common Activity
+on: issue_comment
 ```
