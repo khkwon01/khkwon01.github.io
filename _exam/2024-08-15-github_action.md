@@ -1,6 +1,8 @@
 ## 1. Github Action 전체 Flow
 ![image](https://github.com/user-attachments/assets/1f454113-be9c-472b-99cd-73c6ad5cd176)
 
+- 문서 : https://docs.github.com/en/actions
+  
 ## 2. Github Action Event
 ```
 1) Single Event
