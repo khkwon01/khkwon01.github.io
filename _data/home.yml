@@ -24,9 +24,12 @@ data_entries:
   - title: MySQL 데이터 마이그레이션
     url: https://github.com/khkwon01/mig_db/blob/main/handon/mds_dump_load_handon.md
     desc: MySQL 데이터베이스에 대한 데이터 이관을 가이드를 제공합니다.
-  - title: OCI MySQL Major upgrade 가이드
+  - title: OCI Heatwave MySQL Major upgrade 가이드
     url: https://docs.oracle.com/en-us/iaas/mysql-database/doc/major-version-upgrade.html#GUID-0D7B5266-6FF9-42B7-AAC0-5A49F7D40D82
     desc: 8.0에서 8.4등 Major 업그레이드에 대한 가이드를 제공합니다. 
+  - title: OCI Heatwave H/W 구성 아키텍처 가이드
+    url: https://github.com/khkwon01/mig_db/blob/main/handon/mds_hw_architecture.md
+    desc: Heatwave에서 HA 또는 replication 구성에 대한 가이드를 제공합니다.
 
 demo_entries:
   - title: Heatwave MySQL Demo
