@@ -21,7 +21,7 @@ data_entries:
     url: https://github.com/khkwon01/AI-LLM
     desc: 해당 Git site는 Gen-AI에 기본적인 개념을 설명합니다.
     highlight: NEW
-  - title: MySQL 데이터 마이그레이션
+  - title: MySQL 데이터 마이그레이션 가이드
     url: https://github.com/khkwon01/mig_db/blob/main/handon/mds_dump_load_handon.md
     desc: MySQL 데이터베이스에 대한 데이터 이관을 가이드를 제공합니다.
   - title: OCI Heatwave MySQL Major upgrade 가이드
