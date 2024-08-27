@@ -30,7 +30,7 @@ data_entries:
   - title: OCI Heatwave H/W 구성 아키텍처 가이드
     url: https://github.com/khkwon01/mig_db/blob/main/handon/mds_hw_architecture.md
     desc: Heatwave에서 HA 또는 replication 구성에 대한 가이드를 제공합니다.
-  - title: MySQL 버전간 차이 확인
+  - title: MySQL 서버 버전간 차이 확인
     url: https://mysql-params.tmtms.net/variable/?vers=5.7.44,8.0.39&diff=true
     desc: MySQL sever 버전간 파라미터, 캐릭터셋등에 차이를 확인할 수 있습니다.
 
