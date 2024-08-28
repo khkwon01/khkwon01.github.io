@@ -40,10 +40,6 @@ demo_entries:
   - title: MySQL vistual explain 
     url: https://mysqlexplain.com/
 
-ai_entries:
-  - title: Recurrent Neural Networks(RNN) vs Transformers(LLM) 차이
-  - uri:
-
 footer_entries:
   - title: Tistory
     url: https://semode.tistory.com/
