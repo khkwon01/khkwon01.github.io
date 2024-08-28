@@ -43,6 +43,7 @@ theme_config:
 collections:
   ai:
     output: true
+    permalink: /:path/
 
 highlighter: rouge
 
