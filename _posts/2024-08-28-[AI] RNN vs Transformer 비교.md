@@ -8,3 +8,5 @@ layout: post
 - Transformer is no-sequential(parallel based on GPU)
 
 
+![image](https://github.com/user-attachments/assets/3904cde4-f3f9-4ffd-90c7-2358ce4f28ea)
+
