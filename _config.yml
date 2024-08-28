@@ -40,11 +40,6 @@ theme_config:
     title_ai: AI 관련 정보들
     title_misc_list: Details
 
-collections:
-  ai:
-    output: true
-    permalink: /:path/
-
 highlighter: rouge
 
 sass:
