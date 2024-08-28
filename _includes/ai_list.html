@@ -1,9 +1,10 @@
-{% if site.ai.size > 0 %}
-  <ul>
-    {% for post in site.ai %}
-      <li class="post-list-item">
-         <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-{% endif %}
+<ul>
+  {% for item in include.collection %}
+    <li> 
+      <a href="{{ item.url }}" target="_blank">
+        {{ item.title }}
+      </a>
+      &nbsp;&nbsp;
+    </li>
+  {% endfor %}
+</ul>
