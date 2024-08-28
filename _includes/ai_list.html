@@ -2,10 +2,7 @@
   <ul>
     {% for post in site.ai %}
       <li class="post-list-item">
-         <a href="{{ item.url }}" target="_blank">
-         {{ item.title }}
-         </a>
-         &nbsp;&nbsp;
+         <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
       </li>
     {% endfor %}
   </ul>
