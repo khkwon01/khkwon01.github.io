@@ -28,7 +28,7 @@ layout: default
 
 {% if site.theme_config.show_ai == true %}
   <h2>{{ site.theme_config.home.title_ai }}</h2>
-  {% include post_list.html collection=site.data.home.ai_entries %}
+  {% include ai_list.html %}
 {% endif %}
 
 {% if site.theme_config.show_blog == true %}
