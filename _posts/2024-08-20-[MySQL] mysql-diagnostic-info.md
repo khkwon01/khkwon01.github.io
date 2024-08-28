@@ -1,3 +1,8 @@
+---
+layout: post
+---
+
+
 MySQL Shell를 사용하여 MySQL diagnostic 정보를 수집하는 방법을 가이드합니다.
 
 (참고로, Heatwave에서는 동작하지 않음)
