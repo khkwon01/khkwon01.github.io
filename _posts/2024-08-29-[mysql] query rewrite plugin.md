@@ -32,8 +32,7 @@ VALUES('SELECT ?', 'SELECT ? + 1');
 - rule 반영
 ```sql
 CALL query_rewrite.flush_rewrite_rules();
-
-SELECT * FROM query_rewrite.rewrite_rules\G
+SELECT * FROM query_rewrite.rewrite_rules\G;
 ```
 
 - rule 수정
