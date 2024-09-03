@@ -1,3 +1,7 @@
+---
+layout: post
+---
+
 ## 1. 구성 아키텍처
 
 ![image](https://github.com/user-attachments/assets/13a07778-5fa5-46a4-91c5-98717b7608fe)
