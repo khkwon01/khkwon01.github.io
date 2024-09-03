@@ -56,3 +56,7 @@ Query OK, 0 rows affected (0.0295 sec)
 - 생성된 채널 확인
 ![image](https://github.com/user-attachments/assets/5963b956-b05c-4ff3-bbdf-920f617f620d)
 
+
+### 참조. 다른 리젼과 연결을 위한 DRG구성은 아래 URL 참조
+- https://lefred.be/content/setup-disaster-recovery-for-oci-mysql-database-service/
+
