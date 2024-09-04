@@ -34,7 +34,7 @@ data_entries:
     url: https://mysql-params.tmtms.net/variable/?vers=5.7.44,8.0.39&diff=true
     desc: MySQL sever 버전간 파라미터, 캐릭터셋등에 차이를 확인할 수 있습니다.
   - title: Heatwave에서 다른 리젼으로 DR 구성
-    url: https://github.com/khkwon01/khkwon01.github.io/blob/main/_posts/2024-09-03-%5BHeatwave%5D%20DR%20%EA%B5%AC%EC%84%B1.md
+    url: https://github.com/khkwon01/khkwon01.github.io/blob/main/_posts/2024-09-03-%5BHeatwave%5D%20MySQL%20DR%20%EA%B5%AC%EC%84%B1.md
     desc: Heatwave DB를 다른 리젼으로 replica를 통해 DR 구성하는 것을 가이드합니다.
 
 demo_entries:
