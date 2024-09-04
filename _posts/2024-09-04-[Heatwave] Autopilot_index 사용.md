@@ -2,7 +2,6 @@
 layout: post
 ---
 
-
 ## 1. Autopilot index 설명
 
 MySQL 9.0.0부터 HeatWave Autopilot Advisor에는 워크로드 성능을 향상시키기 위해 보조 인덱스 제안을 제공할 수 있는 Autopilot Indexing이 포함되어 있습니다.
