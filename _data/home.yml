@@ -36,6 +36,9 @@ data_entries:
   - title: Heatwave에서 다른 리젼으로 DR 구성
     url: https://github.com/khkwon01/khkwon01.github.io/blob/main/_posts/2024-09-03-%5BHeatwave%5D%20MySQL%20DR%20%EA%B5%AC%EC%84%B1.md
     desc: Heatwave DB를 다른 리젼으로 replica를 통해 DR 구성하는 것을 가이드합니다.
+  - title: Heatwave and MySQL 질문 및 답변 내용
+    url: https://github.com/khkwon01/MySQL_Q-A/blob/main/cloud_heatwave.md
+    desc: Heatwave 또는 MySQL 사용시 자주 물어 보는 사항들을 정리하였습니다.
 
 demo_entries:
   - title: Heatwave MySQL Demo
