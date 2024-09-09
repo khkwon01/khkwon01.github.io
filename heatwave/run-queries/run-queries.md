@@ -1,4 +1,4 @@
-# HeatWave과 MySQL에서 쿼리 수행 
+# HeatWave cluster에서 복잡한 Airport 쿼리 수행
 
 ![mysql heatwave](./images/mysql-heatwave-logo.jpg "mysql heatwave")
 
