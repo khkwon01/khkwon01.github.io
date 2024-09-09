@@ -36,7 +36,7 @@
         },
       
         {
-          "title": "Lab 5: HeatWave and MySQL에서 쿼리 수행 ",
+          "title": "Lab 5: HeatWave cluster에서 복잡한 Airport 쿼리 수행",
           "filename": "../run-queries/run-queries.md"
         },
 
