@@ -1,3 +1,7 @@
+---
+layout: post
+---
+
 ```
 -- option 설정
 > set @options = JSON_OBJECT("table_name", "demo_embeddings", "language", "en");
