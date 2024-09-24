@@ -34,3 +34,20 @@ layout: post
 
 ## 3. 관리 및 모니터링
 
+- OCI Ops insight service 통합지원
+  - OCI ops insight가 Heatwave MySQL에 대해서 ML-based 기반에 데이터 성능 관리 및 모니터링 기능을 확장하여 제공
+  ![image](https://github.com/user-attachments/assets/b9e8742c-1b42-4092-90f6-3f5c41b61ecb)
+    - 성능 사용 패턴 및 workload 트랜드 분석
+    - MySQL에 성능 예측 및 분석
+    - CPU, storage, 데이터베이스 등 포함하여 전체적으로 용량 계획 이점 제공
+    - 구성된 리소스에 기반하여 향후 예상 사용량(consumption) 예측
+    - 적정한 장애 조치를 위해 사전 사용률 기반 사전 알람 설정 지원
+
+- Automatic Storage Expansion 지원
+  - 서비스 부하에 추가적인 스토리지 리소스가 필요할 경우 해당 사항을 인지하여 스토리지를 자동으로 확장지원
+  ![image](https://github.com/user-attachments/assets/0ad3ada0-6155-43c8-be4d-8c934b085f2c)
+
+- inbound replication에 대해 virtual ip 주소 (vip) 지원
+  - firewall 설정 및 security 구성을 간편하게 관리하기 위해 데이터베이스에 대한 virtual ip 지원
+
+
