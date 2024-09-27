@@ -79,9 +79,14 @@
           "title": "Lab 13: MySQL HeatWave High Availability 구성",
           "filename": "../setup-ha/setup-ha.md"
         },
-
+      
         {
-          "title": "Lab 14: OCI Services 중단",
+          "title": "Lab 14: Create and Test HeatWave Lakehouse",
+          "filename": "../../do-lakehouse/do-lakehouse.md"  
+        },
+      
+        {
+          "title": "Lab 15: OCI Services 중단",
           "filename": "../stop-services/stop-services.md"
         },
 
