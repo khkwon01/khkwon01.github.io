@@ -4,7 +4,7 @@
 
 ## 세션 소개
 
-MySQL HeatWave includes MySQL HeatWave Lakehouse, letting users query hundreds of terabytes of data in object storage—in a variety of file formats, such as CSV, Parquet, and Aurora/Redshift export files from other databases. Customers can query transactional data in MySQL databases, data in various formats in object storage, or a combination of both using standard MySQL commands. Querying data in object storage is as fast as querying data inside the database.
+MySQL HeatWave에는 MySQL HeatWave Lakehouse가 포함되어 있어 사용자가 다른 데이터베이스에서 export된 CSV, Parquet, Aurora/Redshift 등 다양한 파일 형식으로 객체 스토리지에서 수백 테라바이트의 데이터를 로드하여 쿼리할 수 있습니다. 고객은 표준 MySQL 명령을 사용하여 MySQL 데이터베이스의 트랜잭션 데이터, 객체 스토리지의 다양한 형식의 데이터 또는 두 가지를 조합하여 쿼리할 수 있습니다. 객체 스토리지의 데이터를 쿼리하는 것은 데이터베이스 내부의 데이터를 쿼리하는 것만큼 빠릅니다.
 
 ### 목표
 
@@ -16,7 +16,7 @@ In this lab, you will be guided through the following tasks:
 - Run Autoload to infer the schema and estimate capacity
 - Load survey table from Object Store into MySQL HeatWave cluster
 
-### Prerequisites
+### Prerequisites (필요사항)
 
 - An Oracle Trial or Paid Cloud Account
 - Some Experience with MySQL Shell
