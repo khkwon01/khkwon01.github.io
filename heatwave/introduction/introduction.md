@@ -1,7 +1,6 @@
 # Heatwave 소개
 
 - Heatwave 전체 구성도 (application flow)
-![image](https://github.com/user-attachments/assets/2f055dda-9212-4d8d-bac7-c2d200939a2f)
 ![image](https://github.com/user-attachments/assets/f7eb181d-d177-466a-96f0-b0e906a05e03)
 
 
