@@ -21,11 +21,11 @@ MySQL HeatWave에는 MySQL HeatWave Lakehouse가 포함되어 있어 사용자�
 - Oracle 평가판 또는 유료 클라우드 계정
 - MySQL Shell에 대한 약간의 경험
 
-## Task 1: survey file 로컬 머신에 다운로드하세요
+## 작업 1: survey file 로컬 머신에 다운로드하세요
 
 1. 로컬머신에 다운로드 받기 위해  **Download file [passenger_survey.csv](files/passenger_survey.csv)** 클릭 하세요.
 
-## Task 2: Object Storage bucket 생성
+## 작업 2: Object Storage bucket 생성
 
 1. 테넌트 이름, 사용자 이름, 비밀번호를 사용하여 OCI에 로그인하세요.
 2. 로그인 후 **root** compartment을 선택하세요.
@@ -43,7 +43,7 @@ MySQL HeatWave에는 MySQL HeatWave Lakehouse가 포함되어 있어 사용자�
 
     ![press bucket button](./images/press-bucket-button.png "press-bucket-button")
 
-## Task 3: Upload airport-survey data
+## 작업 3: Upload airport-survey data
 
 1. In the Buckets page, click the **airport-survey** name to load images into. The bucket's details page is displayed.
 2. Under Resources, click Objects to display the list of objects in the bucket.
@@ -56,7 +56,7 @@ MySQL HeatWave에는 MySQL HeatWave Lakehouse가 포함되어 있어 사용자�
     - Wait for the **Abort** to change into **close**
     - Click the **close** button
 
-## Task 4: Create the PAR Link for the "airport-survey" files
+## 작업 4: Create the PAR Link for the "airport-survey" files
 
 1. To create a PAR URL
     - Go to menu **Storage —> Buckets**
@@ -80,7 +80,7 @@ MySQL HeatWave에는 MySQL HeatWave Lakehouse가 포함되어 있어 사용자�
 
 9. Save the generated PAR URL; you will need it in the next task
 
-## Task 5: Setup MySQL HeatWave system for Lakehouse processing
+## 작업 5: Setup MySQL HeatWave system for Lakehouse processing
 
 1. Make sure HeatWave Lakehouse is enabled. If not then execute **Lab 4: Load Airportdb Data into HeatWave**
 
@@ -134,7 +134,7 @@ MySQL HeatWave에는 MySQL HeatWave Lakehouse가 포함되어 있어 사용자�
 
     You are now ready to use Autoload to load a table from the object store into MySQL HeatWave
 
-## Task 6: Run Autoload to infer the schema and estimate capacity required for the DELIVERY table in the Object Store
+## 작업 6: Run Autoload to infer the schema and estimate capacity required for the DELIVERY table in the Object Store
 
 1. The survey information is in the passenger_survey.csv file in object store for which we have created a PAR URL in the earlier task. We will load the file for the passenger_survey table into MySQL HeatWave. Enter the following commands one by one and hit Enter.
 
@@ -206,7 +206,7 @@ MySQL HeatWave에는 MySQL HeatWave Lakehouse가 포함되어 있어 사용자�
 
     ![Delivery Table create](./images/create-survey-table.png "create delivery table")
 
-## Task 7: Load complete passenger_survey table from Object Store into MySQL HeatWave
+## 작업 7: Load complete passenger_survey table from Object Store into MySQL HeatWave
 
 1. Run this command to see the created table structure .
 
@@ -254,4 +254,4 @@ You may now **proceed to the next lab**
 
 - **Author** - Perside Foster, MySQL Principal Solution Engineering
 - **Contributors** - Mandy Pang, MySQL Principal Product Manager,  Nick Mader, MySQL Global Channel Enablement & Strategy Manager, Selena Sanchez, MySQL Solution Engineering
-- **Last Updated By/Date** - Perside Foster, MySQL Solution Engineering, March 2024
+- **Last Updated By/Date** - Kihyuk, MySQL Solution Engineering, September 2024
