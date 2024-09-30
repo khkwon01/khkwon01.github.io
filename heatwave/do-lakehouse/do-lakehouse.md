@@ -8,13 +8,13 @@ MySQL HeatWave에는 MySQL HeatWave Lakehouse가 포함되어 있어 사용자�
 
 ### 목표
 
-In this lab, you will be guided through the following tasks:
+이 랩에서는 다음 작업을 안내합니다.
 
-- Create Object Storage bucket
-- Upload survey data
-- Create PAR Link for the  survey file
-- Run Autoload to infer the schema and estimate capacity
-- Load survey table from Object Store into MySQL HeatWave cluster
+- Create Object Storage bucket 생성
+- Upload survey data 업로드
+- survey file에 대해 PAR Link 생성
+- 스키마를 유추하고 용량을 추정하기 위해 Autoload 실행
+- Object Store에서 MySQL HeatWave 클러스터로 survey table 로드
 
 ### Prerequisites (필요사항)
 
