@@ -18,19 +18,19 @@ MySQL HeatWave에는 MySQL HeatWave Lakehouse가 포함되어 있어 사용자�
 
 ### Prerequisites (필요사항)
 
-- An Oracle Trial or Paid Cloud Account
-- Some Experience with MySQL Shell
+- Oracle 평가판 또는 유료 클라우드 계정
+- MySQL Shell에 대한 약간의 경험
 
-## Task 1: Download survey file to your local machine
+## Task 1: survey file 로컬 머신에 다운로드하세요
 
-1. Click on this link to **Download file [passenger_survey.csv](files/passenger_survey.csv)**  to your local machine
+1. 로컬머신에 다운로드 받기 위해  **Download file [passenger_survey.csv](files/passenger_survey.csv)** 클릭 하세요.
 
-## Task 2: Create Object Storage bucket
+## Task 2: Object Storage bucket 생성
 
-1. Sign in to OCI using your tenant name, user name and password.
-2. Once signed in select the **root** compartment
-3. From the Console navigation menu, click **Storage**.
-4. Under Object Storage, click Buckets
+1. 테넌트 이름, 사용자 이름, 비밀번호를 사용하여 OCI에 로그인하세요.
+2. 로그인 후 **root** compartment을 선택하세요.
+3. 콘솔 탐색 메뉴에서 **Storage**를 클릭합니다.
+4. Object Storage 아래, Buckets 클릭합니다.
 
     **NOTE:** Ensure the correct Compartment is selected : Select **root**
 
