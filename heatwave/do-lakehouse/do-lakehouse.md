@@ -1,12 +1,12 @@
-# Create and Test HeatWave Lakehouse
+# HeatWave Lakehouse 생성 및 테스트
 
 ![mysql heatwave](./images/mysql-heatwave-logo.jpg "mysql heatwave")
 
-## Introduction
+## 세션 소개
 
 MySQL HeatWave includes MySQL HeatWave Lakehouse, letting users query hundreds of terabytes of data in object storage—in a variety of file formats, such as CSV, Parquet, and Aurora/Redshift export files from other databases. Customers can query transactional data in MySQL databases, data in various formats in object storage, or a combination of both using standard MySQL commands. Querying data in object storage is as fast as querying data inside the database.
 
-### Objectives
+### 목표
 
 In this lab, you will be guided through the following tasks:
 
