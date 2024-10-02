@@ -36,7 +36,7 @@ MySQL HeatWave에는 MySQL HeatWave Lakehouse가 포함되어 있어 사용자�
 
     ![cloud storage bucket](./images/cloud-storage-bucket.png "cloud-storage-bucket")
 
-5. Bucket 생성 클릭. Bucket 생성화면이 표시 됩니다.
+5. Bucket 생성 클릭하면 Bucket 생성화면이 표시 됩니다.
 6. Bucket 이름으로 **airport-survey** 입력하세요.
 7. Default Storage Tier 아래, Standard 클릭하세요. 남아 있는 필드들을 default values으로 남겨 두세요.
 8. Create 클릭 하세요.
