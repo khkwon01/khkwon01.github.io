@@ -51,7 +51,7 @@ MySQL HeatWave에는 MySQL HeatWave Lakehouse가 포함되어 있어 사용자�
 4. 로컬 컴퓨터에서 **passenger_survey.csv** 파일을 선택하세요.
     - 열기를 클릭하여 Passenger_survey.csv 파일을 로드합니다
     - 업로드 버튼을 클릭하세요
-       ![bucket detail](./images/bucket-detail.png"bucket-detail.png")
+       ![bucket detail](./images/bucket-detail.png "bucket-detail.png")
 
     - **Abort**가 **close**로 변경될 때까지 기다리세요
     - **close** 버튼을 클릭하세요
