@@ -135,15 +135,19 @@ MySQL HeatWave에는 MySQL HeatWave Lakehouse가 포함되어 있어 사용자�
 
 ## 작업 6: Object Store의 DELIVERY 테이블에 필요한 스키마 유추 및 용량을 추정하기 위해 Autoload를 실행
 
-1. The survey information is in the passenger_survey.csv file in object store for which we have created a PAR URL in the earlier task. We will load the file for the passenger_survey table into MySQL HeatWave. Enter the following commands one by one and hit Enter.
+1. survey information는 이전 작업에서 PAR URL을 생성한 object store의 Passenger_survey.csv 파일에 있습니다. 
 
-2. This sets the schema we will load table data into. Don’t worry if this schema has not been created. Autopilot will generate the commands for you to create this schema if it doesn’t exist.
+   우리는 Passenger_survey 테이블에 대한 파일을 MySQL HeatWave에 로드하겠습니다.
+
+   다음 명령을 하나씩 입력하고 Enter를 누르세요.
+
+3. 아래와 같이 명령어를 수행하면 테이블 데이터를 로드할 schema가 설정됩니다. 이 schema가 생성되지 않았더라도 걱정하지 마세요. schema가 없으면 Autopilot에서 이 schema를 생성할 수 있는 명령을 생성합니다.
 
     ```bash
     <copy>SET @db_list = '["airportdb"]';</copy>
     ```
 
-3. This sets the parameters for the table name we want to load data into and other information about the source file in the object store. Substitute the **(PAR URL)** below with the one you generated in the previous task:
+4. 아래와 같이 명령어를 수행하면 우리가 데이터를 로드하고자 하는 테이블 이름과 객체 저장소의 소스 파일에 대한 다른 정보에 대한 매개변수를 설정합니다. 아래의 **(PAR URL)** 을 이전 작업에서 생성한 것으로 대체합니다.
 
     ```bash
     <copy>SET @dl_tables = '[{
@@ -159,31 +163,31 @@ MySQL HeatWave에는 MySQL HeatWave Lakehouse가 포함되어 있어 사용자�
         "file": [{"par": "(PAR URL)"}]}]  }]';</copy>
     ```
 
-    - It should look like the following example (Be sure to include the PAR Link inside at of quotes("")):
+    - 다음 예제와 같아야 합니다. (따옴표("") 안에 PAR 링크를 포함해야 합니다.):
 
         ![Load script set table](./images/load-script-set-table.png "Load script set table")
 
-    - Run the set table script now.
+    - 지금 테이블 설정 스크립트를 실행하세요.
 
-4. This command populates all the options needed by Autoload:
+5. 이 명령은 Autoload에 필요한 모든 옵션을 설정합니다.
 
     ```bash
     <copy>SET @options = JSON_OBJECT('mode', 'dryrun',  'policy', 'disable_unsupported_columns',  'external_tables', CAST(@dl_tables AS JSON));</copy>
     ```
 
-5. Run this Autoload command:
+6. Autoload 명령어 실행 하세요. (option에 dryrun이 포함 되어 있어 실제 테이블 생성 및 로드는 진행하지 않습니다):
 
     ```bash
     <copy>CALL sys.heatwave_load(@db_list, @options);</copy>
     ```
 
-6. Once Autoload completes running, its output has several pieces of information:
-    - a. Whether the table exists in the schema you have identified.
-    - b. Auto schema inference determines the number of columns in the table.
-    - c. Auto schema sampling samples a small number of rows from the table and determines the number of rows in the table and the size of the table.
-    - d. Auto provisioning determines how much memory would be needed to load this table into HeatWave and how much time loading this data take.
+7. Autoload가 실행을 완료하면 명령어 출력에 여러 정보가 포함됩니다.
+    - a. 식별한 schema에 테이블이 존재하는지 여부입니다.
+    - b. Auto schema inference는 테이블의 열 수를 결정합니다.
+    - c. Auto schema sampling은 테이블에서 적은 수의 행을 샘플링하고 테이블의 행 수와 테이블 크기를 결정합니다.
+    - d. Auto provisioning은 테이블을 HeatWave에 로드하는 데 필요한 메모리 양과 이 데이터를 로드하는 데 걸리는 시간을 결정합니다.
 
-7. Autoload also generated a statement lke the one below. Execute this statement now.
+8. Autoload는 아래와 같은 문장도 생성합니다. 지금 이 문장을 실행하세요.
 
     ```bash
     <copy>SELECT log->>"$.sql" AS "Load Script" FROM sys.heatwave_autopilot_report WHERE type = "sql" ORDER BY id;</copy>
@@ -191,23 +195,23 @@ MySQL HeatWave에는 MySQL HeatWave Lakehouse가 포함되어 있어 사용자�
 
     ![Dryrun script](./images/load-script-dryrun.png "load script dryrun")
 
-8. The execution result conatins the SQL statements needed to create the table and then load this table data from the Object Store into HeatWave.
+10. 실행 결과에는 테이블을 생성하고 이 테이블 데이터를 Object Store에서 HeatWave로 로드하는 데 필요한 SQL 문이 포함됩니다.
 
     ![create passenger survey script](./images/create-passenger-survey-script.png "create passenger survey script")
 
-9. Copy the **CREATE TABLE** command from the results. It should look like the following example
+11. 결과에서 **CREATE TABLE** 명령을 복사합니다. 다음 예와 같아야 합니다.
 
     ![create passenger survey script copy](./images/create-passenger-survey-script-copy.png "create passenger survey script copy")  
 
-10. Execute the modified **CREATE TABLE** command to create the passenger_survey table.
+12. 수정된 **CREATE TABLE** 명령을 실행하여 Passenger_survey 테이블을 생성합니다.
 
-11. The create command and result should look lie this
+13. 생성 명령과 결과는 다음과 같아야 합니다.
 
     ![Delivery Table create](./images/create-survey-table.png "create delivery table")
 
 ## 작업 7: Object Store에서 MySQL HeatWave로 전체 Passenger_survey 테이블을 로드
 
-1. Run this command to see the created table structure .
+1. 생성된 테이블 구조를 보려면 이 명령을 실행하세요.
 
     ```bash
     <copy>desc passenger_survey;</copy>
@@ -215,25 +219,25 @@ MySQL HeatWave에는 MySQL HeatWave Lakehouse가 포함되어 있어 사용자�
 
     ![Passenger Survey Table](./images/passenger-survey-table.png "Passenger Survey Table")
 
-2. Now load the data from the Object Store into the passenger_survey table.
+2. 이제 object storage에 있는 데이털ㄹ 아래 명령어를 사용하여 Heatwave cluster(passenger_survery테이블)로 load 합니다.
 
     ```bash
     <copy> ALTER TABLE `airportdb`.`passenger_survey` SECONDARY_LOAD; </copy>
     ```
 
-3. Once Autoload completes, check the number of rows loaded into the table.
+3. Autoload가 완료되면 테이블에 로드된 행 수를 확인하세요.
 
     ```bash
     <copy>select count(*) from passenger_survey;</copy>
     ```
 
-4. View a sample of the data in the table.
+4. 테이블의 데이터 샘플을 확인하세요.
 
     ```bash
     <copy>select * from passenger_survey limit 5;</copy>
     ```
 
-    a. Join the passenger_survey table with another table in the schema
+    a. schema의 다른 테이블과 Passenger_survey 테이블을 조인합니다.
 
     ```bash
     <copy> select p.* , ps.* from passenger p 
@@ -241,13 +245,13 @@ MySQL HeatWave에는 MySQL HeatWave Lakehouse가 포함되어 있어 사용자�
     where p.passenger_id = 28; </copy>
     ```
 
-5. Your output for steps 2 thru 5 should look like this:
+5. 2단계부터 5단계까지의 출력은 다음과 같습니다.
 
     ![Passenger Survey Output](./images/passenger-survey-output.png "Passenger Survey Output")
 
-6. Your passenger_survey table is now ready to be used in queries with other tables.
-
-You may now **proceed to the next lab**
+6. passenger_survey table은 다른 테입블과 쿼리 조인해서 사용할 수 있습니다.
+   
+이제 다음 Lab으로 진행할 수 있습니다.
 
 ## Acknowledgements
 
