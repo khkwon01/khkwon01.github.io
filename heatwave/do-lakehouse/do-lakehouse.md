@@ -43,18 +43,18 @@ MySQL HeatWave에는 MySQL HeatWave Lakehouse가 포함되어 있어 사용자�
 
     ![press bucket button](./images/press-bucket-button.png "press-bucket-button")
 
-## 작업 3: Upload airport-survey data
+## 작업 3: Airport-survey 데이터 업로드
 
-1. In the Buckets page, click the **airport-survey** name to load images into. The bucket's details page is displayed.
-2. Under Resources, click Objects to display the list of objects in the bucket.
-3. Click Upload. The Upload Objects pane is displayed.
-4. Select the **passenger_survey.csv** file from your local machine
-    - Click open to load the passenger_survey.csv file
-    - Click the Upload button
+1. Buckets page에서, **airport-survey** 이름을 클릭하세요. bucket's 상세한 정보가 표시됩니다.
+2. Resources 아래에서, bucket에 있는 객체 목록을 표시하려면 객체를 클릭합니다.
+3. Upload 클릭하세요. 파일 업로드 창이 표시됩니다.
+4. 로컬 컴퓨터에서 **passenger_survey.csv** 파일을 선택하세요.
+    - 열기를 클릭하여 Passenger_survey.csv 파일을 로드합니다
+    - 업로드 버튼을 클릭하세요
        ![bucket detail](./images/bucket-detail.png"bucket-detail.png")
 
-    - Wait for the **Abort** to change into **close**
-    - Click the **close** button
+    - **Abort**이 **close**로 변경될 때까지 기다리세요
+    - **close** 버튼을 클릭하세요
 
 ## 작업 4: Create the PAR Link for the "airport-survey" files
 
