@@ -62,31 +62,30 @@ MySQL HeatWave에는 MySQL HeatWave Lakehouse가 포함되어 있어 사용자�
     - **Storage —> Buckets** 매뉴로 이동
      ![Bucket menu](./images/storage-bucket-menu.png "storage bucket menu")
 
-    - Select **airport-survey**  folder.
-2. Select the first file —> **passenger_survey.csv** and click the three vertical dots.
-3. Click on **Create Pre-Authenticated Request**
+    - **airport-survey**  폴더를 선택 하십시요.
+2. 처음 **passenger_survey.csv** 파일을 선택하고 3개의 vertical dots를 클릭 하세요.
+3. **Create Pre-Authenticated Request** 를 클릭하세요.
 
     ![delivery-orders-1.csv 3 dots](./images/storage-create-par-orders.png "storage create par orders")
 
-4. The **Object** option will be pre-selected.
-5. Keep **Permit object reads** selected
-6. Kep the other options for **Access Type** unchanged.
-7. Click the **Create Pre-Authenticated Request** button.
+4. **Object** 옵션이 미리 선택됩니다.
+5. **Permit object reads**를 선택된 상태로 유지하세요.
+6. **Access Type**에 대한 다른 옵션은 변경하지 마세요.
+7. **Create Pre-Authenticated Request** 버튼을 클릭합니다.
 
     ![Create PAR](./images/storage-create-par-orders-page.png "storage create par orders page")
 
-8. Click the **Copy** icon to copy the PAR URL.
+8. **Copy** 아이콘을 클릭하여 PAR URL을 복사합니다.
     ![Copy PAR](./images/storage-create-par-orders-page-copy.png "storage create par orders page copy")
 
-9. Save the generated PAR URL; you will need it in the next task
+9. 생성된 PAR URL을 저장하세요. 다음 작업에서 필요합니다.
 
 ## 작업 5: Lakehouse 처리를 위한 MySQL HeatWave 시스템 설정
 
-1. Make sure HeatWave Lakehouse is enabled. If not then execute **Lab 4: Load Airportdb Data into HeatWave**
-
+1. HeatWave Lakehouse가 활성화되어 있는지 확인하세요. 그렇지 않은 경우 **Lab 4: Heatwave Cluster에 Airportdb Data Load**를 실행하세요.
     ![Enabled HeatWave Lakehouse](./images/heatwave-lakehouse-enabled.png " Enabled HeatWave Lakehouse")
 
-2. Go to Cloud shell to SSH into the Compute Instance
+2. Cloud Shell로 이동하여 Compute Instance에 SSH를 실행합니다.
 
     (Example: **ssh -i ~/.ssh/id_rsa opc@132.145.170...**) 
 
@@ -94,7 +93,7 @@ MySQL HeatWave에는 MySQL HeatWave Lakehouse가 포함되어 있어 사용자�
     <copy>ssh -i ~/.ssh/id_rsa opc@<your_compute_instance_ip></copy>
     ```
 
-3. Connect to the HeatWave Database using MySQL Shell with the following command:
+3. 다음 명령을 사용하여 MySQL Shell을 사용하여 HeatWave 데이터베이스에 연결합니다.
 
     ```bash
     <copy>mysqlsh -uadmin -p -h 10.0.1... --sql </copy>
@@ -102,13 +101,13 @@ MySQL HeatWave에는 MySQL HeatWave Lakehouse가 포함되어 있어 사용자�
 
     ![MySQL Shell Connect](./images/mysql-shell-login.png " mysql shell login")
 
-4. Change to SQL mode
+4. SQL 모드로 변경
 
     ```bash
     <copy>\sql</copy>
     ```
 
-5. List schemas in your heatwave instance
+5. heatwave instance에서 schemas를 리스트 하세요.
 
     ```bash
     <copy>show databases;</copy>
@@ -116,23 +115,23 @@ MySQL HeatWave에는 MySQL HeatWave Lakehouse가 포함되어 있어 사용자�
 
     ![Databse Schemas](./images/list-schemas-after.png "list schemas after")
 
-6. Change to the airportdb database
+6. airportdb 데이터베이스로 변경
 
-    Enter the following command at the prompt
+    프롬프트에 다음 명령을 입력하세요.
 
     ```bash
     <copy>USE airportdb;</copy>
     ```
 
-7. To see a list of the tables available in the airportdb schema
+7. airportdb 스키마에서 사용 가능한 테이블 목록을 보려면
 
-    Enter the following command at the prompt
+    프롬프트에 다음 명령을 입력하세요.
 
     ```bash
     <copy>show tables;</copy>
     ```
 
-    You are now ready to use Autoload to load a table from the object store into MySQL HeatWave
+    이제 Autoload를 사용하여 객체 저장소에서 MySQL HeatWave로 테이블을 로드할 준비가 되었습니다.
 
 ## 작업 6: Object Store의 DELIVERY 테이블에 필요한 스키마 유추 및 용량을 추정하기 위해 Autoload를 실행
 
