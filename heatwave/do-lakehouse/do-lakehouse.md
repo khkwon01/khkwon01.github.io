@@ -53,7 +53,7 @@ MySQL HeatWave에는 MySQL HeatWave Lakehouse가 포함되어 있어 사용자�
     - 업로드 버튼을 클릭하세요
        ![bucket detail](./images/bucket-detail.png"bucket-detail.png")
 
-    - **Abort**이 **close**로 변경될 때까지 기다리세요
+    - **Abort**가 **close**로 변경될 때까지 기다리세요
     - **close** 버튼을 클릭하세요
 
 ## 작업 4: Create the PAR Link for the "airport-survey" files
