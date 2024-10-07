@@ -18,12 +18,14 @@ yum install openssl gnutls nss
   - https://github.com/s3fs-fuse/s3fs-fuse
 
 - installation procedures
+  
 ```
 git clone https://github.com/s3fs-fuse/s3fs-fuse.git
 cd s3fs-fuse
 ./autogen.sh
 ./configure
-
+```
+```
 make
 sudo make install
 ```
@@ -34,6 +36,7 @@ sudo make install
   - Click Customer Secret Keys, and then click Generate Secret Key.
 
 - Enter your credentials in a ${HOME}/.passwd-s3fs file and set owner-only permissions:
+  
 ```
 echo ACCESS_KEY_ID:SECRET_ACCESS_KEY > ${HOME}/.passwd-s3fs
 chmod 600 ${HOME}/.passwd-s3fs
