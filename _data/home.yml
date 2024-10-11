@@ -42,7 +42,7 @@ data_entries:
 
 demo_entries:
   - title: Heatwave MySQL Demo
-    url: https://158.180.80.105:8000/
+    url: https://130.162.135.29:8000/
   - title: MySQL vistual explain 
     url: https://mysqlexplain.com/
 
