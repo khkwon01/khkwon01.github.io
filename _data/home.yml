@@ -27,7 +27,7 @@ data_entries:
   - title: OCI Heatwave MySQL Major upgrade 가이드
     url: https://docs.oracle.com/en-us/iaas/mysql-database/doc/major-version-upgrade.html#GUID-0D7B5266-6FF9-42B7-AAC0-5A49F7D40D82
     desc: 8.0에서 8.4등 Major 업그레이드에 대한 가이드를 제공합니다. 
-  - title: OCI Heatwave H/W 구성 아키텍처 가이드
+  - title: OCI Heatwave 구성 아키텍처 가이드
     url: https://github.com/khkwon01/mig_db/blob/main/handon/mds_hw_architecture.md
     desc: Heatwave에서 HA 또는 replication 구성에 대한 가이드를 제공합니다.
   - title: MySQL 서버 버전간 차이 확인
