@@ -1,4 +1,4 @@
-# Build Oracle Analytics Cloud Dashboard with HeatWave
+# HeatWave로 Oracle Analytics Cloud 대시보드 구축
 
 ![mysql heatwave](./images/mysql-heatwave-logo.jpg "mysql heatwave")
 
