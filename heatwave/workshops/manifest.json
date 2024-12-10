@@ -84,12 +84,17 @@
           "title": "Lab 14: HeatWave Lakehouse 생성 및 테스트",
           "filename": "../do-lakehouse/do-lakehouse.md"  
         },
+
+        {
+          "title": "Lab 15: Oracle Analytics Cloud (OAC) 대시보드 구축",
+          "filename": "../do-oac-advanced/do-oac-advanced.md"
+        },
       
         {
-          "title": "Lab 15: OCI Services 중단",
+          "title": "Lab 16: OCI Services 중단",
           "filename": "../stop-services/stop-services.md"
         },
-
+      
         {
             "title": "도움이 필요할 경우",
             "description": "Solutions to Common Problems and Directions for Receiving Live Help",
