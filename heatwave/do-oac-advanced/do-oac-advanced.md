@@ -8,21 +8,21 @@ MySQL HeatWave는 Oracle Cloud Analytics와 같은 기존 Oracle 서비스를 �
 
 MySQL HeatWave를 OAC와 함께 사용하면 MySQL 데이터를 탐색하고 협업 분석을 수행할 수 있습니다.
 
-_예측 :_ 20 minutes
+_Estimated Time: :_ 20 minutes 소요
 
-### Objectives
+### 목표
 
-In this lab, you will be guided through the following tasks:
+이 랩에서는 다음 작업을 안내해 드립니다 :
 
-- Create Oracle Analytics Cloud and connect to MySQL HeatWave
-- Create a dashboard on OAC for the airportdb
+- Oracle Analytics Cloud를 생성하고 MySQL HeatWave에 연결
+- airportdb에 대한 OAC 대시보드 만들기
 
-### Prerequisites
+### Prerequisites (필요사항)
 
 - An Oracle Trial or Paid Cloud Account
-- Some Experience with MySQL Shell
+- MySQL Shell에 사용경험
 
-## Task 1:  Create an Oracle Analytic Cloud Service
+## 작업 1:  Create an Oracle Analytic Cloud Service
 
 1. From the OCI console, navigate to Analytics & AI-> Analytics Clouds
  ![analytics menu](./images/analytics-menu.png " analytics menu")
@@ -56,7 +56,7 @@ In this lab, you will be guided through the following tasks:
 
     ![created oac](./images/created-oac.png " created-oac")
 
-## Task 2: Configure Private Access Channel
+## 작업 2: Configure Private Access Channel
 
 1. Go down to the “Private Access Channel” resources page and click on the **Configure Private Access Channel**  button.
 
@@ -88,7 +88,7 @@ In this lab, you will be guided through the following tasks:
 5. Wait 30 minutes for the process to finish, then continue to Task 3
     ![oac private access created  ](./images/created-pac-oac.png " created-pac-oac")
 
-## Task 3: Get HeatWave DB Hostname
+## 작업 3: Get HeatWave DB Hostname
 
 1. Before starting go to Menu Databases > DB Systems
 
@@ -102,7 +102,7 @@ In this lab, you will be guided through the following tasks:
 
     Example : **hwdb.sub09012.....hwvcn.oraclevcn.com**
 
-## Task 4: - Build OAC Dashboard
+## 작업 4: - Build OAC Dashboard
 
 1. Navigate to hamburger->Analytics->Analytics Clouds
 
@@ -189,4 +189,4 @@ You may now **proceed to the next lab**
 
 - **Author** - Perside Foster, MySQL Principal Solution Engineering
 - **Contributors** - Mandy Pang, MySQL Principal Product Manager,  Nick Mader, MySQL Global Channel Enablement & Strategy Manager, Selena Sanchez, MySQL Solution Engineering
-- **Last Updated By/Date** - Perside Foster, MySQL Solution Engineering, March 2024
+- **Last Updated By/Date** - kihyuk, MySQL Solution Engineering, Dec 2024
