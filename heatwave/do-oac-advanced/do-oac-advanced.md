@@ -102,7 +102,7 @@ _Estimated Time: :_ 20 minutes 소요
 
     예제 : **hwdb.sub09012.....hwvcn.oraclevcn.com**
 
-## 작업 4: - OAC 대시보드 구축
+## 작업 4: OAC 대시보드 구축
 
 1. 왼쪽 위 hamburger->Analytics->Analytics Clouds 이동
 
