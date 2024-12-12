@@ -44,9 +44,9 @@ _Estimated Time: :_ 20 minutes 소요
         <copy>Oracle Analytics Cloud HeatWave Test</copy>
     ```
 
-    Capacity: select **OCPU** and select **1**
+    Capacity: **OCPU** 선택하고 **1** 로 선택
 
-    License Type: select **License Included**
+    License Type: **License Included** 선택
 
 4. **Create** button를 클릭합니다.
 
@@ -58,11 +58,11 @@ _Estimated Time: :_ 20 minutes 소요
 
 ## 작업 2: Private Access Channel 구성
 
-1. Go down to the “Private Access Channel” resources page and click on the **Configure Private Access Channel**  button.
+1. “Private Access Channel” 리소스 페이지로 가서 **Private Access Channel 구성** 버튼을 클릭합니다.
 
-2. Click the create Private Access Channel button
+2. Private Access Channel 생성 버튼을 클릭합니다.
 
-3. On the create Private Access Channel page enter the following:
+3. Private Access Channel 생성 페이지에서 다음을 입력하세요:
 
     Name:
 
@@ -71,7 +71,7 @@ _Estimated Time: :_ 20 minutes 소요
     ```
 
     DNS Zones:
-    **Check Virtual Cloud Network's domain name as DNS zone (hwvcn.oraclevcn.com)**
+    **DNS 영역(hwvcn.oraclevcn.com)으로 Virtual Cloud Network의 도메인 이름을 확인하세요.**
 
     Description:
 
@@ -79,61 +79,61 @@ _Estimated Time: :_ 20 minutes 소요
         <copy>Testing</copy>
     ```
 
-    **Remove second  DNS Zone entry**
+    **두 번째 DNS 영역 항목 제거**
 
-4. Click the **Create** button
+4. **Create** button 클릭합니다.
 
     ![configure private access for oac](./images/config-pac-oac.png " config-pac-oac")
 
-5. Wait 30 minutes for the process to finish, then continue to Task 3
+5. 프로세스가 완료될 때까지 30분을 기다린 후 작업 3으로 계속 진행하세요.
     ![oac private access created  ](./images/created-pac-oac.png " created-pac-oac")
 
-## 작업 3: Get HeatWave DB Hostname
+## 작업 3: HeatWave DB 호스트 이름 가져오기
 
-1. Before starting go to Menu Databases > DB Systems
+1. 시작하기전에 Databases > DB Systems 메뉴로 이동합니다.
 
-2. Select HeatWave database: HeatWave-DB
+2. HeatWave database 선택합니다: HeatWave-DB
 
-3. Go to the **Connections** tab  on the Endpoinst Link. On the **Internal FQDN** click show, and  copy the  and save it to notepad
+3. **Endpoint Link**에서 **Connections** 탭으로 이동합니다. **Internal FQDN**에서 show를 클릭하고 복사하여 메모장에 저장합니다.
 
     ![database endpoint](./images/hw-db-endpoint.png "hw-db-endpoint ")
 
-4. Save the Hostname for use with OAC
+4. OAC에서 사용할 호스트 이름 저장합니다.
 
-    Example : **hwdb.sub09012.....hwvcn.oraclevcn.com**
+    예제 : **hwdb.sub09012.....hwvcn.oraclevcn.com**
 
-## 작업 4: - Build OAC Dashboard
+## 작업 4: - OAC 대시보드 구축
 
-1. Navigate to hamburger->Analytics->Analytics Clouds
+1. 왼쪽 위 hamburger->Analytics->Analytics Clouds 이동
 
-2. Select the OAC instance you provisioned to access the OAC console by clicking on Analytics Home Page
+2. Analytics 홈페이지를 클릭하여 OAC 콘솔에 액세스하기 위해 프로비저닝(provisioned)한 OAC 인스턴스를 선택합니다.
 
     ![analytics go home page](./images/analytics-go-home-page.png "analytics-go-home-page ")
 
-3. Create a Connection to HeatWave to build a dashboard
+3. 대시보드를 구축하기 위해 HeatWave에 연결을 만듭니다.
 
     ![analytics home page](./images/analytics-home-page.png " analytics-home-page")
 
-4. Search for mysql and select mysql as the database
+4. mysql을 검색하고 데이터베이스로 mysql을 선택하세요.
 
-    Example: **HEATWAVE-HW.sub0….heatwavevcn.oraclevcn.com**
+    예제 : **HEATWAVE-HW.sub0….heatwavevcn.oraclevcn.com**
 
     ![add mysql connection](./images/add-connection-mysql.png "add-connection-mysql ")
 
-5. Specify the connections details
+5. 연결 세부 정보를 지정하세요.
 
-    - Specify the hostname of HEATWAVE-DB in FQDN from Task 4.
-    - Be sure to use mysql admin user name and password.
+    - 4번 작업의 FQDN으로 HEATWAVE-DB의 호스트 이름을 지정하세요.
+    - 반드시 MySQL 관리자 사용자 이름과 비밀번호를 사용하세요.
 
     ![config myql connection](./images/config-add-connection-mysql.png "config-add-connection-mysql ")
 
-6. Select the MySQL Connection created earlier
+6. 이전에 생성한 MySQL 연결을 선택하세요.
 
-7. Double click "Manual Query" on the left panel and click ”Manual Query” tab on the bottom
+7. 왼쪽 패널에서 "수동 쿼리(Manual Query)"를 두 번 클릭하고 하단에서 "수동 쿼리(Manual Query)" 탭을 클릭합니다.
 
     ![manual query](./images/manual-query-select.png "manual-query-select ")
 
-8. Add the following SQL query (find per-company average age of passengers from Switzerland, Italy and France) in the statement text box, and select “Live” in Data Access on the right, then click OK on the top
+8. 다음 SQL 쿼리(스위스, 이탈리아 및 프랑스 승객의 회사별 평균 연령 찾기)를 명세서 텍스트 상자에 추가하고 오른쪽의 데이터 액세스에서 "라이브"를 선택한 다음 상단에서 확인을 클릭합니다.
 
     ```bash  
     <copy> SELECT
@@ -154,26 +154,26 @@ _Estimated Time: :_ 20 minutes 소요
     LIMIT 10;</copy>
     ```
 
-9. Dataset screen
+9. Dataset 화면
     ![set oac dataset](./images/new-data-set-oac.png "new-data-set-oac ")
 
-10. Click the  save button and set the DataSet name to Passengers then click Create workbook button
+10. 저장 버튼을 클릭하고 DataSet 이름을 Passengers로 설정한 다음 통합 문서 만들기 버튼을 클릭합니다.
     ![create oac workbook](./images/create-workbook-oac.png "create-workbook-oac")
 
-11. On new display page  click on the Dataset icon, select airline and nbrpeople
+11. 새 페이지에서 데이터 세트 아이콘을 클릭하고 항공사(airline) 및 nbrpeople을 선택합니다.
     ![select columns](./images/passenger-column.png "passenger-column")
-12. Right click and select "Create Best Visualization".
+
+12. 마우스 오른쪽 버튼을 클릭하고 "최상의 시각화 만들기"를 선택하세요.
     ![auto visualization](./images/best-visualization-oac.png "best-visualization-oac")
 
-13. Click on the bottom + sign to add Canvas 2 , select airline and avg_age
-14. Right click and select "Pick Visualization" and select pie chart.
+13. 하단의 + 기호를 클릭하여 Canvas 2를 추가하고 항공사와 avg_age를 선택하세요.
+    
+14. 마우스 오른쪽 버튼을 클릭하고 "시각화 선택(Pick Visualization)"을 선택한 다음 원형 차트를 선택하세요.
     ![manual visualization](./images/pick-visualization-oac.png "pick-visualization-oac ")
 
-15. Save Workbook as "passenger Workbook" and close OAC application
+15. 통합 문서를 "승객 통합 문서 (passenger Workbook)"로 저장하고 OAC 응용 프로그램을 닫습니다.
 
-
-
-16. Add chart to OAC using the following query
+16. 다음 쿼리를 사용하여 OAC에 차트를 추가합니다.
 
     ```bash
     <copy>SELECT satisfaction,customer_type, travel_type, AVG(departure_delay) departure_delay,count(*) as nb_psgr
@@ -183,7 +183,7 @@ _Estimated Time: :_ 20 minutes 소요
 
     ![delay satisfaction workbook](./images/delay-satisfaction.png "delay satisfaction")
 
-You may now **proceed to the next lab**
+이제 **다음 Lab으로 진행**할 수 있습니다.
 
 ## Acknowledgements
 
