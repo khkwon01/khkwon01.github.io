@@ -22,15 +22,15 @@ _Estimated Time: :_ 20 minutes 소요
 - An Oracle Trial or Paid Cloud Account
 - MySQL Shell에 사용경험
 
-## 작업 1:  Create an Oracle Analytic Cloud Service
+## 작업 1:  Oracle Analytic Cloud 서비스 생성
 
-1. From the OCI console, navigate to Analytics & AI-> Analytics Clouds
+1. OCI console에서, Analytics & AI-> Analytics Clouds 메뉴를 선택합니다.
  ![analytics menu](./images/analytics-menu.png " analytics menu")
 
-2. Click Create Instance
+2. 인스턴스 생성을 클릭합니다.
  ![create-instance-oac](./images/create-instance-oac.png "create-instance-oac ")
 
-3. On the Create Analytics Instance enter the required information as shown below
+3. 인스턴스 생성에서 아래에 표시된 대로 필요한 정보를 입력합니다.
 
     Name:
 
@@ -48,15 +48,15 @@ _Estimated Time: :_ 20 minutes 소요
 
     License Type: select **License Included**
 
-4. Click the **Create** button
+4. **Create** button를 클릭합니다.
 
     ![configure oac](./images/config-oac.png "config-oac ")
 
-5. It takes about 12-15 mins for OAC instance creation to complete.
+5. OAC 인스턴스 생성이 완료되는 데 약 12~15분이 걸립니다.
 
     ![created oac](./images/created-oac.png " created-oac")
 
-## 작업 2: Configure Private Access Channel
+## 작업 2: Private Access Channel 구성
 
 1. Go down to the “Private Access Channel” resources page and click on the **Configure Private Access Channel**  button.
 
