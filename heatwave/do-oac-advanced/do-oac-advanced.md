@@ -2,13 +2,13 @@
 
 ![mysql heatwave](./images/mysql-heatwave-logo.jpg "mysql heatwave")
 
-## Introduction
+## 세션 소개
 
-MySQL HeatWave can easily be used for development tasks with existing Oracle services, such as Oracle Cloud Analytics. -> Oracle Analytics Cloud (OAC) provides the industry’s most comprehensive cloud analytics in a single unified platform, including self-service visualization and inline data preparation to enterprise reporting, advanced analytics, and self-learning analytics that deliver proactive insights.
+MySQL HeatWave는 Oracle Cloud Analytics와 같은 기존 Oracle 서비스를 사용한 개발 작업에 쉽게 사용할 수 있습니다. -> Oracle Analytics Cloud(OAC)는 단일 통합 플랫폼에서 업계에서 가장 포괄적인 클라우드 분석을 제공하며, 여기에는 셀프 서비스 시각화 및 인라인 데이터 준비부터 기업 보고, 고급 분석 및 사전 예방적 통찰력을 제공하는 자체 학습 분석이 포함됩니다.
 
-Use MySQL HeatWave with OAC to explore and perform collaborative analytics with your MySQL data.
+MySQL HeatWave를 OAC와 함께 사용하면 MySQL 데이터를 탐색하고 협업 분석을 수행할 수 있습니다.
 
-_Estimated Lab Time:_ 20 minutes
+_예측 :_ 20 minutes
 
 ### Objectives
 
