@@ -25,3 +25,14 @@ layout: post
   - 사용자 질의(agent, chain등 통해서)의 결과에 대한 상태 유지를 통해 일관된 문맥(context)를 제공
 
 ### 2. 사용예제 (prompt)
+```
+from langchain.chat_models import ChatOpenAI
+from langchain.agents import load_tools, initialize_agent, AgentType
+llm = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0)
+tools = load_tools(["wikipedia", "llm-math"], llm=llm)
+agent = initialize_agent(
+    tools, llm, agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION, verbose=True
+)
+question = """ """
+agent.run(question)
+```
