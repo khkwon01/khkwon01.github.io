@@ -23,3 +23,5 @@ layout: post
  
 - Memory
   - 사용자 질의(agent, chain등 통해서)의 결과에 대한 상태 유지를 통해 일관된 문맥(context)를 제공
+
+### 2. 사용예제 (prompt)
