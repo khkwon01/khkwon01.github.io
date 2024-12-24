@@ -46,6 +46,13 @@ _Estimated Time:_ 10 minutes 소요
     ```bash
     <copy>select sys.ML_GENERATE(@query, JSON_OBJECT("task", "generation", "model_id", "llama3-8b-instruct-v1"));</copy>
     ```
+
+    or
+
+    ```bash
+    <copy>select sys.ML_GENERATE(@query, JSON_OBJECT("task", "generation", "model_id", "llama3-8b-instruct-v1", "language", "ko"));</copy>
+    ```
+        
     ![image](https://github.com/user-attachments/assets/d745dabb-36f8-4ffa-b155-f263fe78a874)
 
 4. HeatWave GenAI는 데이터베이스 내 LLM을 사용하여 응답을 생성합니다.
@@ -70,12 +77,18 @@ _Estimated Time:_ 10 minutes 소요
 2. 다음 명령을 입력하여 요약된 텍스트를 생성하고 **Enter**를 클릭합니다.
 
     ```bash
-    <copy>select sys.ML_GENERATE(@text, JSON_OBJECT("task", "summarization","model_id", "llama3-8b-instruct-v1"));</copy>
+    <copy>select sys.ML_GENERATE(@text, JSON_OBJECT("task", "summarization", "model_id", "llama3-8b-instruct-v1"));</copy>
     ```
+
+    or
+
+    ```bash
+    <copy>select sys.ML_GENERATE(@text, JSON_OBJECT("task", "summarization", "model_id", "llama3-8b-instruct-v1", "language", "ko"));</copy>
+    ```   
 
     ![image](https://github.com/user-attachments/assets/05084c40-b9e7-4372-a537-5ff7c1f911fa)
 
- 3. LLM은 귀하의 텍스트 요약을 생성합니다.:
+ 4. LLM은 귀하의 텍스트 요약을 생성합니다.:
 
     ![image](https://github.com/user-attachments/assets/0dcf8469-27b6-4f37-96a7-771dd9f34fe7)
 
