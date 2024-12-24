@@ -18,18 +18,18 @@ _Estimated Time:_ 10 minutes 소요
 - An Oracle Trial or Paid Cloud Account
 - MySQL Shell에 사용경험
 
-## Task 1:  Generate response using in-database LLMs
+## 작업 1:  데이터베이스 내 LLM을 사용하여 응답(Generate) 생성
 
-1. Load the LLM in HeatWave, and click **Execute the selection or full block on HeatWave and create a new block**:
+1. HeatWave에 LLM 로드합니다. **Enter**:
 
-    - To load mistral-7b-instruct-v1 model:
+    - llama3-8b-instruct-v1 모델을 로드하려면:
 
         ```bash
-        <copy>call sys.ML_MODEL_LOAD('mistral-7b-instruct-v1', NULL);</copy>
+        <copy>call sys.ML_MODEL_LOAD('llama3-8b-instruct-v1', NULL);</copy>
         ```
 
-        ![Load LLMs](./images/1-load-llm.png "Load LLMs")
- 
+        ![image](https://github.com/user-attachments/assets/aa1d6050-84b9-4314-9080-3a60e7d3d696)
+
 2. Set the @query session variable with your query in natural language, and click **Enter**.
 
     ```bash
@@ -53,7 +53,7 @@ _Estimated Time:_ 10 minutes 소요
 
     ![HeatWave GenAI output](./images/3-llm-ouput.png "HeatWave GenAI output")
 
-## Task 2: Summarize text using in-database LLMs
+## 작업 2: Summarize text using in-database LLMs
 
 1. Define the text that you want to summarize, and click **Enter**:
 
