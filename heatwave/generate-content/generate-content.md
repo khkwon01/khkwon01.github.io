@@ -1,22 +1,22 @@
 # HeatWave 데이터베이스 내 LLM을 사용하여 콘텐츠 생성 및 요약
 
-## Introduction
+## 세션 소개
 
-HeatWave GenAI supports two in-database large language models (LLM): mistral-7b-instruct-v1 and llama2-7b-v1. You can use any of these models to generate response or summarize.
+HeatWave GenAI는 두 개의 데이터베이스 내 대규모 언어 모델(LLM)을 지원합니다: mistral-7b-instruct-v1 및 llama2-7b-v1, llama3-8b-instruct-v1. 이러한 모델을 사용하여 응답을 생성하거나 요약할 수 있습니다.
 
-_Estimated Time:_ 10 minutes
+_Estimated Time:_ 10 minutes 소요
 
-### Objectives
+### 목표
 
-In this lab, you will be guided through the following task:
+이 Lab에서는 다음과 같은 작업들을 진행합니다.
 
-- Generate response using in-database LLMs.
-- Summarize text using in-database LLMs.
+- 데이터베이스 내 LLM을 사용하여 응답 생성.
+- 데이터베이스 내 LLM을 사용하여 텍스트 요약.
 
-### Prerequisites
+### Prerequisites (필요사항)
 
-- Must complete Lab 3.
-
+- An Oracle Trial or Paid Cloud Account
+- MySQL Shell에 사용경험
 
 ## Task 1:  Generate response using in-database LLMs
 
