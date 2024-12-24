@@ -229,65 +229,62 @@ Pre-authenticated requests provide a way to let you access a bucket or an object
     ![Copy Pre-Authenticated Request details](./images/10-copy-par.png "Copy Pre-Authenticated Request details")*/ -->
 
 
-## 작업 6: Set up a vector store
+## 작업 6: 벡터 스토어 (vector store) 설정
 
-1. Go to Visual Studio Code, and under **DATABASE CONNECTIONS**, click **heatwave-genai-db-connection** icon next to your HeatWave instance to connect to it. 
+1. Cloud shell에서 MySQL shell를 사용하여 아래와 같이 Heatwave 서비스 접속합니다.
 
-    ![Connect database](./images/vscode-connection.png "Connect database")
+    ![image](https://github.com/user-attachments/assets/26f53eea-fed9-458e-a0d6-ce3ba776a954)
 
-2. Create a new schema and select it.
+
+2. 새로운 스키마를 생성하고 선택합니다.
 
     ```bash
     <copy>create database genai_db;</copy>
 	<copy>use genai_db;</copy>
     ```
 
-    ![Create database](./images/11-create-database.png "Create database")
+   ![image](https://github.com/user-attachments/assets/549ebfb6-bdfa-4d1f-b801-dd2bfc4485ee)
 
-2. Call the following procedure to create a schema that is used for task management.
+2. 다음 프로시저(procedure)를 호출하여 작업 관리에 사용되는 스키마를 생성합니다.
 
     ```bash
     <copy>select mysql_task_management_ensure_schema();</copy>
     ```
 
-    ![Call procedure](./images/12-call-procedure.png "Call procedure")
+    ![image](https://github.com/user-attachments/assets/195da13d-d555-40ab-965f-b0311eeea0c1)
 
-3. Click **Reload Database Information** to view the mysql\_task\_management schema.
-
-    ![Reload Database Information](./images/13-reload-database-information.png "Reload Database Information")
-
-4. Ingest the file from the Object Storage, create vector embeddings, and load the vector embeddings into HeatWave:
+3. Object Storage에서 파일을 수집하고 벡터 임베딩(vector embeddings)을 생성한 다음 벡터 임베딩을 HeatWave Cluster에 로드합니다.
 
     ```bash
     <copy>call sys.VECTOR_STORE_LOAD('oci://BucketName@Namespace/Path/', '{"table_name": "VectorStoreTableName"}');</copy>
     ```
     Replace the following:
 
-    - BucketName: The OCI Object Storage bucket name that you created in Task 2.
-    - Namespace: The name of the Object Storage bucket namespace that you copied in Task 2, Step 6.
-    - Path: Path to the folder that contains the source file that you created in Task 2, Step 7.
-    - VectorStoreTableName: The name you want for the vector store table
+    - BucketName: 작업 2에서 생성한 OCI 개체 저장소 버킷 이름(bucket name).
+    - Namespace: 작업 2, 6단계에서 복사한 Object Storage 버킷 네임스페이스(namespace)의 이름.
+    - Path: 작업 2, 7단계에서 생성한 소스 파일이 포함된 폴더의 경로.
+    - VectorStoreTableName: 벡터 저장소 테이블에 원하는 이름.
    
     For example:
 
     ```bash
-    <copy>call sys.VECTOR_STORE_LOAD('oci://bucket-vector-search@axqzijr6ae84/bucket-folder-heatwave/', '{"table_name": "livelab_embedding"}');</copy>
+    <copy>call sys.VECTOR_STORE_LOAD('oci://bucket-vector-search@axqzijr6ae84/bucket-folder-heatwave/', '{"table_name": "vector_embedding"}');</copy>
     ```
+    ![image](https://github.com/user-attachments/assets/8d755039-31f4-4ee9-8b7f-c0867f45f52c)
 
-    ![Ingest files from Object Storage](./images/14-ingest-files.png "Ingest files from Object Storage")
 
-5. Wait for a few minutes, and verify that embeddings are loaded in the vector embeddings table.
+4. 몇 분간 기다렸다가 벡터 임베딩 테이블에 데이터가 임베딩이 로드되었는지 확인하세요.
 
     ```bash
     <copy>select count(*) from <EmbeddingsTableName>;</copy>
     ```
     For example:
     ```bash
-    <copy>select count(*) from livelab_embedding_pdf; </copy>
+    <copy>select count(*) from vector_embedding; </copy>
     ```
-    It takes a couple of minutes to create vector embeddings. You should see a numerical value in the output, which means your embeddings are successfully loaded in the table.
+    벡터 임베딩을 만드는 데 몇 분이 걸립니다. 출력에 숫자 값이 표시되어야 하며, 이는 임베딩이 테이블에 성공적으로 로드되었음을 의미합니다.
 
-    ![Vector embeddings](./images/15-check-count.png "Vector embeddings")
+    ![image](https://github.com/user-attachments/assets/7a983a8b-79eb-4764-8117-b82684c853bb)
 
 ## 작업 7: Perform retrieval augmented generation
 
