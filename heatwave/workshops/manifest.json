@@ -94,9 +94,14 @@
           "title": "Lab 17: HeatWave GenAI LLM을 사용하여 콘텐츠 생성 및 요약",
           "filename": "../generate-content/generate-content.md"
         },
+
+        {
+          "title": "Lab 18: HeatWave GenAI 검색 증강 생성(RAG) 수행",
+          "filename": "../vector-search/vector-search.md"
+        },      
       
         {
-          "title": "Lab 18: OCI Services 중단",
+          "title": "Lab 19: OCI Services 중단",
           "filename": "../stop-services/stop-services.md"
         },
       
