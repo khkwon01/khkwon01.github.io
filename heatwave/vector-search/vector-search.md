@@ -25,9 +25,9 @@ _Estimated Time:_ 30 minutes 소요
 
 ## 작업 1: HeatWave 파일 다운로드
 
-Download HeatWave files on which we will perform a vector search.
+벡터 검색(vector search)을 수행할 HeatWave 파일을 다운로드합니다.
 
-1. Download the following files and save it in your local computer.
+1. 다음 파일을 다운로드하여 로컬 컴퓨터에 저장하세요.
 
     - https://www.oracle.com/a/ocom/docs/mysql-heatwave-technical-brief.pdf
     - https://www.oracle.com/a/ocom/docs/mysql/mysql-heatwave-on-aws-brief.pdf
@@ -38,39 +38,39 @@ Download HeatWave files on which we will perform a vector search.
 
 ## 작업 2: Object Storage에 버킷(bucket)과 폴더(folder) 생성
 
-The Object Storage service provides reliable, secure, and scalable object storage. Object Storage uses buckets to organize your files. 
+Object Storage 서비스는 안정적이고, 안전하고, 확장 가능한 Object Storage를 제공합니다. Object Storage는 버킷을 사용하여 파일을 보관합니다.
 
-1. Open the **Navigation menu** and click **Storage**. Under **Object Storage & Archive Storage**, click **Buckets**.
+1. **Navigation menu**를 열고 **Storage**를 클릭합니다. **Object Storage & Archive Storage**에서 **Buckets**을 클릭합니다.
 
     ![Click bucket](./images/1-click-bucket.png "Click bucket")
 
-2. In the **heatwave-genai** compartment, click **Create Bucket**. 
+2. **heatwave-genai** compartment에서, **Bucket 생성** 클릭합니다. 
 
     ![Create bucket](./images/2-create-bucket.png "Create bucket")
 
-3. Enter the **Bucket Name**, and accept the defaults for the rest of the fields.
+3. **Bucket Name**을 입력하고 나머지 필드는 기본값을 그대로 사용합니다.
 
     ```bash
     <copy>bucket-vector-search</copy>
     ```
 
-4. Click **Create**.
+4. **Create** 클릭합니다.
 
     ![Enter bucket details](./images/3-enter-bucket-details.png "Enter bucket details")
 
-5. Once the bucket is created, click the name of the bucket to open the **Bucket Details** page. 
+5. 버킷이 생성되면 버킷 이름을 클릭하여 **Bucket Details** 페이지를 엽니다.
 
     ![Created bucket](./images/4-created-bucket.png "Created bucket")
 
-6. Copy the bucket name and **Namespace**, and paste the it somewhere for future reference.
+6. 버킷 이름과 **Namespace**를 복사하여 나중에 참조할 수 있도록 어딘가에 붙여넣습니다.
 
     ![Bucket namespace](./images/35-bucket-namespace.png "Bucket namespace")
 
-7. Under **Objects**, click **More Actions**, and then click **Create New Folder**.
+7. **Objects**에서 **More Actions**을 클릭한 다음 **Create New Folder**를 클릭합니다.
 
     ![Create new folder](./images/31-create-new-folder.png "Create new folder")
 
-8. In the **Create New Folder** page, enter a **Name** of the folder, and note it for future reference.
+8. **Create New Folder** 페이지에서 폴더의 **Name**을 입력하고 향후 참조를 위해 기록해 둡니다.
 
     ```bash
     <copy>bucket-folder-heatwave</copy>
@@ -78,7 +78,7 @@ The Object Storage service provides reliable, secure, and scalable object storag
 
     ![Enter new folder details](./images/32-enter-folder-details.png "Enter new folder details")
 
-9. Click **Create**.
+9. **Create** 클릭합니다.
 
 ## 작업 3: Upload files to the bucket folder
 
@@ -341,7 +341,7 @@ HeatWave retrieves content from the vector store and provide that as context to 
 
     ![Vector search results](./images/18-vector-search-output.png "Vector search results")
 
-## Learn More
+## Learn More (관련 자료)
 
 - [HeatWave User Guide](https://dev.mysql.com/doc/heatwave/en/)
 
