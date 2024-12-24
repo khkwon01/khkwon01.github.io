@@ -101,9 +101,9 @@ Object Storage 서비스는 안정적이고, 안전하고, 확장 가능한 Obje
     ![Upload files finished](./images/7-upload-files-finished.png "Upload files finished")
 
 
-## 작업 4: Create a dynamic group
+## 작업 4: 동적 그룹(dynamic group) 만들기
 
-Dynamic groups allow you to group Oracle Cloud Infrastructure resources as principal. You can then create policies to permit the dynamic groups to access Oracle Cloud Infrastructure services. 
+동적 그룹(Dynamic groups)을 사용하면 Oracle Cloud Infrastructure 리소스(resources)를 주체(principal)로 그룹화할 수 있습니다. 그런 다음 동적 그룹(Dynamic groups)이 Oracle Cloud Infrastructure 서비스에 액세스할 수 있도록 허용하는 정책(policies)을 만들 수 있습니다.
 
 1. Open the **Navigation menu**, click **Identity & Security**, and under **Identity**, click **Compartments**.
 
