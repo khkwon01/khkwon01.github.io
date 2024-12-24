@@ -91,7 +91,12 @@
         },
       
         {
-          "title": "Lab 16: OCI Services 중단",
+          "title": "Lab 17: HeatWave GenAI LLM을 사용하여 콘텐츠 생성 및 요약",
+          "filename": "../generate-content/generate-content.md"
+        },
+      
+        {
+          "title": "Lab 18: OCI Services 중단",
           "filename": "../stop-services/stop-services.md"
         },
       
