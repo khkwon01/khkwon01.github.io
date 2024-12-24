@@ -1,4 +1,4 @@
-# Use HeatWave in-database LLM to Generate and Summarize Content
+# HeatWave 데이터베이스 내 LLM을 사용하여 콘텐츠 생성 및 요약
 
 ## Introduction
 
