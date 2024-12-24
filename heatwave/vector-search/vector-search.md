@@ -105,31 +105,31 @@ Object Storage 서비스는 안정적이고, 안전하고, 확장 가능한 Obje
 
 동적 그룹(Dynamic groups)을 사용하면 Oracle Cloud Infrastructure 리소스(resources)를 주체(principal)로 그룹화할 수 있습니다. 그런 다음 동적 그룹(Dynamic groups)이 Oracle Cloud Infrastructure 서비스에 액세스할 수 있도록 허용하는 정책(policies)을 만들 수 있습니다.
 
-1. Open the **Navigation menu**, click **Identity & Security**, and under **Identity**, click **Compartments**.
+1. **Navigation menu**를 열고 **Identity & Security**을 클릭한 다음 **Identity**에서 **Compartments**을 클릭합니다. 
 
     ![Click Domain](./images/23-click-compartment.png "Click Domain")
 
-2. In the **Compartments** page, hover over the OCID of your compartment, click **Copy**, and paste the OCID somewhere for future reference.
+2. **Compartments** 페이지에서 Compartments의 OCID 위에 마우스를 올려놓고 **Copy**를 클릭한 후 나중에 참조할 수 있도록 OCID를 어딘가에 붙여넣습니다.
 
     ![Copy compartment OCID](./images/24-copy-comparment-ocid.png "Copy compartment OCID")
 
-3. Open the **Navigation menu**, click **Identity & Security**, and under **Identity**, click **Domains**.
+3. **Navigation menu**를 열고 **Identity & Security**을 클릭한 다음 **Identity**에서 **Domains**을 클릭합니다.
 
     ![Click Domain](./images/19-click-domain.png "Click Domain")
 
-4. Click the domain, **Default**. Note that you had logged into OCI Console using the default identity domain.
+4. **Default** 도메인을 클릭합니다. 기본 ID 도메인을 사용하여 OCI 콘솔에 로그인했음을 유의하세요.
 
     ![Click default domain](./images/39-default-domain.png "Click default domain")
 
-5. Under **Identity domain**, click **Dynamic groups**.
+5. **Identity domain**에서 **Dynamic groups**을 클릭합니다.
 
     ![Click dynamic group](./images/21-click-dynamic-group.png "Click group")
 
-6. Click **Create dynamic group**.
+6. **동적 그룹 만들기 - Create dynamic group**를 클릭합니다.
 
-7. In the **Create dynamic group** page, enter a **Name** and a **Description** for the dynamic group. *Note* the name of the dynamic group.
+7. **동적 그룹(Create dynamic group) 만들기** 페이지에서 동적 그룹의 **Name**과 **Description**을 입력합니다. *참고* 동적 그룹의 이름.  
 
-    **Name**:
+    **이름**:
     
     ```bash
     <copy>heatwave-genai-dynamic-group</copy>
@@ -142,12 +142,12 @@ Object Storage 서비스는 안정적이고, 안전하고, 확장 가능한 Obje
 
     ![Create dynamic group](./images/38-create-dynamic-group.png "Create dynamic group")
 
-8. Enter the followng rule:
+8. 다음 규칙을 입력하세요 : 
 
     ```bash
     <copy>ALL{resource.type='mysqldbsystem', resource.compartment.id = '<OCIDComparment>'}</copy>
     ```
-    Replace OCIDComparment with the OCID of the compartment you had copied in Task 4 items 1 and 2.
+    OCID Comparment를 작업 4 항목 1과 2에서 복사한 compartment의 OCID로 바꾸세요.
 
     For example:
 
@@ -157,24 +157,24 @@ Object Storage 서비스는 안정적이고, 안전하고, 확장 가능한 Obje
 
     ![Enter rule](./images/37-dynamic-group-rule.png "Enter rule")
 
-9. Click **Create**.
+9. **Create** 클릭합니다.
 
 
-## 작업 5: Write policies for the dynamic group to access Object Storage bucket
+## 작업 5: 동적 그룹(dynamic group)이 Object Storage 버킷에 액세스할 수 있도록 정책(policies)을 작성합니다.
 
-To access Object Storage from HeatWave, you must define a policy that enables the dynamic group to access to buckets and its folders.
+HeatWave에서 Object Storage에 액세스하려면 동적 그룹(dynamic group)이 버킷과 해당 폴더에 액세스할 수 있도록 하는 정책(policy)을 정의해야 합니다.
 
- 1. Open the **Navigation menu**, click **Identity & Security**, and under **Identity**, click **Policies**.
+ 1. **Navigation menu**를 열고 **Identity & Security**을 클릭한 다음 **Identity**에서 **Policies**을 클릭합니다.
 
     ![Click policy](./images/28-click-policies.png "Click policy")
 
- 2. Click **Create Policy**.
+ 2. **Create Policy** 클릭합니다.
 
    ![Create dynamic group](./images/29-create-policies.png "Create dynamic group")
 
-3. In **Create policy** page, enter the **Name**, and **Description** of the policy.
+3. **Create policy** 페이지에서 정책의 **이름**과 **설명**을 입력합니다.
 
-    **Name**:
+    **이름**:
 
     ```bash
     <copy>heatwave-genai-policy</copy>
@@ -184,15 +184,15 @@ To access Object Storage from HeatWave, you must define a policy that enables th
     <copy>Policy for HeatWave GenAI</copy>
     ```
 
-4. Ensure that the Compartment is **heatwave-genai**.
+4. Compartment가 **heatwave-genai** 인지 확인하세요.
 
-5. Toggle the **Show manual editor** button, and paste the following policy. *Note* that you can use the following command only when you have logged into OCI Console using the default domain.
+5. **Show manual editor** 버튼을 토글하고 다음 정책을 붙여넣습니다. *참고* 기본 도메인을 사용하여 OCI 콘솔에 로그인한 경우에만 다음 명령을 사용할 수 있습니다.
 
     ```bash
     <copy>Allow dynamic-group <DynamicGroupName> to read buckets in compartment <CompartmentName></copy>
     <copy>Allow dynamic-group <DynamicGroupName> to read objects in compartment <CompartmentName></copy>
     ```
-    Replace DynamicGroupName with the name of the dynamic group, and CompartmentName with the name of the compartment. 
+    DynamicGroupName을 동적 그룹의 이름으로, CompartmentName을 compartment의 이름으로 바꿉니다.
 
     For example:
         
@@ -201,7 +201,7 @@ To access Object Storage from HeatWave, you must define a policy that enables th
     <copy>Allow dynamic-group heatwave-genai-dynamic-group to read objects in compartment heatwave-genai</copy>
     ```
 
-  6. Click **Create**.
+  6. **Create** 클릭합니다.
 
     ![Enter policy details](./images/30-enter-policy-details.png "Enter policy details")
 
