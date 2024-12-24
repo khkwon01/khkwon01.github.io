@@ -80,23 +80,23 @@ Object Storage 서비스는 안정적이고, 안전하고, 확장 가능한 Obje
 
 9. **Create** 클릭합니다.
 
-## 작업 3: Upload files to the bucket folder
+## 작업 3: 버킷 폴더(bucket folder)에 파일 업로드
 
-1.  In the **Bucket Details** page, under **Objects**, click the bucket folder name.
+1.  **Bucket Details** 페이지의 **Objects** 아래에서 버킷 폴더 이름을 클릭합니다.
 
     ![Click bucket folder](./images/33-click-bucket-folder.png "Click bucket folder")
 
-2.  Click **Upload**.
+2.  **Upload** 클릭합니다.
 
     ![Click upload](./images/34-click-upload.png "Click upload")
 
-3. Click **select files** to display a file selection dialog box.
+3. **파일 선택 (select files)**을 클릭하면 파일 선택 대화 상자가 표시됩니다.
 
-4. Select the files you had downloaded earlier in Task 1, and click **Upload**.
+4. 작업 1에서 다운로드한 파일을 선택하고 **Upload**를 클릭합니다.
 
     ![Upload files](./images/6-upload-files.png "Upload files")
 
-5. When the file status shows **Finished**, click **Close** to return to the bucket.
+5. 파일 상태가 **완료 (Finished)**로 표시되면 **닫기 (Close)**를 클릭하여 버킷으로 돌아갑니다.
 
     ![Upload files finished](./images/7-upload-files-finished.png "Upload files finished")
 
