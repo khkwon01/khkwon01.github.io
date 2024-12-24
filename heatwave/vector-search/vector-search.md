@@ -1,28 +1,29 @@
-# Perform Retrieval Augmented Generation 
+# 검색 증강 생성(Retrieval Augmented Generation) 수행 
 
-## Introduction
+## 세션 소개
 
-Using the in-database vector store and retrieval-augmented generation (RAG), you can load and query unstructured documents stored in Object Storage using natural language within the HeatWave ecosystem.
+데이터베이스 내 벡터 저장소와 검색 증강 생성(RAG)을 사용하면 HeatWave 생태계 내에서 자연어를 사용하여 개체 스토리지에 저장된 비정형 문서를 로드하고 쿼리할 수 있습니다.
 
-_Estimated Time:_ 30 minutes
+_Estimated Time:_ 30 minutes 소요
 
-### Objectives
+### 목표
 
-In this lab, you will be guided through the following task:
+이 Lab에서는 다음 작업을 안내해 드립니다 :
 
-- Download HeatWave files.
-- Create a bucket and a folder.
-- Upload files to the bucket folder.
-- Create a dynamic group.
-- Write policies for the dynamic group.
-- Set up a vector store.
-- Perform a vector search.
+- HeatWave 파일 다운로드.
+- Object Storage에 버킷(bucket)과 폴더(folder) 생성.
+- 버킷(bucket) 폴더에 파일 업로드.
+- 동적 그룹(dynamic group) 구성.
+- 동적 그룹(dynamic group)에 대한 정책(policies) 작성.
+- vector store 설정.
+- 벡터 검색(vector search)을 수행.
 
-### Prerequisites
+### Prerequisites (필요사항)
 
-- Must complete Lab 4.
+- An Oracle Trial, Paid or LiveLabs Cloud Account
+- MySQL Shell에 사용경험
 
-## Task 1: Download HeatWave files
+## 작업 1: HeatWave 파일 다운로드
 
 Download HeatWave files on which we will perform a vector search.
 
@@ -35,7 +36,7 @@ Download HeatWave files on which we will perform a vector search.
 
     ![Download files](./images/vector-search-folder.png "Download files")
 
-## Task 2: Create a bucket and a folder
+## 작업 2: Object Storage에 버킷(bucket)과 폴더(folder) 생성
 
 The Object Storage service provides reliable, secure, and scalable object storage. Object Storage uses buckets to organize your files. 
 
@@ -79,7 +80,7 @@ The Object Storage service provides reliable, secure, and scalable object storag
 
 9. Click **Create**.
 
-## Task 3: Upload files to the bucket folder
+## 작업 3: Upload files to the bucket folder
 
 1.  In the **Bucket Details** page, under **Objects**, click the bucket folder name.
 
@@ -100,7 +101,7 @@ The Object Storage service provides reliable, secure, and scalable object storag
     ![Upload files finished](./images/7-upload-files-finished.png "Upload files finished")
 
 
-## Task 4: Create a dynamic group
+## 작업 4: Create a dynamic group
 
 Dynamic groups allow you to group Oracle Cloud Infrastructure resources as principal. You can then create policies to permit the dynamic groups to access Oracle Cloud Infrastructure services. 
 
@@ -159,7 +160,7 @@ Dynamic groups allow you to group Oracle Cloud Infrastructure resources as princ
 9. Click **Create**.
 
 
-## Task 5: Write policies for the dynamic group to access Object Storage bucket
+## 작업 5: Write policies for the dynamic group to access Object Storage bucket
 
 To access Object Storage from HeatWave, you must define a policy that enables the dynamic group to access to buckets and its folders.
 
@@ -228,7 +229,7 @@ Pre-authenticated requests provide a way to let you access a bucket or an object
     ![Copy Pre-Authenticated Request details](./images/10-copy-par.png "Copy Pre-Authenticated Request details")*/ -->
 
 
-## Task 6: Set up a vector store
+## 작업 6: Set up a vector store
 
 1. Go to Visual Studio Code, and under **DATABASE CONNECTIONS**, click **heatwave-genai-db-connection** icon next to your HeatWave instance to connect to it. 
 
@@ -288,7 +289,7 @@ Pre-authenticated requests provide a way to let you access a bucket or an object
 
     ![Vector embeddings](./images/15-check-count.png "Vector embeddings")
 
-## Task 7: Perform retrieval augmented generation
+## 작업 7: Perform retrieval augmented generation
 
 HeatWave retrieves content from the vector store and provide that as context to the LLM. This process is called as retrieval-augmented generation or RAG. This helps the LLM to produce more relevant and accurate results for your queries.
 
@@ -353,4 +354,4 @@ HeatWave retrieves content from the vector store and provide that as context to 
 
 - **Author** - Aijaz Fatima, Product Manager
 - **Contributors** - Mandy Pang, Senior Principal Product Manager, Aijaz Fatima, Product Manager
-- **Last Updated By/Date** - Aijaz Fatima, Product Manager, August 2024
+- **Last Updated By/Date** - kihyuk, MySQL Solution Engineering, December 2024
