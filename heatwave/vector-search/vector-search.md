@@ -286,7 +286,35 @@ Pre-authenticated requests provide a way to let you access a bucket or an object
 
     ![image](https://github.com/user-attachments/assets/7a983a8b-79eb-4764-8117-b82684c853bb)
 
-## 작업 7: 검색 증강 생성 (retrieval augmented generation) 수행
+## 작업 7: vector(유사) 검색 수행
+
+작업 6에서 생성된 vector store 사용하여 unstructed 데이터에 대해 벡터(유사) 검색을 수행하여 결과를 가져와서 사용할 수 있습니다.
+
+1. @query에 사용자 질의를 정의하고 해당 사용자 질의를 벡터 임베이딩 모델(all_minilm_l12_v2, multilingual-e5-small)을 사용하여 Vectorizing하여 숫자로 변경하는 작업을 합니다.
+
+   ```bash
+   <copy>set @query="What is HeatWave AutoML?";
+
+   select sys.ML_EMBED_ROW(@query, JSON_OBJECT("model_id", "multilingual-e5-small")) into @query_embedding;
+   select @query_embedding;</copy>
+   ```
+
+   ![image](https://github.com/user-attachments/assets/ee5e5195-6ffc-4093-9084-555fff6b3293)
+
+2. 1번에서 생성된 @query_embedding 변수 값을 사용하여 SQL를 사용하여 사용자 질의와 가장 가까운 데이터에 대해 distance metric(COSINE, DOT, EUCLIDEAN)를 사용하여 유사(시만텍) 검색을 수행합니다.
+
+   ```bash
+   <copy>select segment,
+     1-distance(segment_embedding, @query_embedding, 'COSINE') as similr,
+     metadata
+   from genai_db.vector_embedding
+   order by similr desc limit 3;</copy>
+   ```
+   
+   ![image](https://github.com/user-attachments/assets/278b0b59-e9d7-4248-ab42-a9540b29ade2)
+
+
+## 작업 8: 검색 증강 생성 (retrieval augmented generation) 수행
 
 HeatWave는 벡터 스토어에서 콘텐츠를 검색하여 LLM에 컨텍스트로 제공합니다. 이 프로세스를 검색 증강 생성 또는 RAG라고 합니다. 이를 통해 LLM은 귀하의 질의에 대해 더욱 관련성 있고 정확한 결과를 생성할 수 있습니다.
 
