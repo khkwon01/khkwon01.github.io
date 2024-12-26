@@ -95,7 +95,7 @@ _Estimated Time:_ 10 minutes 소요
 
 이제 다음 Lab으로 진행할 수 있습니다.
 
-## Learn More (관련 웹사이트)
+## Learn More (관련 문서)
 
 - [HeatWave User Guide](https://dev.mysql.com/doc/heatwave/en/)
 
