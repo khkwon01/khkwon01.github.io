@@ -4,7 +4,7 @@ layout: post
 
 ### 1. mysql connector-j 9.0 이전버전에서 발생하는 현상
 
-- jdk19 출시 이후 microservices에 virtual thread를 사용할 수 있는데 mysql connector에 blocking 동작으로
+- jdk21(19?) 출시 이후 microservices에 virtual thread를 사용할 수 있는데 mysql connector에 blocking 동작으로
 
   인해 최대성능을 사용하지 못하는 현상 발생
 
@@ -30,6 +30,6 @@ layout: post
 
   tps 1000으로 제한 되는 사항은 springboot에서 사용하는 hikari 설정으로 인해 발생 하는 현상임
 
-  (spring.datasource.hikari.maximum-pool-size=1000)
+  (spring.datasource.hikari.maximum-pool-size=1000, spring.threads.virtual.enabled=true)
 
 - 관련 참고 문서 : https://medium.com/naukri-engineering/virtual-threads-and-mysql-unlocking-performance-gains-with-mysql-connector-j-9-0-0-6754abc85f61
