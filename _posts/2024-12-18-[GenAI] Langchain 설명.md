@@ -25,13 +25,13 @@ layout: post
   - 사용자 질의(agent, chain등 통해서)의 결과에 대한 상태 유지를 통해 일관된 문맥(context)를 제공
  
 ### 2. Langchain 중요한 3가지 
-- Chat models
+- Chat models   
   LangChain 설명서를 참조하세요. OpenAI(상업적 API)를 사용하고 싶지 않다면 상업적 대안으로 Anthropic을 제안하고, 오픈 소스 대안으로 Ollama를 제안합니다.
 
-- Embeddings
+- Embeddings   
   LangChain 설명서를 참조하세요. OpenAI(상업적 API)를 사용하고 싶지 않다면 상업적 대안으로 Cohere를 제안하고, 오픈 소스 대안으로 Ollama를 제안합니다.
 
-- Vector stores
+- Vector stores   
   LangChain 설명서를 참조하세요. PGVector(인기 있는 SQL 데이터베이스 Postgres의 오픈 소스 확장)를 사용하고 싶지 않다면 Weaviate(전용 벡터 스토어) 또는 OpenSearch(인기 있는 검색 데이터베이스의 일부인 벡터 검색 기능)를 사용하는 것이 좋습니다.
 
 
