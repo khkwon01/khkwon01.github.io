@@ -178,6 +178,7 @@ OCI 데이터베이스 마이그레이션에서 마이그레이션 리소스에 
 OCI Database Migration(DMS)은 온프레미스 또는 클라우드 배포에서 OCI로 Oracle 데이터베이스를 마이그레이션합니다. 사용하기 쉬운 그래픽 사용자 환경은 마이그레이션 워크플로를 검증하고 관리합니다. MySQL 마이그레이션을 위한 DMS는 MySQL Shell을 초기 로드 엔진으로, Premigration Advisor Tool 및 Oracle GoldenGate 서비스를 사용하여 안전하고 내결함성이 뛰어나며 증분형 마이그레이션을 수행합니다.
 
 
+* [원본: Migrate AWS RDS for MySQL to HeatWave MySQL using OCI Database Migration](https://blogs.oracle.com/dataintegration/post/migrate-aws-rds-for-mysql-to-heatwave-mysql-using-oci-database-migration)
 
 
 
