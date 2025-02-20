@@ -66,13 +66,13 @@
 
 ## 작업 2: 개체 저장소 버킷 생성 (Object Storage bucket)
 
-1. From the Console navigation menu, click **Storage**.
-2. Under Object Storage, click Buckets
+1. 콘솔 탐색 메뉴에서 **Storage**를 클릭합니다.
+2. Object Storage 아래, Buckets 클릭
     ![bucket menu](./images/cloud-storage-menu.png "cloud storage menu")
 
-    **NOTE:** Ensure the correct Compartment is selected : Select **lakehouse**
+    **NOTE:** Compartment를 **lakehouse** 로 선택
 
-3. Click Create Bucket. The Create Bucket pane is displayed.
+3. Bucket 생성 클릭. Bucket 생성 pane이 화면에 표시됨.
 
     ![bucket create pane](./images/cloud-storage-bucket.png "cloud storage bucket")
 
