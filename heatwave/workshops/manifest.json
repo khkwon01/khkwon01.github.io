@@ -86,22 +86,37 @@
         },
 
         {
-          "title": "Lab 15: Oracle Analytics Cloud (OAC) 대시보드 구축",
-          "filename": "../do-oac-advanced/do-oac-advanced.md"
-        },
+          "title": "Lab 15: AutoML - black-friday 데이터 Object Storage로 업로드",
+          "filename": "../create-lakehouse-files-black-friday/create-lakehouse-files-black-friday.md"
+        },            
       
         {
-          "title": "Lab 17: HeatWave GenAI LLM을 사용하여 콘텐츠 생성 및 요약",
+          "title": "Lab 16: AutoML - OCI Object Store에서 Lakehouse로 black_friday CSV 데이터 로드",
+          "filename": "../load-csv-data-black-friday/load-csv-data-black-friday.md"
+        },  
+     
+        {
+          "title": "Lab 17: AutoML - black-friday 데이터로 HeatWave AutoML 모델 생성 및 사용",
+          "filename": "../do-heatwave-ml-black-friday/do-heatwave-ml-black-friday.md"
+        },  
+      
+        {
+          "title": "Lab 18: GenAI - HeatWave GenAI LLM을 사용하여 콘텐츠 생성 및 요약",
           "filename": "../generate-content/generate-content.md"
         },
 
         {
-          "title": "Lab 18: HeatWave GenAI 검색 증강 생성(RAG) 수행",
+          "title": "Lab 19: GenAI - HeatWave GenAI 검색 증강 생성(RAG) 수행",
           "filename": "../vector-search/vector-search.md"
         },      
+
+        {
+          "title": "Lab 20: Oracle Analytics Cloud (OAC) 대시보드 구축",
+          "filename": "../do-oac-advanced/do-oac-advanced.md"
+        },     
       
         {
-          "title": "Lab 19: OCI Services 중단",
+          "title": "Lab 21: OCI Services 중단",
           "filename": "../stop-services/stop-services.md"
         },
       
