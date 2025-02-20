@@ -1,8 +1,8 @@
-# Load CSV data from OCI Object Store to Lakehouse - black-friday
+# OCI Object Store에서 Lakehouse로 CSV 데이터 로드 - black-friday
 
-## Introduction
+## 세션 소개
 
-To load data from Object Storage to HeatWave, you need to specify the location of the file or folder objects in your Object Storage.
+Object Storage에서 HeatWave로 데이터를 로드하려면 Object Storage에 있는 파일이나 폴더 객체의 위치를 ​​지정해야 합니다.
 
 1. Use [Resource Principal](https://docs.oracle.com/en-us/iaas/autonomous-database-serverless/doc/resource-principal-enable.html) - It is recommended that you use Resource Principal-based approach for access to data in Object Storage for more sensitive data as this approach is more secure.
 
