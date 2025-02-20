@@ -76,7 +76,7 @@
 
     ![bucket create pane](./images/cloud-storage-bucket.png "cloud storage bucket")
 
-4. 버킷(Bucket) 이름을 입력하세요 **lakehouse-files**
+4. 버킷(Bucket) 이름을 **lakehouse-files**로 입력하세요
 5. 기본 저장소(Storage) 계층에서, Standard 선택하고 다른 모든 필드는 기본값을 그대로 둡니다.
 
     ![Add bucket name](./images/create-lakehous-bucket.png "create bucket")
