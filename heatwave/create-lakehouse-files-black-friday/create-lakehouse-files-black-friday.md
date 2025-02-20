@@ -76,26 +76,26 @@
 
     ![bucket create pane](./images/cloud-storage-bucket.png "cloud storage bucket")
 
-4. Enter the Bucket Name **lakehouse-files**
-5. Under Default Storage Tier, click Standard. Leave all the other fields at their default values.
+4. 버킷(Bucket) 이름을 입력하세요 **lakehouse-files**
+5. 기본 저장소(Storage) 계층에서, Standard 선택하고 다른 모든 필드는 기본값을 그대로 둡니다.
 
     ![Add bucket name](./images/create-lakehous-bucket.png "create bucket")
 
-6. Create the  Pre-Authenticated Request URL for the bucket
-     - a. Click on the 3 dots to the right of the **lakehouse-files** bucket  Click on ‘Create Pre-Authenticated Request’
+6. 버킷(Bucket)에 대한 사전 인증된(Pre-Authenticated) 요청 URL을 만듭니다.
+     - a. **lakehouse-files** 버킷 오른쪽에 있는 3개의 점을 클릭합니다. '사전 인증된 요청 만들기(Pre-Authenticated Request)'를 클릭합니다.
         ![lakehouse-files 3 dots](./images/create-lakehous-bucket-par-dots.png "bucket par dots")
         ![Create PAR](./images/create-lakehous-bucket-par-load.png "bucket par load")
-     - b. The ‘Bucket’ option will be pre-selected
-     - c. For 'Access Type' select 'Permit object write
-     - d. Click the Create "Pre-Authenticated Request' button
+     - b. '버킷 (Bucket)' 옵션이 미리 선택됩니다.
+     - c. '액세스 유형 (Access Type)'에 대해 '개체 쓰기 허용 (Permit object write)'을 선택하세요.
+     - d. '사전 인증된 요청 만들기 (Pre-Authenticated Request)' 버튼을 클릭하세요.
         ![PAR Button](./images/create-lakehous-bucket-par-load-button.png " bucket par load button")
-     - e. Click the ‘Copy’ icon to copy the PAR URL
+     - e. '복사' 아이콘을 클릭하여 PAR URL을 복사합니다.
         ![Copy PAR](./images/create-lakehous-bucket-par-copy-load.png "bucket par load copy")
-     - f. Save the generated PAR URL; you will need it in the next task
+     - f. 생성된 PAR URL을 저장하세요. 다음 작업에서 필요합니다.
 
-## Task 3: Add files into  the Bucket using the saved PAR URL
+## 작업 3: 저장된 PAR URL을 사용하여 버킷(Bucket)에 파일 추가
 
-1. Go into the lakehouse folder and list all of the files
+1. lakehouse 폴더로 가서 모든 파일을 리스트 하세요.
 
     ```bash
     <copy>cd ~/lakehouse</copy>
@@ -107,7 +107,7 @@
 
     ![bucket file list](./images/datafiles-list.png "datafiles list")
 
-2. Add the black\_friday\_train.csv file to the storage bucket by modifying the following statement with the example below. You must replace the **(PAR URL)** value with the saved generated **PAR URL** from the previous Task.
+2. 아래 예제를 사용하여 다음 문장을 수정하여 black\_friday\_train.csv 파일을 저장소 버킷에 추가합니다. **(PAR URL)** 값을 이전 작업에서 저장된 생성된 **PAR URL**로 바꿔야 합니다.
 
     ```bash
     <copy>curl -X PUT --data-binary '@black_friday_train.csv' (PAR URL)black_friday_train.csv</copy>
@@ -116,7 +116,7 @@
      **Example**  
      curl -X PUT --data-binary '@black\_friday\_train.csv' https://objectstorage.us-ashburn-1.oraclecloud.com/p/RfXc55AGpLSu26UgqbmGxbWZwh4hPhLkVWYMg4f5pNerQx_1NghgSKJHLzE4IWxH/n/******/b/lakehouse-files/o/black_friday_train.csv
 
-3. Add the @black\_friday\_test.csv file to the storage bucket by modifying the following statement with the example below. You must replace the **(PAR URL)** value with the saved generated **PAR URL** from the previous Task.
+3. 아래 예제를 사용하여 다음 문장을 수정하여 @black\_friday\_test.csv 파일을 저장소 버킷에 추가합니다. **(PAR URL)** 값을 이전 작업에서 저장된 생성된 **PAR URL**로 바꿔야 합니다.
 
     ```bash
     <copy>curl -X PUT --data-binary '@black_friday_test.csv' (PAR URL)black_friday_test.csv</copy>
@@ -125,10 +125,10 @@
      **Example**  
      curl -X PUT --data-binary '@black\_friday\_test.csv' https://objectstorage.us-ashburn-1.oraclecloud.com/p/RfXc55AGpLSu26UgqbmGxbWZwh4hPhLkVWYMg4f5pNerQx_1NghgSKJHLzE4IWxH/n/******/b/lakehouse-files/o/black_friday_test.csv
 
-4. Your **lakehouse-files** bucket should look like this:
+4. **lakehouse-files** 버킷은 다음과 같아야 합니다.
     ![cloud storage bucket](./images/lakehouse-bucket.png "lakehouse bucket")
 
-You may now **proceed to the next lab**
+이제 **다음 랩으로 진행**할 수 있습니다.
 
 ## Acknowledgements
 
