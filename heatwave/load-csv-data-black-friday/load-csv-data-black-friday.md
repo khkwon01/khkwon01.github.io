@@ -4,25 +4,25 @@
 
 Object Storage에서 HeatWave로 데이터를 로드하려면 Object Storage에 있는 파일이나 폴더 객체의 위치를 ​​지정해야 합니다.
 
-1. Use [Resource Principal](https://docs.oracle.com/en-us/iaas/autonomous-database-serverless/doc/resource-principal-enable.html) - It is recommended that you use Resource Principal-based approach for access to data in Object Storage for more sensitive data as this approach is more secure.
+1. [Resource Principal 사용](https://docs.oracle.com/en-us/iaas/autonomous-database-serverless/doc/resource-principal-enable.html) - 민감한 데이터일 경우 Object Storage에 있는 데이터에 액세스하려면 리소스 주체 기반 접근 방식을 사용하는 것이 좋습니다. 이 접근 방식이 더 안전하기 때문입니다.
 
-2. Use [Pre-Authenticated Request URLs (PARs)](https://docs.oracle.com/en-us/iaas/Content/Object/Tasks/usingpreauthenticatedrequests.htm) - If you choose to use PARs, we recommend that you use read-only PARs with Lakehouse and specify short expiration dates for your PARs. The expiration dates should align with your loading schedule.
+2. [Pre-Authenticated Request URLs (PARs) 사용](https://docs.oracle.com/en-us/iaas/Content/Object/Tasks/usingpreauthenticatedrequests.htm) - PAR을 사용하기로 선택한 경우 Lakehouse에서 읽기 전용 PAR을 사용하고 PAR에 대한 짧은 만료 날짜를 지정하는 것이 좋습니다. 만료 날짜는 로딩 일정과 일치해야 합니다.
 
-Since we are using a sample data set, we will make use of PAR in this LiveLab. We already have several tables available in HeatWave that have been loaded from MySQL.
+샘플 데이터 세트를 사용하므로 이 LiveLab에서 PAR을 활용하겠습니다. HeatWave에서 이미 MySQL에서 로드된 여러 테이블을 사용할 수 있습니다.
 
-We will now load the Black Friday tables from the Object Store.
+이제 Object Store에서 Black Friday 테이블을 로드하겠습니다.
 
-### Objectives
+### 목표
 
-- Create PAR Link for the  "black_friday" files
-- Run Autoload to infer the schema and estimate capacity
-- Load complete black_friday tables from Object Store into MySQL HeatWave
+- "black_friday" 파일에 대한 PAR 링크 생성
+- 스키마(schema)를 유추하고 용량을 추정하기 위해 Autoload를 실행합니다.
+- Object Store에서 MySQL HeatWave로 전체 black_friday 테이블 로드
 
-### Prerequisites
+### Prerequisites (필요사항)
 
 - An Oracle Trial or Paid Cloud Account
-- Some Experience with MySQL Shell
-- Completed Lab 5
+- MySQL Shell에 사용경험
+- Lab 4에 작업1까지 완료가 필요
 
 ## Task 1: Create the PAR Link for the "black\_friday" files
 
