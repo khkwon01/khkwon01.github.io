@@ -24,24 +24,24 @@ Object Storage에서 HeatWave로 데이터를 로드하려면 Object Storage에 
 - MySQL Shell에 사용경험
 - Lab 4에 작업1까지 완료가 필요
 
-## Task 1: Create the PAR Link for the "black\_friday" files
+## 작업 1: "black\_friday" 파일에 대한 PAR 링크 생성
 
-1. Create a PAR URL for the **black\_friday\_train.csv** object
+1. **black\_friday\_train.csv** 개체에 대한 PAR URL을 만듭니다.
 
-    - a. From your OCI console, navigate to your lakehouse-files bucket in OCI.
-    - b. Select the black\_friday\_train.csv file and click the three vertical dots.
+    - a. OCI 콘솔에서 OCI의 lakehouse-files 버킷으로 이동합니다.
+    - b. black\_friday\_train.csv 파일을 선택하고 세 개의 세로 점을 클릭합니다.
 
-        ![Select  black_friday_train.csv](./images/storage-delivery-orders-folder.png "storage black_friday_train.csv")
+        ![black_friday_train.csv 선택](./images/storage-delivery-orders-folder.png "storage black_friday_train.csv")
 
-    - c. Click on ‘Create Pre-Authenticated Request’
-    - d. Click to select the ‘Object’ option under ‘PreAuthentcated Request Target’.
-    - e. Leave the ‘Access Type’ option as-is: ‘Permit object reads’.
-    - h. Click the ‘Create Pre-Authenticated Request’ button.
+    - c. '사전 인증된 요청 생성 (Pre-Authenticated Request)'을 클릭하세요.
+    - d. '사전 인증된 요청 대상 (PreAuthentcated Request Target)'에서 '개체 (Object)' 옵션을 선택하려면 클릭하세요.
+    - e. '액세스 유형 (Access Type)' 옵션 : '개체 읽기 허용'(Permit object reads)
+    - h. '사전 인증된 요청 만들기 (Pre-Authenticated Request)' 버튼을 클릭하세요.
 
-       ![Create Folder PAR](./images/storage-delivery-orders-folder-page.png "storage  folder page")
+       ![PAR 생성](./images/storage-delivery-orders-folder-page.png "storage  folder page")
 
-    - i. Click the ‘Copy’ icon to copy the PAR URL.
-    - j. Save the generated PAR URL; you will need it later.
+    - i. '복사' 아이콘을 클릭하여 PAR URL을 복사합니다.
+    - j. 생성된 PAR URL을 저장하세요. 나중에 필요합니다.
 
 2. Save the generated PAR URL; you will need it in the next task
 
@@ -58,7 +58,7 @@ Object Storage에서 HeatWave로 데이터를 로드하려면 Object Storage에 
 
 4. Save the generated PAR URL; you will need it in the next task
 
-## Task 2: Connect to your MySQL HeatWave system using Cloud Shell
+## 작업 2: Connect to your MySQL HeatWave system using Cloud Shell
 
 1. If not already connected with SSH, on Command Line, connect to the Compute instance using SSH ... be sure replace the  "private key file"  and the "new compute instance ip"
 
@@ -96,7 +96,7 @@ Object Storage에서 HeatWave로 데이터를 로드하려면 Object Storage에 
 
     You are now ready to use Autoload to load a table from the object store into MySQL HeatWave
 
-## Task 3: Run Autoload to infer the schema and estimate capacity for the black\_friday tables in the Object Store
+## 작업 3: Run Autoload to infer the schema and estimate capacity for the black\_friday tables in the Object Store
 
 1. The data is contained in the black\_friday\_train.csv file in object store for which we have created a PAR URL in the earlier task. Enter the following commands one by one and hit Enter.
 
@@ -169,7 +169,7 @@ Object Storage에서 HeatWave로 데이터를 로드하려면 Object Storage에 
 
     ![ result train table](./images/create-table-black-friday.png "result train table")
 
-## Task 4: Load the black\_friday\_train table from Object Store into MySQL HeatWave
+## 작업 4: Load the black\_friday\_train table from Object Store into MySQL HeatWave
 
 1. Run this command to see the table structure created.
 
@@ -199,7 +199,7 @@ Object Storage에서 HeatWave로 데이터를 로드하려면 Object Storage에 
     <copy>select * from black_friday_train limit 5;</copy>
     ```
 
-## Task 5: Create and Load the black\_friday\_test table from Object Store into MySQL HeatWave
+## 작업 5: Create and Load the black\_friday\_test table from Object Store into MySQL HeatWave
 
 1. Create the black\_friday\_test table by copying the black\_friday\_train Create command and replace the  (PAR URL) with the black\_friday\_test.csv PAR URL  you saved earlier. It will be the source for the black\_friday\_test.csv table:
 
@@ -244,4 +244,4 @@ You may now **proceed to the next lab**
 - **Author** - Perside Foster, MySQL Solution Engineering
 
 - **Contributors** - Abhinav Agarwal, Senior Principal Product Manager, Nick Mader, MySQL Global Channel Enablement & Strategy Manager
-- **Last Updated By/Date** - Perside Foster, MySQL Solution Engineering, May 2023
+- **Last Updated By/Date** - kihyuk, MySQL Solution Engineering, Feburary 2025
