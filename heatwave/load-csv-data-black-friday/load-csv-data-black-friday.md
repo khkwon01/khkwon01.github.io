@@ -48,23 +48,21 @@ Object Storage에서 HeatWave로 데이터를 로드하려면 Object Storage에 
     - a. OCI 콘솔에서 OCI의 lakehouse-files 버킷으로 이동합니다.
     - b. black\_friday\_test.csv 파일을 선택하고 세 개의 세로 점을 클릭합니다.
     - c. '사전 인증된 요청 생성 (Pre-Authenticated Request)'을 클릭하세요.
-    - d. Click to select the ‘Object’ option under ‘PreAuthentcated Request Target’.
-    - e. Leave the ‘Access Type’ option as-is: ‘Permit object reads’.
-    - h. Click the ‘Create Pre-Authenticated Request’ button.
-    - i. Click the ‘Copy’ icon to copy the PAR URL.
-    - j. Save the generated PAR URL; you will need it later.
+    - d. '사전 인증된 요청 대상(PreAuthentcated Request)'에서 '개체 (Object)' 옵션을 선택하려면 클릭하세요.
+    - e. '액세스 유형 (Access Type)' 옵션 : '개체 읽기 허용'(Permit object reads)
+    - h. '사전 인증된 요청 만들기 (Pre-Authenticated Request)' 버튼을 클릭하세요.
+    - i. '복사' 아이콘을 클릭하여 PAR URL을 복사합니다.
+    - j. 생성된 PAR URL을 저장하세요. 나중에 필요합니다.
 
-3. Save the generated PAR URL; you will need it in the next task
+## 작업 2: Cloud Shell을 사용하여 MySQL HeatWave 시스템에 연결
 
-## 작업 2: Connect to your MySQL HeatWave system using Cloud Shell
-
-1. If not already connected with SSH, on Command Line, connect to the Compute instance using SSH ... be sure replace the  "private key file"  and the "new compute instance ip"
+1. SSH로 아직 연결되지 않은 경우 명령줄에서 SSH를 사용하여 Compute 인스턴스에 연결합니다. "개인 키 파일"과 "새 Compute 인스턴스 IP"를 반드시 바꿔야 합니다.
 
      ```bash
     <copy>ssh -i private_key_file opc@new_compute_instance_ip</copy>
      ```
 
-2. If not already connected to MySQL then connect to MySQL using the MySQL Shell client tool with the following command:
+2. 아직 MySQL에 연결되지 않았다면 다음 명령을 사용하여 MySQL Shell 클라이언트 도구를 사용하여 MySQL에 연결합니다.
 
     ```bash
     <copy>mysqlsh -uadmin -p -h 10.0.1... --sql </copy>
@@ -72,7 +70,7 @@ Object Storage에서 HeatWave로 데이터를 로드하려면 Object Storage에 
 
     ![MySQL Shell Connect](./images/mysql-shell-login.png " mysql shell login")
 
-3. List schemas in your heatwave instance
+3. heatwave instance에 schemas를 리스트 하세요.
 
     ```bash
         <copy>show databases;</copy>
@@ -80,31 +78,31 @@ Object Storage에서 HeatWave로 데이터를 로드하려면 Object Storage에 
 
     ![Databse Schemas](./images/list-schemas-after.png "list schemas after")
 
-4. Create the Machine Learning schema 
+4. 머신 러닝 스키마 (schema) 생성
 
     ```bash
     <copy>CREATE DATABASE heatwaveml_bench;</copy>
     ```
 
-5. Set new database as default
+5. 새 데이터베이스를 기본값(default)으로 설정
 
     ```bash
     <copy>use heatwaveml_bench;</copy>
     ```
 
-    You are now ready to use Autoload to load a table from the object store into MySQL HeatWave
+    이제 Autoload를 사용하여 객체 저장소에서 MySQL HeatWave로 테이블을 로드할 준비가 되었습니다.
 
-## 작업 3: Run Autoload to infer the schema and estimate capacity for the black\_friday tables in the Object Store
+## 작업 3: Autoload를 실행하여 Object Store의 black\_friday 테이블에 대한 스키마를 유추하고 용량을 추정합니다.
 
-1. The data is contained in the black\_friday\_train.csv file in object store for which we have created a PAR URL in the earlier task. Enter the following commands one by one and hit Enter.
+1. 데이터는 이전 작업에서 PAR URL을 만든 객체 저장소의 black\_friday\_train.csv 파일에 포함되어 있습니다. 다음 명령을 하나씩 입력하고 Enter를 누릅니다.
 
-2. This sets the schema we will load table data into. Don’t worry if this schema has not been created. Autopilot will generate the commands for you to create this schema if it doesn’t exist.
+2. 이렇게 하면 테이블 데이터를 로드할 스키마가 설정됩니다. 이 스키마가 생성되지 않았더라도 걱정하지 마세요. 스키마가 없으면 Autopilot에서 이 스키마를 생성할 수 있는 명령을 생성합니다.
 
     ```bash
     <copy>SET @db_list = '["heatwaveml_bench"]';</copy>
     ```
 
-3. This sets the parameters for the table name we want to load data into and other information about the source file in the object store. Substitute the **(PAR URL)** below with the one you generated in the previous task:
+3. 데이터를 로드하고자 하는 테이블 이름과 객체 저장소의 소스 파일에 대해 다음 정보에 대해 매개변수를 설정합니다. 아래의 **(PAR URL)**을 이전 작업에서 생성한 것으로 대체합니다.
 
     ```bash
     <copy>SET @dl_tables = '[{
@@ -123,53 +121,53 @@ Object Storage에서 HeatWave로 데이터를 로드하려면 Object Storage에 
     ]';</copy>
     ```
 
-    - It should look like the following example (Be sure to include the PAR Link inside at of quotes("")):
+    - 다음 예와 같아야 합니다. (따옴표("") 안에 PAR 링크를 포함해야 합니다.)
 
     ![autopilot set table example](./images/set-table-example.png "autopilot set table example")
 
-4. This command populates all the options needed by Autoload:
+4. 이 명령은 Autoload에 필요한 모든 옵션을 채웁니다.
 
     ```bash
     <copy>SET @options = JSON_OBJECT('mode', 'dryrun', 'policy', 'disable_unsupported_columns', 'external_tables', CAST(@dl_tables AS JSON));</copy>
     ```
 
-5. Run this Autoload command:
+5. 이 Autoload 명령을 실행하세요:
 
     ```bash
     <copy>CALL sys.heatwave_load(@db_list, @options);</copy>
     ```
 
-6. Once Autoload completes running, its output has several pieces of information:
-    - a. Whether the table exists in the schema you have identified.
-    - b. Auto schema inference determines the number of columns in the table.
-    - c. Auto schema sampling samples a small number of rows from the table and determines the number of rows in the table and the size of the table.
-    - d. Auto provisioning determines how much memory would be needed to load this table into HeatWave and how much time loading this data take.
-
+6. Autoload가 실행을 완료하면 출력에 여러 정보가 포함됩니다.
+    - a. 식별한 스키마(schema)에 테이블이 존재하는지 여부입니다.
+    - b. 자동 스키마 유추(Auto schema inference)는 테이블의 열 수를 결정합니다.
+    - c. 자동 스키마 샘플링은 테이블에서 적은 수의 행을 샘플링하고 테이블의 행 수와 테이블 크기를 결정합니다.
+    - d. 자동 프로비저닝은 이 테이블을 HeatWave에 로드하는 데 필요한 메모리 양과 이 데이터를 로드하는 데 걸리는 시간을 결정합니다.
 
     ![Dryrun script](./images/load-script-dryrun.png "load script dryrun")
 
-7. Autoload also generated a statement lke the one below. Execute this statement now.
+7. Autoload는 아래와 같은 문장도 생성했습니다. 지금 이 문장을 실행하세요.
 
     ```bash
     <copy>SELECT log->>"$.sql" AS "Load Script" FROM sys.heatwave_autopilot_report WHERE type = "sql" ORDER BY id;</copy>
     ```
 
 
-8. The execution result contains the SQL statements needed to create the table and then load this table data from the Object Store into HeatWave.
+8. 실행 결과에는 테이블을 생성하고 이 테이블 데이터를 Object Store에서 HeatWave로 로드하는 데 필요한 SQL 문이 포함됩니다.
 
     ![create train table](./images/create-black-friday-train.png "create train table")
 
-9. Copy the **CREATE TABLE** command from the results.
+9. 결과에서 **CREATE TABLE** 명령을 복사합니다.
 
-10. Execute the **CREATE TABLE** command to create the black-friday table.
+10. **CREATE TABLE** 명령을 실행하여 블랙 프라이데이 (black-friday) 테이블을 만듭니다.
 
-11. The create command and result should look lie this
+11. 생성 명령과 결과는 다음과 같아야 합니다.
 
     ![ result train table](./images/create-table-black-friday.png "result train table")
 
-## 작업 4: Load the black\_friday\_train table from Object Store into MySQL HeatWave
 
-1. Run this command to see the table structure created.
+## 작업 4: Object Store에서 MySQL HeatWave로 black\_friday\_train 테이블을 로드합니다.
+
+1. 이 명령을 실행하면 생성된 테이블 구조를 확인할 수 있습니다.
 
     ```bash
     <copy>desc black_friday_train;</copy>
@@ -177,13 +175,13 @@ Object Storage에서 HeatWave로 데이터를 로드하려면 Object Storage에 
 
     ![black_friday_train Table structure](./images/describe-balck-friday-table.png "black_friday_train Table structure")
 
-2. Now load the data from the Object Store file into the table.
+2. 이제 Object Store 파일에서 테이블에 데이터를 로드합니다.
 
     ```bash
     <copy> ALTER TABLE `heatwaveml_bench`.`black_friday_train` SECONDARY_LOAD; </copy>
     ```
 
-3. Check the number of rows loaded into the table.
+3. 테이블에 로드된 행의 수를 확인하세요.
 
     ```bash
     <copy>select count(*) from black_friday_train;</copy>
@@ -191,23 +189,23 @@ Object Storage에서 HeatWave로 데이터를 로드하려면 Object Storage에 
 
     The black\_friday\_train table has 116698 rows.
 
-4. View a sample of the data in the table.
+4. 표의 데이터 샘플을 확인하세요.
 
     ```bash
     <copy>select * from black_friday_train limit 5;</copy>
     ```
 
-## 작업 5: Create and Load the black\_friday\_test table from Object Store into MySQL HeatWave
+## 작업 5: Object Store에서 MySQL HeatWave로 black\_friday\_test 테이블을 생성하고 로드합니다.
 
-1. Create the black\_friday\_test table by copying the black\_friday\_train Create command and replace the  (PAR URL) with the black\_friday\_test.csv PAR URL  you saved earlier. It will be the source for the black\_friday\_test.csv table:
+1. black\_friday\_train Create 명령을 복사하여 black\_friday\_test 테이블을 만들고 (PAR URL)을 이전에 저장한 black\_friday\_test.csv PAR URL로 바꿉니다. 이는 black\_friday\_test.csv 테이블의 소스가 됩니다:
 
     ```bash
     <copy>CREATE TABLE `heatwaveml_bench`.`black_friday_test`( `Gender` varchar(1) NOT NULL COMMENT 'RAPID_COLUMN=ENCODING=VARLEN', `Age` varchar(5) NOT NULL COMMENT 'RAPID_COLUMN=ENCODING=VARLEN', `Occupation` tinyint unsigned NOT NULL, `City_Category` varchar(1) NOT NULL COMMENT 'RAPID_COLUMN=ENCODING=VARLEN', `Stay_In_Current_City_Years` varchar(2) NOT NULL COMMENT 'RAPID_COLUMN=ENCODING=VARLEN', `Marital_Status` tinyint unsigned NOT NULL, `Product_Category_1` tinyint unsigned NOT NULL, `Product_Category_2` tinyint unsigned NOT NULL, `Product_Category_3` tinyint unsigned NOT NULL, `Purchase` mediumint unsigned NOT NULL) ENGINE=lakehouse SECONDARY_ENGINE=RAPID ENGINE_ATTRIBUTE='{"file": [{"par": "(PAR URL)"}], "dialect": {"format": "csv", "has_header": true, "is_strict_mode": false, "field_delimiter": ",", "record_delimiter": "\\r\\n"}}';</copy>
     ```
 
 
-    - It should look like the following example 
-    (Be sure to include the PAR Link inside at of quotes("")):
+    - 다음 예와 같아야 합니다.
+      (PAR 링크를 at of quotes("")에 포함해야 합니다.):
 
         ![autopilot create table with no field name](./images/create-table-no-fieldname.png "autopilot create table with no field name")
 
