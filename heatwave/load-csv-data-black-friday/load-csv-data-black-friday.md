@@ -43,20 +43,18 @@ Object Storage에서 HeatWave로 데이터를 로드하려면 Object Storage에 
     - i. '복사' 아이콘을 클릭하여 PAR URL을 복사합니다.
     - j. 생성된 PAR URL을 저장하세요. 나중에 필요합니다.
 
-2. Save the generated PAR URL; you will need it in the next task
+2. **black\_friday\_test.csv** 개체에 대한 PAR URL을 생성하려면 동일한 작업을 수행하세요.
 
-3. Do the same to create a PAR URL for the **black\_friday\_test.csv** object
-
-    - a. From your OCI console, navigate to your lakehouse-files bucket in OCI.
-    - b. Select the black\_friday\_test.csv file and click the three vertical dots.
-    - c. Click on ‘Create Pre-Authenticated Request’
+    - a. OCI 콘솔에서 OCI의 lakehouse-files 버킷으로 이동합니다.
+    - b. black\_friday\_test.csv 파일을 선택하고 세 개의 세로 점을 클릭합니다.
+    - c. '사전 인증된 요청 생성 (Pre-Authenticated Request)'을 클릭하세요.
     - d. Click to select the ‘Object’ option under ‘PreAuthentcated Request Target’.
     - e. Leave the ‘Access Type’ option as-is: ‘Permit object reads’.
     - h. Click the ‘Create Pre-Authenticated Request’ button.
     - i. Click the ‘Copy’ icon to copy the PAR URL.
     - j. Save the generated PAR URL; you will need it later.
 
-4. Save the generated PAR URL; you will need it in the next task
+3. Save the generated PAR URL; you will need it in the next task
 
 ## 작업 2: Connect to your MySQL HeatWave system using Cloud Shell
 
