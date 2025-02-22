@@ -209,35 +209,34 @@ Object Storage에서 HeatWave로 데이터를 로드하려면 Object Storage에 
 
         ![autopilot create table with no field name](./images/create-table-no-fieldname.png "autopilot create table with no field name")
 
-2. Run this command to see the table structure created:
+2. 다음 명령을 실행하여 생성된 테이블 구조를 확인하세요.
 
     ```bash
     <copy>desc black_friday_test;</copy>
     ```
 
-3. Load the data from the Object Store into the black\_friday\_test table.
+3. 객체 저장소에서 black\_friday\_test 테이블에 데이터를 로드합니다.
 
     ```bash
     <copy>ALTER TABLE /*+ AUTOPILOT_DISABLE_CHECK */ `heatwaveml_bench`.`black_friday_test` SECONDARY_LOAD;</copy>
     ```
 
-4. Once Autoload completes, check the number of rows loaded into the table.
+4. 자동 로드가 완료되면 테이블에 로드된 행 수를 확인하세요.
 
     ```bash
     <copy>select count(*) from black_friday_test;</copy>
     ```
 
-5. View a sample of the data in the table.
+5. 표의 데이터 샘플을 확인하세요.
 
     ```bash
     <copy>select * from black_friday_test limit 5;</copy>
     ```
 
-You may now **proceed to the next lab**
+이제 다음 Lab으로 진행할 수 있습니다.
 
 ## Acknowledgements
 
 - **Author** - Perside Foster, MySQL Solution Engineering
-
 - **Contributors** - Abhinav Agarwal, Senior Principal Product Manager, Nick Mader, MySQL Global Channel Enablement & Strategy Manager
 - **Last Updated By/Date** - kihyuk, MySQL Solution Engineering, Feburary 2025
