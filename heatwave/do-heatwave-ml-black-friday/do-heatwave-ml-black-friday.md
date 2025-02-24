@@ -20,11 +20,11 @@ _Estimated Time:_ 30 minutes 소요
 
 ### 목표
 
-In this lab, you will be guided through the following task:
+이 랩에서는 다음 작업을 안내해 드립니다.
 
-- Train the machine learning model
-- Predict and Explain using the test table
-- Score your machine learning model to assess its reliability and unload the model
+- 머신러닝 모델 (machine learning model)을 훈련
+- 테스트 테이블을 사용하여 예측 (Predict) 및 설명 (Explain)
+- 머신 러닝 모델의 신뢰성을 평가하기 위해 모델 점수 확인 및 모델 언로드 (Unload)
 
 ### Prerequisites (필요사항)
 
