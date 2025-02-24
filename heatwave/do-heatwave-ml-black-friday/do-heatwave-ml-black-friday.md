@@ -143,36 +143,36 @@ In this lab, you will be guided through the following task:
     <copy>CALL sys.ML_PREDICT_TABLE('heatwaveml_bench.black_friday_test', @model_black_friday,'heatwaveml_bench.black_predictions',NULL);</copy>
     ```
 
-5. Retrieve some of the predictions individually
+5. 일부 예측 (predictions)을 개별적으로 검색합니다.
 
     ```bash
     <copy>SELECT * FROM heatwaveml_bench.black_predictions limit 5\G</copy>
     ```
 
-6. Retrieve some of the predictions in row display
+6. 행 표시에서 일부 예측 (predictions) 검색
 
-    a. Use Javascript
+    a. Javascript 사용
 
     ```bash
     <copy>\js</copy>
 
     ```
 
-    b. Set MySQL Shell configuration option resultFormat to table
+    b. MySQL Shell 구성 옵션 resultFormat을 테이블로 설정
 
     ```bash
     <copy>shell.options.set('resultFormat','tabbed')</copy>
 
     ```
 
-    b. List 5 rows
+    b. 5개의 행을 리스트
 
     ```bash
     <copy>session.sql("SELECT * FROM heatwaveml_bench.black_predictions limit 5")</copy>
 
     ```
 
-7. Unload the model using ML\_MODEL\_UNLOAD:
+7. ML\_MODEL\_UNLOAD를 사용하여 모델을 Unload
 
     ```bash
     <copy>\sql</copy>
@@ -183,7 +183,7 @@ In this lab, you will be guided through the following task:
     <copy>CALL sys.ML_MODEL_UNLOAD(@model_black_friday);</copy>
     ```
 
-    To avoid consuming too much space, it is good practice to unload a model when you are finished using it.
+    너무 많은 공간을 차지하는 것을 피하려면 모델 사용이 끝나면 모델을 언로드(Unload)하는 것이 좋습니다.
 
 이제 다음 랩으로 진행할 수 있습니다.
 
