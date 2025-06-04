@@ -9,10 +9,10 @@ navbar_entries:
     url: heatwave_mysql
 
 data_entries:
-  - title: Heatwave Handon
-    url: heatwave/workshops/
-    desc: 이 온라인 문서는 Heatwave 사용에 대해 Gudie를 제공합니다.
-    highlight: NEW
+#  - title: Heatwave Handon
+#    url: heatwave/workshops/
+#    desc: 이 온라인 문서는 Heatwave 사용에 대해 Gudie를 제공합니다.
+#    highlight: NEW
   - title: MySQL Tuning 가이드
     url: https://github.com/khkwon01/mysqltune
     desc: 해당 Git site는 MySQL 튜닝에 대한 가이드 제공합니다.
