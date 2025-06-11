@@ -82,5 +82,3 @@ layout: post
 
 - 동작 : 이렇게 하면 nsg-app-dev의 트래픽만 포트 3306에서 HeatWave DB에 도달할 수 있습니다.
  
-```
-```
