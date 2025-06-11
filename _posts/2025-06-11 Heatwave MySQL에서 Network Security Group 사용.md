@@ -30,10 +30,12 @@ layout: post
 
 - IAM 권한 설정 (IAM policies 추가필요)
   ```
+  -- Allow HeatWave MySQL to update NSG membership 
   Allow any-user to {NETWORK_SECURITY_GROUP_UPDATE_MEMBERS} in compartment <NSG_compartment_name>
   where all {request.principal.type='mysqldbsystem', request.resource.compartment.id='<DBsystem_compartment_OCID>'
   }
 
+  -- Allow VNIC operations required by HeatWave MySQL
   Allow any-user to {
   VNIC_CREATE,
   VNIC_UPDATE,
