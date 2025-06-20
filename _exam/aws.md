@@ -1,3 +1,5 @@
+### 1. 서비스 일반적인 아키텍처
+
 ![image](https://github.com/user-attachments/assets/19f83874-38cd-4506-aaa6-13fb3a147912)
 
 ![image](https://github.com/user-attachments/assets/cb1f737a-ba7e-429e-a215-ba0f41df2e7c)
@@ -13,4 +15,14 @@
 ![image](https://github.com/user-attachments/assets/12ce18db-c918-4f66-a862-bc5020ff2184)
 
 
+### 2. 비용 구조
+![image](https://github.com/user-attachments/assets/25fb0468-c65c-4d10-a70c-8a82cd16e787)
 
+![image](https://github.com/user-attachments/assets/8b86d0ec-07df-4f97-a3d1-16c38dc4285f)
+
+
+### 3. 보안 구성
+
+![image](https://github.com/user-attachments/assets/8a5e5fa7-b840-4a14-97d1-886ef6ca4621)
+
+![image](https://github.com/user-attachments/assets/a0cc25ff-b51c-4321-8939-0ca771d8f617)
