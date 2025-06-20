@@ -26,3 +26,7 @@
 ![image](https://github.com/user-attachments/assets/8a5e5fa7-b840-4a14-97d1-886ef6ca4621)
 
 ![image](https://github.com/user-attachments/assets/a0cc25ff-b51c-4321-8939-0ca771d8f617)
+
+### 4. LB 구성
+
+![image](https://github.com/user-attachments/assets/d872136a-002a-4abb-a5a4-0ef4d2dde3d5)
