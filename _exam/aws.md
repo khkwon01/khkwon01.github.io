@@ -29,4 +29,5 @@
 
 ### 4. LB 구성
 
-![image](https://github.com/user-attachments/assets/d872136a-002a-4abb-a5a4-0ef4d2dde3d5)
+![image](https://github.com/user-attachments/assets/c0a62806-5a89-463c-b2e6-cce6f5e7d2fa)
+
