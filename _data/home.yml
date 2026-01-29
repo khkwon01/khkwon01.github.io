@@ -37,10 +37,6 @@ data_entries:
     desc: Heatwave 또는 MySQL 사용시 자주 물어 보는 사항들을 정리하였습니다.
 
 demo_entries:
-  - title: Heatwave Demo
-    url: https://130.162.135.29:8000/
-  - title: MySQL Cli 
-    url: http://130.162.135.29:8888/notebooks/notebook/heatwave_mysql.ipynb
   - title: MySQL vistual explain 
     url: https://mysqlexplain.com/
 
